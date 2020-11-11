@@ -13,9 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+Route::get('/', [App\Http\Controllers\LandingPageController::class, 'index'])->name('landing-page');
+
+Route::get('/city', [App\Http\Controllers\CityController::class, 'index'])->name('city.index');
+Route::get('/city/{city?}', [App\Http\Controllers\CityController::class, 'show'])->name('city.show');
 
 Auth::routes();
 

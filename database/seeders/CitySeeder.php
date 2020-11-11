@@ -16,6 +16,7 @@ class CitySeeder extends Seeder
     {
         City::create([
             'name' => '札幌市',
+            'slug' => 'sapporo',
             'prefecture' => '北海道',
             'region' => '北海道',
             'population' => '1952356',
@@ -24,6 +25,7 @@ class CitySeeder extends Seeder
 
         City::create([
             'name' => '函館市',
+            'slug' => 'hakodate',
             'prefecture' => '北海道',
             'region' => '北海道',
             'population' => '265979',
@@ -32,6 +34,7 @@ class CitySeeder extends Seeder
 
         City::create([
             'name' => '小樽市',
+            'slug' => 'otaru',
             'prefecture' => '北海道',
             'region' => '北海道',
             'population' => '121924',

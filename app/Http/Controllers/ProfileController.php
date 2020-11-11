@@ -18,12 +18,7 @@ class ProfileController extends Controller
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
+    public function show()
     {
         $user = Auth::User();
         return view('profile', [
@@ -42,4 +37,10 @@ class ProfileController extends Controller
           'email'                 => $user->email,
         ]);
     }
+
+    public function edit() {
+        return view('profile-edit');
+    }
+
+
 }

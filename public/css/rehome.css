@@ -1,0 +1,21 @@
+body {
+  font-family: 'Viga', sans-serif;
+}
+
+.logo img{
+  width: 3.5rem;
+}
+.logo span{
+  font-weight: 800;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  vertical-align: middle;
+}
+
+.navbar-nav {
+  font-size: 1.3rem;
+}
+
+.footer {
+  background-color: #EEE;
+}
