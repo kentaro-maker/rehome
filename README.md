@@ -7,7 +7,7 @@
 * Composer 2.0.3
 
 ## ロゴ
-![rehome Logo](document-image/rehome_logo.png)
+![rehome Logo](document-image/rehome_logo_w300.png)
 
 ## ルーティング
 <table>
