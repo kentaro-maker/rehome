@@ -16,6 +16,7 @@
             <td>view</td>
             <td>controller</td>
             <td>path</td>
+            <td>desc</td>
         </tr>
     </thead>
     <tbody>
@@ -23,6 +24,7 @@
             <td>landing-page</td>
             <td>LandingPageController</td>
             <td>/</td>
+            <td></td>
         </tr>
         <tr>
             <td>-</td>
