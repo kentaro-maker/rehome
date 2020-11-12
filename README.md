@@ -1,4 +1,10 @@
 # rehome++ 設計書
+## 環境
+* PHP 7.4.8
+* Laravel 8
+* MySQL 8.0
+* Composer 2.0.3
+## ロゴ
 ![rehome Logo](document-image/rehome_logo.png)
 <table>
     <thead>
