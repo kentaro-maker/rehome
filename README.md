@@ -85,6 +85,12 @@
     </tbody>
 </table>
 
+## 完成イメージ
+* [グーネット](https://www.goo-net.com/)
+* [カーセンサー](https://www.carsensor.net/)
+* [価格ドットコム　自動車・バイク](https://kakaku.com/kuruma/used/)
+こういう感じになる
+
 ## TODO
 * Userの登録情報を変更できるようにする
 * CityControllerの作成
