@@ -9,6 +9,13 @@
 ## ロゴ
 ![rehome Logo](document-image/rehome_logo_w300.png)
 
+## セットアップ
+1. git clone https://github.com/kentaro-maker/rehome.git
+2. composer install
+3. php artisan migrate
+4. php artisan db:seed
+5. php artisan serve
+
 ## ルーティング
 <table>
     <thead>
