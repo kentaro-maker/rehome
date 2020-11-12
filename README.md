@@ -15,11 +15,6 @@
             <td>/</td>
         </tr>
         <tr>
-            <td>landing-page</td>
-            <td>LandingPageController</td>
-            <td>/</td>
-        </tr>
-        <tr>
             <td>-</td>
             <td>-</td>
             <td>/login</td>
