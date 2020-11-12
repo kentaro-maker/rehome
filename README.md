@@ -1,5 +1,5 @@
 # rehome++ 設計書
-![rehome Logo](document_image/rehome_logo.png)
+![rehome Logo](document-image/rehome_logo.png)
 <table>
     <thead>
         <tr>
