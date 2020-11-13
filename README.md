@@ -28,6 +28,9 @@ x: 小文字　X:大文字
 
 ※小文字と大文字を混在せず、ハイフンで分ける。
 
+## 画面遷移図
+![Screen Transition](document-image/screen_transition_diagram.png)
+
 ## ルーティング
 <table>
     <thead>
