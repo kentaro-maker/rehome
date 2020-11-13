@@ -17,6 +17,17 @@
 5. php artisan storage:link
 6. php artisan serve
 
+## Blade命名規則
+x: 小文字　X:大文字
+
+###### ○
+* xxxx-xxxx.blade.php
+###### ×
+* xxxxXXXX.blade.php
+* xxxx_xxxx.blade.php
+
+※小文字と大文字を混在せず、ハイフンで分ける。
+
 ## ルーティング
 <table>
     <thead>
