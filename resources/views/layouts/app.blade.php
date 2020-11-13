@@ -117,7 +117,10 @@
                     <a href="set_your_link" rel="noopener" class="text">FAQ</a>
                 </div>
             </div>
-            <div class="copyright text-center p-2">©︎ 2020 rehome++, inc</div>
+            <div class="copyright text-center p-2">
+                ©︎ 2020 rehome++, inc
+            </div>
+        </div>
     </div>
 </body>
 </html>
