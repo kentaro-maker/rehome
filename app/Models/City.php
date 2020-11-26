@@ -23,4 +23,9 @@ class City extends Model
         'population',
         'investigated_at',
     ];
+
+    public function prefecture()
+    {
+        return $this->belongsTo('App\Models\Prefecture');
+    }
 }

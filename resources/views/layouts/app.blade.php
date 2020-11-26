@@ -11,7 +11,7 @@
     <!--<title>{{ config('app.name') }}</title>-->
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -25,6 +25,9 @@
 </head>
 <body>
     <div id="app">
+        {{--
+
+        
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="logo navbar-brand" href="{{ url('/') }}">
@@ -121,6 +124,7 @@
                 ©︎ 2020 rehome++, inc
             </div>
         </div>
+    --}}
     </div>
 </body>
 </html>

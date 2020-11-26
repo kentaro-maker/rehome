@@ -29,6 +29,75 @@
                             </div>
                         </div>
 
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <legend class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</legend>
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input @error('gender') is-invalid @enderror" type="radio" name="gender" id="inlineCheckbox1" value="{{ $gender ?? '' }}" reuqired autocomplete="gender" autofocus>
+                                        <label class="form-check-label" for="inlineCheckbox1">
+                                          {{ __('Male') }}
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input @error('gender') is-invalid @enderror" type="radio" name="gender" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">
+                                          {{ __('Female') }}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            @error('gender')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </fieldset>
+
+                        <div class="form-group row">
+                            <label for="bod" class="col-md-4 col-form-label text-md-right">{{ __('BOD') }}</label>
+                            <div class="col-md-6 d-flex align-items-center">        
+                                <select v-model="year" @input="modifyMonths">
+                               
+                                </select>年
+                                <select :options="months" v-model="month" @input="modifyDates"></select>月
+                                <select :options="dates" v-model="date"></select>日
+                                <select v-model="selected">
+                                    <option disabled value="">選択して下さい</option>
+                                    <option v-for="option in options" v-bind:value="option.name" v-bind:key="option.id">
+                                        {{ 'option.name' }}
+                                    </option>
+                                </select>
+                                <p>{{ selected }}</p>
+                                
+                                @error('bod')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="birthplace" class="col-md-4 col-form-label text-md-right">{{ __('Birthplace') }}</label>
+
+                            <div class="col-md-6">
+                                <select :options="prefs" v-model="pref" @input="modifyCities">
+                     
+                                </select>年
+                                
+                                <select :options="cities" v-model="city"></select>年
+
+                                <input id="birthplace" type="text" class="form-control @error('birthplace') is-invalid @enderror" name="birthplace" value="{{ $birthplace ?? '' }}" required autocomplete="birthplace" autofocus>
+
+                                @error('birthplace')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 

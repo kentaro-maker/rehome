@@ -1,0 +1,47 @@
+.region-list-group{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+
+  &__item {
+    position: relative;
+    display: block;
+    padding: 0.35rem 1rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+
+    
+
+    &:visited {
+     color: inherit;
+    }
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
+
+.region-nav{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  &__item:first-child{
+    font-weight: bold;
+  }
+
+  &__link {
+    display: block;
+    padding: 0rem 0.5rem;
+  }
+  & a{
+    color: #3490dc;
+    text-decoration: none;
+    background-color: transparent;
+  }
+}

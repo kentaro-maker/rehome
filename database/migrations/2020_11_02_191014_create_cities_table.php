@@ -18,10 +18,10 @@ class CreateCitiesTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->string('image_path')->nullable();
-            $table->string('prefecture');
-            $table->string('region');
-            $table->integer('population');
-            $table->string('investigated_at');
+            $table->string('prefecture')->nullable();
+            $table->string('region')->nullable();
+            $table->integer('population')->nullable();
+            $table->string('investigated_at')->nullable();
             $table->timestamps();
         });
     }

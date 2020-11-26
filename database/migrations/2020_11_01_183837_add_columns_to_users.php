@@ -14,16 +14,16 @@ class AddColumnsToUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-          $table->string('gender');
-          $table->string('age');
-          $table->string('birthplace');
-          $table->string('residence');
-          $table->string('marriage_status');
-          $table->string('occupation');
-          $table->string('annual_income');
-          $table->string('household_composition');
-          $table->string('living_style');
-          $table->string('commuting_time');
+          $table->string('gender')->nullable();
+          $table->date('bod')->nullable();
+          $table->string('birthplace')->nullable();
+          $table->string('residence')->nullable();
+          $table->string('marriage_status')->nullable();
+          $table->string('occupation')->nullable();
+          $table->string('annual_income')->nullable();
+          $table->string('household_composition')->nullable();
+          $table->string('living_style')->nullable();
+          $table->string('commuting_time')->nullable();
         });
     }
 
@@ -36,7 +36,7 @@ class AddColumnsToUsers extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
           $table->dropColumn('gender');
-          $table->dropColumn('age');
+          $table->dropColumn('bod');
           $table->dropColumn('birthplace');
           $table->dropColumn('residence');
           $table->dropColumn('marriage_status');

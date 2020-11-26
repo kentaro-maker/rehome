@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   viewBox="0 0 132.29167 132.29167"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="zenkoku.svg"
+   inkscape:export-filename="C:\phpdocs\imagemap\zenkoku.png"
+   inkscape:export-xdpi="95.999992"
+   inkscape:export-ydpi="95.999992">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70003571"
+     inkscape:cx="-98.394359"
+     inkscape:cy="209.50933"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     inkscape:pagecheckerboard="false"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-intersection-paths="true"
+     showguides="true"
+     units="px"
+     inkscape:lockguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:snap-page="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-164.70834)">
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.41062802;stroke:#000000;stroke-width:0.079416;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="0.6910429"
+       inkscape:transform-center-y="-2.8457086"
+       d="m 108.19854,203.61545 -10.302707,-7.15711 -6.614583,6.35 -8.466667,-8.46667 9.525,-8.73125 5.027084,-15.61041 15.610413,11.33692 8.73125,-3.39942 v 10.31875 l -5.55625,2.11666 z"
+       id="path815"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:export-xdpi="87.478897"
+       inkscape:export-ydpi="87.478897">
+      <title
+         id="title4654">北海道</title>
+    </path>
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.41062802;stroke:#000000;stroke-width:0.079416;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 87.560031,203.32511 -9.628352,3.41581 -4.622974,22.04207 5.754171,3.78581 -2.168861,4.65812 10.508404,4.28294 3.645255,-15.82022 z"
+       id="path937"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc">
+      <title
+         id="title4656">東北</title>
+    </path>
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.41062802;stroke:#000000;stroke-width:0.079416;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 79.062875,232.5688 -5.754688,-3.78581 -1.014923,4.83949 -15.964919,11.66079 0.56224,5.79293 15.631089,-4.45968 z"
+       id="path940"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc">
+      <title
+         id="title4666">甲信越・北陸</title>
+    </path>
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.41062802;stroke:#000000;stroke-width:0.079416;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 76.893498,237.22691 -4.371824,9.38961 4.993492,10.75489 7.09776,-3.75843 2.788976,-12.10314 z"
+       id="path931"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc">
+      <title
+         id="title4664">関東</title>
+    </path>
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.41062802;stroke:#000000;stroke-width:0.079416;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 77.515166,257.37141 -4.993492,-10.75489 -15.694649,4.47828 1.277958,13.16199 4.36539,-5.92987 z"
+       id="path934"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc">
+      <title
+         id="title4662">東海</title>
+    </path>
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.41062802;stroke:#000000;stroke-width:0.079416;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 58.168544,264.23818 -1.840199,-18.95491 -7.051249,3.00756 -2.338874,12.27833 2.741433,10.54457 z"
+       id="path928"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc">
+      <title
+         id="title4658">関西</title>
+    </path>
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.41062802;stroke:#000000;stroke-width:0.079416;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 46.938222,260.56916 2.338875,-12.27832 -31.460613,13.41882 1.554944,3.76256 z"
+       id="path925"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc">
+      <title
+         id="title4660">中国</title>
+    </path>
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.41062802;stroke:#000000;stroke-width:0.079416;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="0.69104334"
+       inkscape:transform-center-y="-2.8457107"
+       d="m 30.115969,276.49389 -2.23578,-9.43505 16.218495,-3.91928 -0.693358,11.52157 z"
+       id="path815-4-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-xdpi="87.478897"
+       inkscape:export-ydpi="87.478897">
+      <title
+         id="title4670">四国</title>
+    </path>
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.41062802;stroke:#000000;stroke-width:0.079416;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="0.69104179"
+       inkscape:transform-center-y="-2.8457113"
+       d="m 13.11146,287.74522 -4.0301045,-20.04013 13.0948685,-1.18124 3.555472,14.65658 z"
+       id="path815-4-8-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-xdpi="87.478897"
+       inkscape:export-ydpi="87.478897">
+      <title
+         id="title4672">九州</title>
+    </path>
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.41062802;stroke:#000000;stroke-width:0.079416;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="0.69104259"
+       inkscape:transform-center-y="-2.8457152"
+       d="m 86.623464,277.13612 13.964686,-5.70408 -16.243806,13.50283 z"
+       id="path815-4-8-4-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-xdpi="87.478897"
+       inkscape:export-ydpi="87.478897">
+      <title
+         id="title4668">沖縄</title>
+    </path>
+  </g>
+</svg>
