@@ -1,15 +1,15 @@
 [
     {
-        "slug":"hokkaido",
-        "name":"北海道" ,
+        "name":"北海道","slug":"hokkaido",
+        "coords": "409,147,370,120,345,144,313,112,349,79,368,20,427,63,460,50,460,89,439,97",
         "prefs":
         [
             {"slug":"hokkaido","name":"北海道"}
         ]
     },   
     {
-        "slug":"tohoku",
-        "name":"東北",
+        "name":"東北","slug":"tohoku",
+        "coords":"331,146,295,159,277,242,299,256,291,274,330,290,344,230",
         "prefs":[
             {"slug":"aomori","name":"青森"},
             {"slug":"akita","name":"秋田"},
@@ -20,8 +20,8 @@
         ]
     },
     {
-        "slug":"kanto",
-        "name":"関東",
+        "name":"関東","slug":"kanto",
+        "coords":"299,256,277,242,273,260,213,305,215,326,274,310",
         "prefs":[
             {"slug":"ibaraki","name":"茨城"},
             {"slug":"tochigi","name":"栃木"},
@@ -33,8 +33,8 @@
         ]
     },
     {
-        "slug":"koshinetsu-hokuriku",
-        "name":"甲信越・北陸",
+        "name":"甲信越・北陸","slug":"koshinetsu-hokuriku",
+        "coords":"291,274,274,310,293,350,320,336,330,290",
         "prefs":[
             {"slug":"nigata","name":"山形"},
             {"slug":"toyama","name":"富山"},
@@ -45,8 +45,8 @@
         ]
     },
     {
-        "slug":"tokai",
-        "name":"東海",
+        "name":"東海","slug":"tokai",
+        "coords":"293,350,274,310,215,326,220,376,236,354",
         "prefs":[
             {"slug":"gifu","name":"岐阜"},
             {"slug":"shizuoka","name":"静岡"},
@@ -55,8 +55,8 @@
         ]
     },
     {
-        "slug":"kansai",
-        "name":"関西",
+        "name":"関西","slug":"kansai",
+        "coords":"220,376,213,305,186,316,177,362,188,402",
         "prefs":[
             {"slug":"shiga","name":"山形"},
             {"slug":"kyoto","name":"京都"},
@@ -67,8 +67,8 @@
         ]
     },
     {
-        "slug":"chugoku",
-        "name":"中国",
+        "name":"中国","slug":"chugoku",
+        "coords":"177,362,186,316,67,367,73,381",
         "prefs":[
             {"slug":"tottori","name":"鳥取"},
             {"slug":"shimane","name":"島根"},
@@ -78,8 +78,8 @@
         ]
     },
     {
-        "slug":"shikoku",
-        "name":"四国",
+        "name":"四国","slug":"shikoku",
+        "coords":"114,422,105,387,167,372,164,416",
         "prefs":[
             {"slug":"kagawa","name":"香川"},
             {"slug":"tokushima","name":"徳島"},
@@ -88,8 +88,8 @@
         ]
     },
     {
-        "slug":"kyushu",
-        "name":"九州",
+        "name":"九州","slug":"kyushu",
+        "coords":"50,465,34,389,84,385,97,440",
         "prefs":[
             {"slug":"oita","name":"大分"},
             {"slug":"fukuoka","name":"福岡"},
@@ -101,8 +101,8 @@
         ]
     },
     {
-        "slug":"okinawa",
-        "name":"沖縄",
+        "name":"沖縄","slug":"okinawa",
+        "coords":"327,425,380,403,319,454",
         "prefs":[
             {"slug":"okinawa","name":"沖縄"}
         ]

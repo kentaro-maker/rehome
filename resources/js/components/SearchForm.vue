@@ -23,10 +23,7 @@ export default {
         Loader
     },
     props: {
-        value: {
-            type: Boolean,
-            required: true,
-        }
+  
     },
     data () {
         return {

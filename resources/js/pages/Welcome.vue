@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Welcome</h1>
+        <h1>あなたにぴったりの町を探そう</h1>
         <div class="grid">
             <SearchForm />
         </div>
@@ -17,10 +17,5 @@ export default {
     SearchForm,
     RegionMapForm,
   },
-  data () {
-    return {
-      photos: []
-    }
-  }
 }
 </script>

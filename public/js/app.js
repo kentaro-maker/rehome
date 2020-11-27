@@ -1971,6 +1971,43 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/City.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/City.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    item: {
+      type: Object,
+      required: true
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=script&lang=js& ***!
@@ -2395,12 +2432,6 @@ var _assets_zenkoku_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/_
   components: {
     Loader: _Loader_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
-  props: {
-    value: {
-      type: Boolean,
-      required: true
-    }
-  },
   data: function data() {
     return {
       zenkoku: _assets_zenkoku_json__WEBPACK_IMPORTED_MODULE_2__,
@@ -2413,7 +2444,8 @@ var _assets_zenkoku_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/_
       this.loading = true;
     }
   },
-  mounted: function mounted() {}
+  mounted: function mounted() {//ImageMap('img[usemap]')
+  }
 });
 
 /***/ }),
@@ -2450,12 +2482,7 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Loader: _Loader_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
-  props: {
-    value: {
-      type: Boolean,
-      required: true
-    }
-  },
+  props: {},
   data: function data() {
     return {
       loading: false,
@@ -2465,6 +2492,241 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     submit: function submit() {
       this.loading = true;
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/CityDetail.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/CityDetail.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util */ "./resources/js/util.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    region_slug: {
+      type: String,
+      required: true
+    },
+    pref_slug: {
+      type: String,
+      required: true
+    },
+    city_slug: {
+      type: String,
+      required: true
+    }
+  },
+  data: function data() {
+    return {
+      city: null
+    };
+  },
+  methods: {
+    fetchCityDetail: function fetchCityDetail() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var response;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return axios.get("/api/region/".concat(_this.region_slug, "/pref/").concat(_this.pref_slug, "/city/").concat(_this.city_slug));
+
+              case 2:
+                response = _context.sent;
+
+                if (!(response.status !== _util__WEBPACK_IMPORTED_MODULE_1__["OK"])) {
+                  _context.next = 6;
+                  break;
+                }
+
+                _this.$store.commit('error/setCode', response.status);
+
+                return _context.abrupt("return", false);
+
+              case 6:
+                console.log(response.data);
+                _this.city = response.data[0];
+
+              case 8:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    }
+  },
+  watch: {
+    $route: {
+      handler: function handler() {
+        var _this2 = this;
+
+        return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+            while (1) {
+              switch (_context2.prev = _context2.next) {
+                case 0:
+                  _context2.next = 2;
+                  return _this2.fetchCityDetail();
+
+                case 2:
+                case "end":
+                  return _context2.stop();
+              }
+            }
+          }, _callee2);
+        }))();
+      },
+      immediate: true
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/CityList.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/CityList.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util */ "./resources/js/util.js");
+/* harmony import */ var _components_City_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/City.vue */ "./resources/js/components/City.vue");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    City: _components_City_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+  },
+  props: {
+    region_slug: {
+      type: String,
+      required: true
+    }
+  },
+  data: function data() {
+    return {
+      cities: []
+    };
+  },
+  methods: {
+    fetchCities: function fetchCities() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var response;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return axios.get("/api/region/".concat(_this.region_slug));
+
+              case 2:
+                response = _context.sent;
+
+                if (!(response.status !== _util__WEBPACK_IMPORTED_MODULE_1__["OK"])) {
+                  _context.next = 6;
+                  break;
+                }
+
+                _this.$store.commit('error/setCode', response.status);
+
+                return _context.abrupt("return", false);
+
+              case 6:
+                console.log(response.data);
+                _this.cities = response.data;
+
+              case 8:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    }
+  },
+  watch: {
+    $route: {
+      handler: function handler() {
+        var _this2 = this;
+
+        return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+            while (1) {
+              switch (_context2.prev = _context2.next) {
+                case 0:
+                  _context2.next = 2;
+                  return _this2.fetchCities();
+
+                case 2:
+                case "end":
+                  return _context2.stop();
+              }
+            }
+          }, _callee2);
+        }))();
+      },
+      immediate: true
     }
   }
 });
@@ -2672,11 +2934,6 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     SearchForm: _components_SearchForm_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     RegionMapForm: _components_RegionMapForm_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
-  },
-  data: function data() {
-    return {
-      photos: []
-    };
   }
 });
 
@@ -39216,6 +39473,52 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/City.vue?vue&type=template&id=4ee562d6&":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/City.vue?vue&type=template&id=4ee562d6& ***!
+  \*******************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "city" },
+    [
+      _c(
+        "router-link",
+        {
+          attrs: {
+            to: {
+              name: "city",
+              params: {
+                region_slug: _vm.item.region,
+                pref_slug: _vm.item.prefecture,
+                city_slug: _vm.item.slug
+              }
+            }
+          }
+        },
+        [_vm._v("\n    " + _vm._s(_vm.item.name) + "\n  ")]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&":
 /*!*********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374& ***!
@@ -39559,7 +39862,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "grid" }, [
+  return _c("div", {}, [
     _c("div", [
       _c("h2", { staticClass: "title" }, [_vm._v("地域から探す")]),
       _vm._v(" "),
@@ -39581,21 +39884,24 @@ var render = function() {
                       {
                         staticClass: "region-nav__link",
                         attrs: {
-                          to: { name: "region", params: { slug: region.slug } }
+                          to: {
+                            name: "region",
+                            params: { region_slug: region.slug }
+                          }
                         }
                       },
                       [
                         _vm._v(
-                          "\n                            " +
+                          "\n                                " +
                             _vm._s(region.name) +
-                            "\n                        "
+                            "\n                            "
                         )
                       ]
                     )
                   ],
                   1
                 ),
-                _c("li"),
+                _vm._v(" "),
                 _vm._l(region.prefs, function(pref) {
                   return _c(
                     "li",
@@ -39603,12 +39909,23 @@ var render = function() {
                     [
                       _c(
                         "router-link",
-                        { staticClass: "region-nav__link", attrs: { to: {} } },
+                        {
+                          staticClass: "region-nav__link",
+                          attrs: {
+                            to: {
+                              name: "pref",
+                              params: {
+                                pref_slug: pref.slug,
+                                region_slug: region.slug
+                              }
+                            }
+                          }
+                        },
                         [
                           _vm._v(
-                            "\n                            " +
+                            "\n                                " +
                               _vm._s(pref.name) +
-                              "\n                        "
+                              "\n                            "
                           )
                         ]
                       )
@@ -39622,175 +39939,214 @@ var render = function() {
           ])
         }),
         0
+      ),
+      _vm._v(" "),
+      _c("img", {
+        attrs: { src: "/storage/images/zenkoku.svg", usemap: "#image-map" }
+      }),
+      _vm._v(" "),
+      _c(
+        "map",
+        { attrs: { name: "image-map" } },
+        [
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: { name: "region", params: { region_slug: "hokkaido" } }
+              }
+            },
+            [
+              _c("area", {
+                attrs: {
+                  shape: "poly",
+                  alt: "hokkaido",
+                  title: "北海道",
+                  coords:
+                    "409,147,370,120,345,144,313,112,349,79,368,20,427,63,460,50,460,89,439,97"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: { name: "region", params: { region_slug: "tohoku" } }
+              }
+            },
+            [
+              _c("area", {
+                attrs: {
+                  shape: "poly",
+                  alt: "東北",
+                  title: "東北",
+                  coords:
+                    "331,146,295,159,277,242,299,256,291,274,330,290,344,230"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: {
+                  name: "region",
+                  params: { region_slug: "koshinetsu-hokuriku" }
+                }
+              }
+            },
+            [
+              _c("area", {
+                attrs: {
+                  shape: "poly",
+                  alt: "甲信越・北陸",
+                  title: "甲信越・北陸",
+                  coords: "299,256,277,242,273,260,213,305,215,326,274,310"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: { name: "region", params: { region_slug: "kanto" } }
+              }
+            },
+            [
+              _c("area", {
+                attrs: {
+                  shape: "poly",
+                  alt: "関東",
+                  title: "関東",
+                  coords: "291,274,274,310,293,350,320,336,330,290"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: { name: "region", params: { region_slug: "tokai" } }
+              }
+            },
+            [
+              _c("area", {
+                attrs: {
+                  shape: "poly",
+                  alt: "東海",
+                  title: "東海",
+                  coords: "293,350,274,310,215,326,220,376,236,354"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: { name: "region", params: { region_slug: "kansai" } }
+              }
+            },
+            [
+              _c("area", {
+                attrs: {
+                  shape: "poly",
+                  alt: "関西",
+                  title: "関西",
+                  coords: "220,376,213,305,186,316,177,362,188,402"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: { name: "region", params: { region_slug: "chugoku" } }
+              }
+            },
+            [
+              _c("area", {
+                attrs: {
+                  shape: "poly",
+                  alt: "中国",
+                  title: "中国",
+                  coords: "177,362,186,316,67,367,73,381"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: { name: "region", params: { region_slug: "shikoku" } }
+              }
+            },
+            [
+              _c("area", {
+                attrs: {
+                  shape: "poly",
+                  alt: "四国",
+                  title: "四国",
+                  coords: "114,422,105,387,167,372,164,416"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: { name: "region", params: { region_slug: "kyushu" } }
+              }
+            },
+            [
+              _c("area", {
+                attrs: {
+                  shape: "poly",
+                  alt: "kyushu",
+                  title: "九州",
+                  coords: "50,465,34,389,84,385,97,440"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: { name: "region", params: { region_slug: "okinawa" } }
+              }
+            },
+            [
+              _c("area", {
+                attrs: {
+                  shape: "poly",
+                  alt: "okinawa",
+                  title: "沖縄",
+                  coords: "327,425,380,403,319,454"
+                }
+              })
+            ]
+          )
+        ],
+        1
       )
-    ]),
-    _vm._v(" "),
-    _c("img", {
-      attrs: { src: "/storage/images/zenkoku.svg", usemap: "#image-map" }
-    }),
-    _vm._v(" "),
-    _c(
-      "map",
-      { attrs: { name: "image-map" } },
-      [
-        _c(
-          "RouterLink",
-          { attrs: { to: { name: "region", params: { slug: "hokkaido" } } } },
-          [
-            _c("area", {
-              attrs: {
-                shape: "poly",
-                alt: "hokkaido",
-                title: "北海道",
-                coords:
-                  "409,147,370,120,345,144,313,112,349,79,368,20,427,63,460,50,460,89,439,97"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          { attrs: { to: { name: "region", params: { slug: "tohoku" } } } },
-          [
-            _c("area", {
-              attrs: {
-                shape: "poly",
-                alt: "東北",
-                title: "東北",
-                coords:
-                  "331,146,295,159,277,242,299,256,291,274,330,290,344,230"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          {
-            attrs: {
-              to: { name: "region", params: { slug: "koshinetsu-hokuriku" } }
-            }
-          },
-          [
-            _c("area", {
-              attrs: {
-                shape: "poly",
-                alt: "甲信越・北陸",
-                title: "甲信越・北陸",
-                coords: "299,256,277,242,273,260,213,305,215,326,274,310"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          { attrs: { to: { name: "region", params: { slug: "kanto" } } } },
-          [
-            _c("area", {
-              attrs: {
-                shape: "poly",
-                alt: "関東",
-                title: "関東",
-                coords: "291,274,274,310,293,350,320,336,330,290"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          { attrs: { to: { name: "region", params: { slug: "tokai" } } } },
-          [
-            _c("area", {
-              attrs: {
-                shape: "poly",
-                alt: "東海",
-                title: "東海",
-                coords: "293,350,274,310,215,326,220,376,236,354"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          { attrs: { to: { name: "region", params: { slug: "kansai" } } } },
-          [
-            _c("area", {
-              attrs: {
-                shape: "poly",
-                alt: "関西",
-                title: "関西",
-                coords: "220,376,213,305,186,316,177,362,188,402"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          { attrs: { to: { name: "region", params: { slug: "chugoku" } } } },
-          [
-            _c("area", {
-              attrs: {
-                shape: "poly",
-                alt: "中国",
-                title: "中国",
-                coords: "177,362,186,316,67,367,73,381"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          { attrs: { to: { name: "region", params: { slug: "shikoku" } } } },
-          [
-            _c("area", {
-              attrs: {
-                shape: "poly",
-                alt: "四国",
-                title: "四国",
-                coords: "114,422,105,387,167,372,164,416"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          { attrs: { to: { name: "region", params: { slug: "kyushu" } } } },
-          [
-            _c("area", {
-              attrs: {
-                shape: "poly",
-                alt: "kyushu",
-                title: "九州",
-                coords: "50,465,34,389,84,385,97,440"
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          { attrs: { to: { name: "region", params: { slug: "okinawa" } } } },
-          [
-            _c("area", {
-              attrs: {
-                shape: "poly",
-                alt: "okinawa",
-                title: "沖縄",
-                coords: "327,425,380,403,319,454"
-              }
-            })
-          ]
-        )
-      ],
-      1
-    )
+    ])
   ])
 }
 var staticRenderFns = []
@@ -39889,7 +40245,63 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("City Detail")])
+  return _c(
+    "div",
+    [
+      _c("h2", [_vm._v(_vm._s(_vm.city.name))]),
+      _vm._v(" "),
+      _c("h3", [
+        _vm._v(
+          "都道府県：" +
+            _vm._s(_vm.city.prefecture) +
+            "、地域：" +
+            _vm._s(_vm.city.region)
+        )
+      ]),
+      _vm._v(" "),
+      _c("RouterLink", { attrs: { to: "/photos/" + _vm.city.slug } }, [
+        _c("div", { staticClass: "photo__controls" }, [
+          _c("button", [
+            _vm._v("\n                転出届ダウンロード\n            ")
+          ])
+        ])
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/CityList.vue?vue&type=template&id=7d78c29c&":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/CityList.vue?vue&type=template&id=7d78c29c& ***!
+  \******************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "city-list" }, [
+    _c(
+      "div",
+      {},
+      _vm._l(_vm.cities, function(city) {
+        return _c("City", { key: city.id, attrs: { item: city } })
+      }),
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -40255,30 +40667,6 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/PhotoList.vue?vue&type=template&id=401edab7&":
-/*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/PhotoList.vue?vue&type=template&id=401edab7& ***!
-  \*******************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Photo List")])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Welcome.vue?vue&type=template&id=07059a2e&":
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Welcome.vue?vue&type=template&id=07059a2e& ***!
@@ -40297,7 +40685,7 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("h1", [_vm._v("Welcome")]),
+      _c("h1", [_vm._v("あなたにぴったりの町を探そう")]),
       _vm._v(" "),
       _c("div", { staticClass: "grid" }, [_c("SearchForm")], 1),
       _vm._v(" "),
@@ -57060,7 +57448,7 @@ const app = new Vue({
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"slug\":\"hokkaido\",\"name\":\"北海道\",\"prefs\":[{\"slug\":\"hokkaido\",\"name\":\"北海道\"}]},{\"slug\":\"tohoku\",\"name\":\"東北\",\"prefs\":[{\"slug\":\"aomori\",\"name\":\"青森\"},{\"slug\":\"akita\",\"name\":\"秋田\"},{\"slug\":\"iwate\",\"name\":\"岩手\"},{\"slug\":\"miyagi\",\"name\":\"宮城\"},{\"slug\":\"yamagata\",\"name\":\"山形\"},{\"slug\":\"fukushima\",\"name\":\"福島\"}]},{\"slug\":\"kanto\",\"name\":\"関東\",\"prefs\":[{\"slug\":\"ibaraki\",\"name\":\"茨城\"},{\"slug\":\"tochigi\",\"name\":\"栃木\"},{\"slug\":\"gumma\",\"name\":\"群馬\"},{\"slug\":\"saitama\",\"name\":\"埼玉\"},{\"slug\":\"chiba\",\"name\":\"千葉\"},{\"slug\":\"tokyo\",\"name\":\"東京\"},{\"slug\":\"kanagawa\",\"name\":\"神奈川\"}]},{\"slug\":\"koshinetsu-hokuriku\",\"name\":\"甲信越・北陸\",\"prefs\":[{\"slug\":\"nigata\",\"name\":\"山形\"},{\"slug\":\"toyama\",\"name\":\"富山\"},{\"slug\":\"ishikawa\",\"name\":\"石川\"},{\"slug\":\"fukui\",\"name\":\"福井\"},{\"slug\":\"yamanashi\",\"name\":\"山梨\"},{\"slug\":\"nagano\",\"name\":\"長野\"}]},{\"slug\":\"tokai\",\"name\":\"東海\",\"prefs\":[{\"slug\":\"gifu\",\"name\":\"岐阜\"},{\"slug\":\"shizuoka\",\"name\":\"静岡\"},{\"slug\":\"aichi\",\"name\":\"愛知\"},{\"slug\":\"mie\",\"name\":\"三重\"}]},{\"slug\":\"kansai\",\"name\":\"関西\",\"prefs\":[{\"slug\":\"shiga\",\"name\":\"山形\"},{\"slug\":\"kyoto\",\"name\":\"京都\"},{\"slug\":\"osaka\",\"name\":\"大阪\"},{\"slug\":\"hyogo\",\"name\":\"兵庫\"},{\"slug\":\"nara\",\"name\":\"奈良\"},{\"slug\":\"wakayama\",\"name\":\"和歌山\"}]},{\"slug\":\"chugoku\",\"name\":\"中国\",\"prefs\":[{\"slug\":\"tottori\",\"name\":\"鳥取\"},{\"slug\":\"shimane\",\"name\":\"島根\"},{\"slug\":\"hiroshima\",\"name\":\"広島\"},{\"slug\":\"okayama\",\"name\":\"岡山\"},{\"slug\":\"yamaguchi\",\"name\":\"山口\"}]},{\"slug\":\"shikoku\",\"name\":\"四国\",\"prefs\":[{\"slug\":\"kagawa\",\"name\":\"香川\"},{\"slug\":\"tokushima\",\"name\":\"徳島\"},{\"slug\":\"ehime\",\"name\":\"愛媛\"},{\"slug\":\"kochi\",\"name\":\"高知\"}]},{\"slug\":\"kyushu\",\"name\":\"九州\",\"prefs\":[{\"slug\":\"oita\",\"name\":\"大分\"},{\"slug\":\"fukuoka\",\"name\":\"福岡\"},{\"slug\":\"saga\",\"name\":\"佐賀\"},{\"slug\":\"nagasaki\",\"name\":\"長崎\"},{\"slug\":\"miyazaki\",\"name\":\"宮崎\"},{\"slug\":\"kumamoto\",\"name\":\"熊本\"},{\"slug\":\"kagoshima\",\"name\":\"鹿児島\"}]},{\"slug\":\"okinawa\",\"name\":\"沖縄\",\"prefs\":[{\"slug\":\"okinawa\",\"name\":\"沖縄\"}]}]");
+module.exports = JSON.parse("[{\"name\":\"北海道\",\"slug\":\"hokkaido\",\"coords\":\"409,147,370,120,345,144,313,112,349,79,368,20,427,63,460,50,460,89,439,97\",\"prefs\":[{\"slug\":\"hokkaido\",\"name\":\"北海道\"}]},{\"name\":\"東北\",\"slug\":\"tohoku\",\"coords\":\"331,146,295,159,277,242,299,256,291,274,330,290,344,230\",\"prefs\":[{\"slug\":\"aomori\",\"name\":\"青森\"},{\"slug\":\"akita\",\"name\":\"秋田\"},{\"slug\":\"iwate\",\"name\":\"岩手\"},{\"slug\":\"miyagi\",\"name\":\"宮城\"},{\"slug\":\"yamagata\",\"name\":\"山形\"},{\"slug\":\"fukushima\",\"name\":\"福島\"}]},{\"name\":\"関東\",\"slug\":\"kanto\",\"coords\":\"299,256,277,242,273,260,213,305,215,326,274,310\",\"prefs\":[{\"slug\":\"ibaraki\",\"name\":\"茨城\"},{\"slug\":\"tochigi\",\"name\":\"栃木\"},{\"slug\":\"gumma\",\"name\":\"群馬\"},{\"slug\":\"saitama\",\"name\":\"埼玉\"},{\"slug\":\"chiba\",\"name\":\"千葉\"},{\"slug\":\"tokyo\",\"name\":\"東京\"},{\"slug\":\"kanagawa\",\"name\":\"神奈川\"}]},{\"name\":\"甲信越・北陸\",\"slug\":\"koshinetsu-hokuriku\",\"coords\":\"291,274,274,310,293,350,320,336,330,290\",\"prefs\":[{\"slug\":\"nigata\",\"name\":\"山形\"},{\"slug\":\"toyama\",\"name\":\"富山\"},{\"slug\":\"ishikawa\",\"name\":\"石川\"},{\"slug\":\"fukui\",\"name\":\"福井\"},{\"slug\":\"yamanashi\",\"name\":\"山梨\"},{\"slug\":\"nagano\",\"name\":\"長野\"}]},{\"name\":\"東海\",\"slug\":\"tokai\",\"coords\":\"293,350,274,310,215,326,220,376,236,354\",\"prefs\":[{\"slug\":\"gifu\",\"name\":\"岐阜\"},{\"slug\":\"shizuoka\",\"name\":\"静岡\"},{\"slug\":\"aichi\",\"name\":\"愛知\"},{\"slug\":\"mie\",\"name\":\"三重\"}]},{\"name\":\"関西\",\"slug\":\"kansai\",\"coords\":\"220,376,213,305,186,316,177,362,188,402\",\"prefs\":[{\"slug\":\"shiga\",\"name\":\"山形\"},{\"slug\":\"kyoto\",\"name\":\"京都\"},{\"slug\":\"osaka\",\"name\":\"大阪\"},{\"slug\":\"hyogo\",\"name\":\"兵庫\"},{\"slug\":\"nara\",\"name\":\"奈良\"},{\"slug\":\"wakayama\",\"name\":\"和歌山\"}]},{\"name\":\"中国\",\"slug\":\"chugoku\",\"coords\":\"177,362,186,316,67,367,73,381\",\"prefs\":[{\"slug\":\"tottori\",\"name\":\"鳥取\"},{\"slug\":\"shimane\",\"name\":\"島根\"},{\"slug\":\"hiroshima\",\"name\":\"広島\"},{\"slug\":\"okayama\",\"name\":\"岡山\"},{\"slug\":\"yamaguchi\",\"name\":\"山口\"}]},{\"name\":\"四国\",\"slug\":\"shikoku\",\"coords\":\"114,422,105,387,167,372,164,416\",\"prefs\":[{\"slug\":\"kagawa\",\"name\":\"香川\"},{\"slug\":\"tokushima\",\"name\":\"徳島\"},{\"slug\":\"ehime\",\"name\":\"愛媛\"},{\"slug\":\"kochi\",\"name\":\"高知\"}]},{\"name\":\"九州\",\"slug\":\"kyushu\",\"coords\":\"50,465,34,389,84,385,97,440\",\"prefs\":[{\"slug\":\"oita\",\"name\":\"大分\"},{\"slug\":\"fukuoka\",\"name\":\"福岡\"},{\"slug\":\"saga\",\"name\":\"佐賀\"},{\"slug\":\"nagasaki\",\"name\":\"長崎\"},{\"slug\":\"miyazaki\",\"name\":\"宮崎\"},{\"slug\":\"kumamoto\",\"name\":\"熊本\"},{\"slug\":\"kagoshima\",\"name\":\"鹿児島\"}]},{\"name\":\"沖縄\",\"slug\":\"okinawa\",\"coords\":\"327,425,380,403,319,454\",\"prefs\":[{\"slug\":\"okinawa\",\"name\":\"沖縄\"}]}]");
 
 /***/ }),
 
@@ -57119,6 +57507,75 @@ window.axios.interceptors.request.use(function (config) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/City.vue":
+/*!******************************************!*\
+  !*** ./resources/js/components/City.vue ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _City_vue_vue_type_template_id_4ee562d6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./City.vue?vue&type=template&id=4ee562d6& */ "./resources/js/components/City.vue?vue&type=template&id=4ee562d6&");
+/* harmony import */ var _City_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./City.vue?vue&type=script&lang=js& */ "./resources/js/components/City.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _City_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _City_vue_vue_type_template_id_4ee562d6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _City_vue_vue_type_template_id_4ee562d6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/City.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/City.vue?vue&type=script&lang=js&":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/City.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_City_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./City.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/City.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_City_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/City.vue?vue&type=template&id=4ee562d6&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/City.vue?vue&type=template&id=4ee562d6& ***!
+  \*************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_City_vue_vue_type_template_id_4ee562d6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./City.vue?vue&type=template&id=4ee562d6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/City.vue?vue&type=template&id=4ee562d6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_City_vue_vue_type_template_id_4ee562d6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_City_vue_vue_type_template_id_4ee562d6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -57455,14 +57912,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************************!*\
   !*** ./resources/js/components/RegionMapForm.vue ***!
   \***************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _RegionMapForm_vue_vue_type_template_id_9437175e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RegionMapForm.vue?vue&type=template&id=9437175e& */ "./resources/js/components/RegionMapForm.vue?vue&type=template&id=9437175e&");
 /* harmony import */ var _RegionMapForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RegionMapForm.vue?vue&type=script&lang=js& */ "./resources/js/components/RegionMapForm.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _RegionMapForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _RegionMapForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -57492,7 +57950,7 @@ component.options.__file = "resources/js/components/RegionMapForm.vue"
 /*!****************************************************************************!*\
   !*** ./resources/js/components/RegionMapForm.vue?vue&type=script&lang=js& ***!
   \****************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57599,15 +58057,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CityDetail_vue_vue_type_template_id_6a4545e5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CityDetail.vue?vue&type=template&id=6a4545e5& */ "./resources/js/pages/CityDetail.vue?vue&type=template&id=6a4545e5&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _CityDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CityDetail.vue?vue&type=script&lang=js& */ "./resources/js/pages/CityDetail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CityDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _CityDetail_vue_vue_type_template_id_6a4545e5___WEBPACK_IMPORTED_MODULE_0__["render"],
   _CityDetail_vue_vue_type_template_id_6a4545e5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -57624,6 +58084,20 @@ component.options.__file = "resources/js/pages/CityDetail.vue"
 
 /***/ }),
 
+/***/ "./resources/js/pages/CityDetail.vue?vue&type=script&lang=js&":
+/*!********************************************************************!*\
+  !*** ./resources/js/pages/CityDetail.vue?vue&type=script&lang=js& ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CityDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./CityDetail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/CityDetail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CityDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/pages/CityDetail.vue?vue&type=template&id=6a4545e5&":
 /*!**************************************************************************!*\
   !*** ./resources/js/pages/CityDetail.vue?vue&type=template&id=6a4545e5& ***!
@@ -57637,6 +58111,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CityDetail_vue_vue_type_template_id_6a4545e5___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CityDetail_vue_vue_type_template_id_6a4545e5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/CityList.vue":
+/*!*****************************************!*\
+  !*** ./resources/js/pages/CityList.vue ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CityList_vue_vue_type_template_id_7d78c29c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CityList.vue?vue&type=template&id=7d78c29c& */ "./resources/js/pages/CityList.vue?vue&type=template&id=7d78c29c&");
+/* harmony import */ var _CityList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CityList.vue?vue&type=script&lang=js& */ "./resources/js/pages/CityList.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CityList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CityList_vue_vue_type_template_id_7d78c29c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CityList_vue_vue_type_template_id_7d78c29c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/CityList.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/CityList.vue?vue&type=script&lang=js&":
+/*!******************************************************************!*\
+  !*** ./resources/js/pages/CityList.vue?vue&type=script&lang=js& ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CityList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./CityList.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/CityList.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CityList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/CityList.vue?vue&type=template&id=7d78c29c&":
+/*!************************************************************************!*\
+  !*** ./resources/js/pages/CityList.vue?vue&type=template&id=7d78c29c& ***!
+  \************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CityList_vue_vue_type_template_id_7d78c29c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./CityList.vue?vue&type=template&id=7d78c29c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/CityList.vue?vue&type=template&id=7d78c29c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CityList_vue_vue_type_template_id_7d78c29c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CityList_vue_vue_type_template_id_7d78c29c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -57706,59 +58249,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_3b6adb30___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_3b6adb30___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/pages/PhotoList.vue":
-/*!******************************************!*\
-  !*** ./resources/js/pages/PhotoList.vue ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _PhotoList_vue_vue_type_template_id_401edab7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PhotoList.vue?vue&type=template&id=401edab7& */ "./resources/js/pages/PhotoList.vue?vue&type=template&id=401edab7&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-var script = {}
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
-  _PhotoList_vue_vue_type_template_id_401edab7___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _PhotoList_vue_vue_type_template_id_401edab7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/pages/PhotoList.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/pages/PhotoList.vue?vue&type=template&id=401edab7&":
-/*!*************************************************************************!*\
-  !*** ./resources/js/pages/PhotoList.vue?vue&type=template&id=401edab7& ***!
-  \*************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PhotoList_vue_vue_type_template_id_401edab7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./PhotoList.vue?vue&type=template&id=401edab7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/PhotoList.vue?vue&type=template&id=401edab7&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PhotoList_vue_vue_type_template_id_401edab7___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PhotoList_vue_vue_type_template_id_401edab7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -57898,7 +58388,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _pages_PhotoList_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/PhotoList.vue */ "./resources/js/pages/PhotoList.vue");
+/* harmony import */ var _pages_CityList_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/CityList.vue */ "./resources/js/pages/CityList.vue");
 /* harmony import */ var _pages_Login_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/Login.vue */ "./resources/js/pages/Login.vue");
 /* harmony import */ var _pages_Welcome_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/Welcome.vue */ "./resources/js/pages/Welcome.vue");
 /* harmony import */ var _pages_CityDetail_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/CityDetail.vue */ "./resources/js/pages/CityDetail.vue");
@@ -57919,7 +58409,6 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 
 var routes = [{
   path: '/',
-  //component: PhotoList
   component: _pages_Welcome_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
 }, {
   path: '/login',
@@ -57939,8 +58428,20 @@ var routes = [{
   path: '/500',
   component: _pages_errors_System_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
 }, {
-  path: '/region/:slug',
-  name: 'region'
+  path: '/region/:region_slug',
+  name: 'region',
+  props: true,
+  component: _pages_CityList_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+}, {
+  path: '/region/:region_slug/pref/:pref_slug',
+  name: 'pref',
+  props: true,
+  component: _pages_CityList_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+}, {
+  path: '/region/:region_slug/pref/:pref_slug/city/:city_slug',
+  name: 'city',
+  props: true,
+  component: _pages_CityDetail_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
 }]; // VueRouterインスタンスを作成する
 
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
@@ -58207,6 +58708,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth */ "./resources/js/store/auth.js");
 /* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./error */ "./resources/js/store/error.js");
 /* harmony import */ var _message__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./message */ "./resources/js/store/message.js");
+/* harmony import */ var _regions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./regions */ "./resources/js/store/regions.js");
+
 
 
 
@@ -58217,7 +58720,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
   modules: {
     auth: _auth__WEBPACK_IMPORTED_MODULE_2__["default"],
     message: _message__WEBPACK_IMPORTED_MODULE_4__["default"],
-    error: _error__WEBPACK_IMPORTED_MODULE_3__["default"]
+    error: _error__WEBPACK_IMPORTED_MODULE_3__["default"],
+    regions: _regions__WEBPACK_IMPORTED_MODULE_5__["default"]
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = (store);
@@ -58255,6 +58759,43 @@ var mutations = {
   namespaced: true,
   state: state,
   mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/js/store/regions.js":
+/*!***************************************!*\
+  !*** ./resources/js/store/regions.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var state = {
+  regions: null
+};
+var getters = {
+  regions: function regions(state) {
+    return state.regions;
+  }
+};
+var mutations = {
+  setRegions: function setRegions(state, regions) {
+    state.regions = regions;
+  }
+};
+var actions = {
+  register: function register(context, data) {
+    context.commit('setRegions', data);
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: state,
+  getters: getters,
+  mutations: mutations,
+  actions: actions
 });
 
 /***/ }),

@@ -11429,10 +11429,6 @@ img {
   color: inherit;
 }
 
-.region-list-group__item:hover {
-  opacity: 0.6;
-}
-
 .region-nav {
   display: flex;
   flex-wrap: wrap;

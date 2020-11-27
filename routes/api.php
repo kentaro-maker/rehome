@@ -26,7 +26,12 @@ Route::get('/user', fn() => Auth::user())->name('user');
 
 Route::post('/photos', [App\Http\Controllers\PhotoController::class,'create'])->name('photo.create');
 
-Route::get('/region/:slug', [App\Http\Controllers\RegionController::class,'index'])->name('photo.index');
+Route::get('/region/{slug}', [App\Http\Controllers\CityController::class,'index'])->name('city.index');
+Route::get('/region/{region_slug}/pref/{pref_slug}', [App\Http\Controllers\CityController::class,'index'])->name('city.index');
+Route::get(
+    '/region/{region_slug}/pref/{pref_slug}/city/{city_slug}', 
+    [App\Http\Controllers\CityController::class,'detail']
+    )->name('city.detail');
 
 
 

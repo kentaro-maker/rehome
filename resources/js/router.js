@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 // ページコンポーネントをインポートする
-import PhotoList from './pages/PhotoList.vue'
+import CityList from './pages/CityList.vue'
 import Login from './pages/Login.vue'
 import Welcome from './pages/Welcome.vue'
 import CityDetail from './pages/CityDetail.vue'
@@ -20,7 +20,6 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    //component: PhotoList
     component: Welcome,
   },
   {
@@ -44,9 +43,22 @@ const routes = [
     component: SystemError
   },
   {
-    path: '/region/:slug',
+    path: '/region/:region_slug',
     name: 'region',
-    
+    props: true,
+    component: CityList,
+  },
+  {
+    path: '/region/:region_slug/pref/:pref_slug',
+    name: 'pref',
+    props: true,
+    component: CityList,
+  },
+  {
+    path: '/region/:region_slug/pref/:pref_slug/city/:city_slug',
+    name: 'city',
+    props: true,
+    component: CityDetail,
   }
 ]
 

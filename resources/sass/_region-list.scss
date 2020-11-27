@@ -5,23 +5,17 @@
   margin-bottom: 0;
   border-radius: 0.25rem;
 
-  &__item {
-    position: relative;
-    display: block;
-    padding: 0.35rem 1rem;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    &__item {
+      position: relative;
+      display: block;
+      padding: 0.35rem 1rem;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.125);
 
-    
-
-    &:visited {
-     color: inherit;
+          &:visited {
+          color: inherit;
+          }
     }
-
-    &:hover {
-      opacity: .6;
-    }
-  }
 }
 
 .region-nav{
