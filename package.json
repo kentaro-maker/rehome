@@ -11,14 +11,14 @@
     },
     "devDependencies": {
         "axios": "^0.19",
-        "bootstrap": "^4.0.0",
+        "bootstrap": "^4.5.3",
         "browser-sync": "^2.26.13",
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^7.0",
         "jquery": "^3.2",
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.19",
-        "popper.js": "^1.12",
+        "popper.js": "^1.16.1",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.20.1",
         "sass-loader": "^8.0.0",
@@ -28,6 +28,10 @@
         "vuex": "^3.5.1"
     },
     "dependencies": {
-        "image-map": "^2.0.1"
+        "@fortawesome/fontawesome-svg-core": "^1.2.32",
+        "@fortawesome/free-solid-svg-icons": "^5.15.1",
+        "@fortawesome/vue-fontawesome": "^2.0.0",
+        "image-map-resizer": "^1.0.10",
+        "portal-vue": "^2.1.7"
     }
 }

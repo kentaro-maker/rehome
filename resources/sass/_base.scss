@@ -14,9 +14,13 @@ body {
   margin: 0;
 }
 
+#welcome_board{
+  background-size: cover;
+  background-color: khaki;
+  background-image: url(/storage/images/background.png);
+}
 main {
-  margin-bottom: 6rem;
-  margin-top: 7rem;
+  margin: 3rem 0;
 }
 
 figure {

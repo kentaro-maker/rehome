@@ -4,7 +4,7 @@ import Vuex from 'vuex'
 import auth from './auth'
 import error from './error'
 import message from './message'
-import regions from './regions'
+import search from './search'
 
 Vue.use(Vuex)
 
@@ -13,7 +13,7 @@ const store = new Vuex.Store({
     auth,
     message,
     error,
-    regions
+    search
   }
 })
 

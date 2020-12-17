@@ -1,0 +1,46 @@
+.condition-list-group{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+
+
+  &:first-child{
+    margin-top: 0;
+  }
+
+    &__item {
+      position: relative;
+      display: block;
+      margin-top: 0.5rem;
+      line-height: 1rem;
+      background-color: #fff;
+
+        &:visited {
+          color: inherit;
+        }
+    }
+}
+
+.condition-nav{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  &__item:first-child{
+    font-weight: bold;
+  }
+
+  &__link {
+    display: block;
+    padding: 0rem 0.5rem;
+  }
+  & a{
+    color: #3490dc;
+    text-decoration: none;
+    background-color: transparent;
+  }
+}

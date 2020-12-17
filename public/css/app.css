@@ -10919,9 +10919,14 @@ body {
   margin: 0;
 }
 
+#welcome_board {
+  background-size: cover;
+  background-color: khaki;
+  background-image: url(/storage/images/background.png);
+}
+
 main {
-  margin-bottom: 6rem;
-  margin-top: 7rem;
+  margin: 3rem 0;
 }
 
 figure {
@@ -10946,7 +10951,7 @@ img {
 .grid {
   display: grid;
   grid-gap: 0 2%;
-  grid-template-columns: repeat(auto-fit, 32%);
+  grid-template-columns: repeat(auto-fit, 64%);
 }
 
 .grid__item {
@@ -11229,10 +11234,34 @@ img {
 .form__item {
   border: 1px solid #dedede;
   border-radius: 0.25rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   padding: 0.5em 0.75em;
   width: 100%;
+}
+
+.form__item__input {
+  height: auto;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+.form__item__input::-moz-placeholder {
+  font-size: 1.5rem;
+}
+
+.form__item__input:-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+.form__item__input::placeholder {
+  font-size: 1.5rem;
+}
+
+.form__item__button {
+  width: 6rem;
+  font-size: 2rem;
 }
 
 .form label {
@@ -11301,6 +11330,12 @@ img {
   margin: 0 0 1rem 0;
 }
 
+.title__h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+}
+
 .loader {
   align-items: center;
   display: flex;
@@ -11308,95 +11343,82 @@ img {
   justify-content: center;
 }
 
-.loader__item--heart {
-  display: inline-block;
-  position: relative;
-  width: 64px;
-  height: 64px;
-  transform: rotate(45deg);
-  transform-origin: 32px 32px;
+.loader__item #loader {
+  width: 100px;
+  height: 100px;
 }
 
-.loader__item--heart div {
-  top: 23px;
-  left: 19px;
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  background: #e4406f;
-  -webkit-animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-          animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+.loader__item #layer2 {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  -webkit-animation: loading 1.6s infinite;
+          animation: loading 1.6s infinite;
 }
 
-.loader__item--heart div:after,
-.loader__item--heart div:before {
-  content: " ";
-  position: absolute;
-  display: block;
-  width: 26px;
-  height: 26px;
-  background: #e4406f;
+.loader__item #up {
+  -webkit-animation: floating 1.6s infinite;
+          animation: floating 1.6s infinite;
 }
 
-.loader__item--heart div:before {
-  left: -17px;
-  border-radius: 50% 0 0 50%;
-}
-
-.loader__item--heart div:after {
-  top: -17px;
-  border-radius: 50% 50% 0 0;
-}
-
-@-webkit-keyframes lds-heart {
+@-webkit-keyframes loading {
   0% {
-    transform: scale(0.95);
-  }
-
-  5% {
-    transform: scale(1.1);
-  }
-
-  39% {
-    transform: scale(0.85);
-  }
-
-  45% {
-    transform: scale(1);
+    transform: rotate(0deg);
   }
 
   60% {
-    transform: scale(0.95);
+    transform: rotate(-360deg);
   }
 
   100% {
-    transform: scale(0.9);
+    transform: rotate(-360deg);
   }
 }
 
-@keyframes lds-heart {
+@keyframes loading {
   0% {
-    transform: scale(0.95);
-  }
-
-  5% {
-    transform: scale(1.1);
-  }
-
-  39% {
-    transform: scale(0.85);
-  }
-
-  45% {
-    transform: scale(1);
+    transform: rotate(0deg);
   }
 
   60% {
-    transform: scale(0.95);
+    transform: rotate(-360deg);
   }
 
   100% {
-    transform: scale(0.9);
+    transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  65% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  65% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
   }
 }
 
@@ -11447,6 +11469,53 @@ img {
 }
 
 .region-nav a {
+  color: #3490dc;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.condition-list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+}
+
+.condition-list-group:first-child {
+  margin-top: 0;
+}
+
+.condition-list-group__item {
+  position: relative;
+  display: block;
+  margin-top: 0.5rem;
+  line-height: 1rem;
+  background-color: #fff;
+}
+
+.condition-list-group__item:visited {
+  color: inherit;
+}
+
+.condition-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.condition-nav__item:first-child {
+  font-weight: bold;
+}
+
+.condition-nav__link {
+  display: block;
+  padding: 0rem 0.5rem;
+}
+
+.condition-nav a {
   color: #3490dc;
   text-decoration: none;
   background-color: transparent;

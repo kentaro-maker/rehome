@@ -20,7 +20,23 @@ class CreateCitiesTable extends Migration
             $table->string('image_path')->nullable();
             $table->string('prefecture')->nullable();
             $table->string('region')->nullable();
-            $table->integer('population')->nullable();
+
+            $table->integer('pop')->nullable();
+            $table->integer('land')->nullable();
+            $table->integer('jp')->nullable();
+            $table->integer('household')->nullable();
+            $table->integer('yo_school')->nullable();
+            $table->integer('sho_school')->nullable();
+            $table->integer('chu_school')->nullable();
+            $table->integer('ko_school')->nullable();
+            $table->integer('empty')->nullable();
+            $table->integer('kominkan')->nullable();
+            $table->integer('toshokan')->nullable();
+            $table->integer('forest')->nullable();
+            $table->string('portal')->nullable();
+            $table->integer('hospital')->nullable();
+            $table->integer('clinic')->nullable();
+
             $table->string('investigated_at')->nullable();
             $table->timestamps();
         });

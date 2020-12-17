@@ -1,0 +1,3962 @@
+[
+  {
+    "pref": "北海道",
+    "name": "札幌市",
+    "portal": "https://www.city.sapporo.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "函館市",
+    "portal": "https://www.city.hakodate.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "小樽市",
+    "portal": "https://www.city.otaru.lg.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "旭川市",
+    "portal": "https://www.city.asahikawa.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "室蘭市",
+    "portal": "https://www.city.muroran.lg.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "釧路市",
+    "portal": "https://www.city.kushiro.lg.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "帯広市",
+    "portal": "https://www.city.obihiro.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "北見市",
+    "portal": "www.city.kitami.lg.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "夕張市",
+    "portal": "https://www.city.yubari.lg.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "岩見沢市",
+    "portal": "https://www.city.iwamizawa.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "網走市",
+    "portal": "https://www.city.abashiri.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "留萌市",
+    "portal": "https://www.e-rumoi.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "苫小牧市",
+    "portal": "www.city.tomakomai.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "稚内市",
+    "portal": "https://www.city.wakkanai.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "美唄市",
+    "portal": "www.city.bibai.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "芦別市",
+    "portal": "https://www.city.ashibetsu.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "江別市",
+    "portal": "www.city.ebetsu.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "赤平市",
+    "portal": "https://www.city.akabira.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "紋別市",
+    "portal": "https://mombetsu.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "士別市",
+    "portal": "www.city.shibetsu.lg.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "名寄市",
+    "portal": "www.city.nayoro.lg.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "三笠市",
+    "portal": "https://www.city.mikasa.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "根室市",
+    "portal": "https://www.city.nemuro.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "千歳市",
+    "portal": "www.city.chitose.lg.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "滝川市",
+    "portal": "https://www.city.takikawa.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "砂川市",
+    "portal": "www.city.sunagawa.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "歌志内市",
+    "portal": "https://www.city.utashinai.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "深川市",
+    "portal": "https://www.city.fukagawa.lg.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "富良野市",
+    "portal": "www.city.furano.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "登別市",
+    "portal": "https://www.city.noboribetsu.lg.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "恵庭市",
+    "portal": "https://www.city.eniwa.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "伊達市",
+    "portal": "https://www.city.fukushima-date.lg.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "北広島市",
+    "portal": "https://www.city.kitahiroshima.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "石狩市",
+    "portal": "www.city.ishikari.hokkaido.jp"
+  },
+  {
+    "pref": "北海道",
+    "name": "北斗市",
+    "portal": "https://www.city.hokuto.hokkaido.jp/index.html"
+  },
+  {
+    "pref": "青森",
+    "name": "青森市",
+    "portal": "www.city.aomori.aomori.jp"
+  },
+  {
+    "pref": "青森",
+    "name": "弘前市",
+    "portal": "www.city.hirosaki.aomori.jp"
+  },
+  {
+    "pref": "青森",
+    "name": "八戸市",
+    "portal": "https://www.city.hachinohe.aomori.jp"
+  },
+  {
+    "pref": "青森",
+    "name": "黒石市",
+    "portal": "www.city.kuroishi.aomori.jp"
+  },
+  {
+    "pref": "青森",
+    "name": "五所川原市",
+    "portal": "www.city.goshogawara.lg.jp"
+  },
+  {
+    "pref": "青森",
+    "name": "十和田市",
+    "portal": "www.city.towada.lg.jp"
+  },
+  {
+    "pref": "青森",
+    "name": "三沢市",
+    "portal": "www.city.misawa.lg.jp"
+  },
+  {
+    "pref": "青森",
+    "name": "むつ市",
+    "portal": "https://www.city.mutsu.lg.jp"
+  },
+  {
+    "pref": "青森",
+    "name": "つがる市",
+    "portal": "www.city.tsugaru.aomori.jp"
+  },
+  {
+    "pref": "青森",
+    "name": "平川市",
+    "portal": "https://www.city.hirakawa.lg.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "秋田市",
+    "portal": "https://www.city.akita.lg.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "能代市",
+    "portal": "https://www.city.noshiro.lg.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "横手市",
+    "portal": "https://www.city.yokote.lg.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "大館市",
+    "portal": "https://www.city.odate.lg.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "男鹿市",
+    "portal": "www.city.oga.akita.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "湯沢市",
+    "portal": "www.city-yuzawa.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "鹿角市",
+    "portal": "https://www.city.kazuno.akita.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "由利本荘市",
+    "portal": "https://www.city.yurihonjo.lg.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "潟上市",
+    "portal": "www.city.katagami.akita.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "大仙市",
+    "portal": "https://www.city.daisen.lg.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "北秋田市",
+    "portal": "https://www.city.kitaakita.akita.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "にかほ市",
+    "portal": "https://www.city.nikaho.akita.jp"
+  },
+  {
+    "pref": "秋田",
+    "name": "仙北市",
+    "portal": "https://www.city.semboku.akita.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "盛岡市",
+    "portal": "www.city.morioka.iwate.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "宮古市",
+    "portal": "https://www.city.miyako.iwate.jp/index.html"
+  },
+  {
+    "pref": "岩手",
+    "name": "大船渡市",
+    "portal": "https://www.city.ofunato.iwate.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "花巻市",
+    "portal": "https://www.city.hanamaki.iwate.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "北上市",
+    "portal": "https://www.city.kitakami.iwate.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "久慈市",
+    "portal": "https://www.city.kuji.iwate.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "遠野市",
+    "portal": "https://www.city.tono.iwate.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "一関市",
+    "portal": "https://www.city.ichinoseki.iwate.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "陸前高田市",
+    "portal": "https://www.city.rikuzentakata.iwate.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "釜石市",
+    "portal": "https://www.city.kamaishi.iwate.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "二戸市",
+    "portal": "https://www.city.ninohe.lg.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "八幡平市",
+    "portal": "https://www.city.hachimantai.lg.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "奥州市",
+    "portal": "www.city.oshu.iwate.jp"
+  },
+  {
+    "pref": "岩手",
+    "name": "滝沢市",
+    "portal": "www.city.takizawa.iwate.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "仙台市",
+    "portal": "www.city.sendai.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "石巻市",
+    "portal": "https://www.city.ishinomaki.lg.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "塩竈市",
+    "portal": "https://www.city.shiogama.miyagi.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "気仙沼市",
+    "portal": "www.kesennuma.miyagi.jp/index.html"
+  },
+  {
+    "pref": "宮城",
+    "name": "白石市",
+    "portal": "https://www.city.shiroishi.miyagi.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "名取市",
+    "portal": "https://www.city.natori.miyagi.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "角田市",
+    "portal": "https://www.city.kakuda.lg.jp/site/koho"
+  },
+  {
+    "pref": "宮城",
+    "name": "多賀城市",
+    "portal": "https://www.city.tagajo.miyagi.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "岩沼市",
+    "portal": "www.city.iwanuma.miyagi.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "登米市",
+    "portal": "https://www.city.tome.miyagi.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "栗原市",
+    "portal": "https://www.kuriharacity.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "東松島市",
+    "portal": "www.city.higashimatsushima.miyagi.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "大崎市",
+    "portal": "https://www.city.osaki.miyagi.jp"
+  },
+  {
+    "pref": "宮城",
+    "name": "富谷市",
+    "portal": "https://www.tomiya-city.miyagi.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "山形市",
+    "portal": "www.city.yamagata-yamagata.lg.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "米沢市",
+    "portal": "www.city.yonezawa.yamagata.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "鶴岡市",
+    "portal": "https://www.city.tsuruoka.lg.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "酒田市",
+    "portal": "https://www.city.sakata.lg.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "新庄市",
+    "portal": "www.city.shinjo.yamagata.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "寒河江市",
+    "portal": "https://www.city.sagae.yamagata.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "上山市",
+    "portal": "www.city.kaminoyama.yamagata.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "村山市",
+    "portal": "https://www.city.murayama.lg.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "長井市",
+    "portal": "https://www.city.nagai.yamagata.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "天童市",
+    "portal": "https://www.city.tendo.yamagata.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "東根市",
+    "portal": "https://www.city.higashine.yamagata.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "尾花沢市",
+    "portal": "www.city.obanazawa.yamagata.jp"
+  },
+  {
+    "pref": "山形",
+    "name": "南陽市",
+    "portal": "www.city.nanyo.yamagata.jp"
+  },
+  {
+    "pref": "福島",
+    "name": "福島市",
+    "portal": "www.city.fukushima.fukushima.jp"
+  },
+  {
+    "pref": "福島",
+    "name": "会津若松市",
+    "portal": "https://www.city.aizuwakamatsu.fukushima.jp"
+  },
+  {
+    "pref": "福島",
+    "name": "郡山市",
+    "portal": "https://www.city.koriyama.lg.jp/index.html"
+  },
+  {
+    "pref": "福島",
+    "name": "いわき市",
+    "portal": "www.city.iwaki.lg.jp/www/index.html"
+  },
+  {
+    "pref": "福島",
+    "name": "白河市",
+    "portal": "www.city.shirakawa.fukushima.jp"
+  },
+  {
+    "pref": "福島",
+    "name": "須賀川市",
+    "portal": "https://www.city.sukagawa.fukushima.jp"
+  },
+  {
+    "pref": "福島",
+    "name": "喜多方市",
+    "portal": "www.city.kitakata.fukushima.jp"
+  },
+  {
+    "pref": "福島",
+    "name": "相馬市",
+    "portal": "https://www.city.soma.fukushima.jp"
+  },
+  {
+    "pref": "福島",
+    "name": "二本松市",
+    "portal": "https://www.city.nihonmatsu.lg.jp"
+  },
+  {
+    "pref": "福島",
+    "name": "田村市",
+    "portal": "https://www.city.tamura.lg.jp"
+  },
+  {
+    "pref": "福島",
+    "name": "南相馬市",
+    "portal": "https://www.city.minamisoma.lg.jp"
+  },
+  {
+    "pref": "福島",
+    "name": "伊達市",
+    "portal": "https://www.city.fukushima-date.lg.jp"
+  },
+  {
+    "pref": "福島",
+    "name": "本宮市",
+    "portal": "www.city.motomiya.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "水戸市",
+    "portal": "https://www.city.mito.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "日立市",
+    "portal": "https://www.city.hitachi.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "土浦市",
+    "portal": "https://www.city.tsuchiura.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "古河市",
+    "portal": "https://www.city.ibaraki-koga.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "石岡市",
+    "portal": "www.city.ishioka.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "結城市",
+    "portal": "https://www.city.yuki.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "龍ケ崎市",
+    "portal": "www.city.ryugasaki.ibaraki.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "下妻市",
+    "portal": "https://www.city.shimotsuma.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "常総市",
+    "portal": "www.city.joso.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "常陸太田市",
+    "portal": "www.city.hitachiota.ibaraki.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "高萩市",
+    "portal": "https://www.city.takahagi.ibaraki.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "北茨城市",
+    "portal": "https://www.city.kitaibaraki.lg.jp/soshiki"
+  },
+  {
+    "pref": "茨城",
+    "name": "笠間市",
+    "portal": "https://www.city.kasama.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "取手市",
+    "portal": "https://www.city.toride.ibaraki.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "牛久市",
+    "portal": "www.city.ushiku.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "つくば市",
+    "portal": "https://www.city.tsukuba.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "ひたちなか市",
+    "portal": "https://www.city.hitachinaka.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "鹿嶋市",
+    "portal": "https://city.kashima.ibaraki.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "潮来市",
+    "portal": "https://www.city.itako.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "守谷市",
+    "portal": "https://www.city.moriya.ibaraki.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "常陸大宮市",
+    "portal": "https://www.city.hitachiomiya.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "那珂市",
+    "portal": "https://www.city.naka.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "筑西市",
+    "portal": "https://www.city.chikusei.lg.jp/index.html"
+  },
+  {
+    "pref": "茨城",
+    "name": "坂東市",
+    "portal": "www.city.bando.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "稲敷市",
+    "portal": "https://www.city.inashiki.lg.jp/index.html"
+  },
+  {
+    "pref": "茨城",
+    "name": "かすみがうら市",
+    "portal": "www.city.kasumigaura.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "桜川市",
+    "portal": "www.city.sakuragawa.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "神栖市",
+    "portal": "https://www.city.kamisu.ibaraki.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "行方市",
+    "portal": "https://www.city.namegata.ibaraki.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "鉾田市",
+    "portal": "https://www.city.hokota.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "つくばみらい市",
+    "portal": "www.city.tsukubamirai.lg.jp"
+  },
+  {
+    "pref": "茨城",
+    "name": "小美玉市",
+    "portal": "https://www.city.omitama.lg.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "宇都宮市",
+    "portal": "https://www.city.utsunomiya.tochigi.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "足利市",
+    "portal": "https://www.city.ashikaga.tochigi.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "栃木市",
+    "portal": "https://www.city.tochigi.lg.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "佐野市",
+    "portal": "https://www.city.sano.lg.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "鹿沼市",
+    "portal": "https://www.city.kanuma.tochigi.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "日光市",
+    "portal": "https://www.city.nikko.lg.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "小山市",
+    "portal": "https://www.city.oyama.tochigi.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "真岡市",
+    "portal": "https://www.city.moka.lg.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "大田原市",
+    "portal": "https://www.city.ohtawara.tochigi.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "矢板市",
+    "portal": "https://www.city.yaita.tochigi.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "那須塩原市",
+    "portal": "www.city.nasushiobara.lg.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "さくら市",
+    "portal": "www.city.tochigi-sakura.lg.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "那須烏山市",
+    "portal": "https://www.city.nasukarasuyama.lg.jp"
+  },
+  {
+    "pref": "栃木",
+    "name": "下野市",
+    "portal": "www.city.shimotsuke.lg.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "前橋市",
+    "portal": "https://www.city.maebashi.gunma.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "高崎市",
+    "portal": "www.city.takasaki.gunma.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "桐生市",
+    "portal": "www.city.kiryu.lg.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "伊勢崎市",
+    "portal": "www.city.isesaki.lg.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "太田市",
+    "portal": "https://www.city.ota.gunma.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "沼田市",
+    "portal": "www.city.numata.gunma.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "館林市",
+    "portal": "https://www.city.tatebayashi.gunma.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "渋川市",
+    "portal": "https://www.city.shibukawa.lg.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "藤岡市",
+    "portal": "https://www.city.fujioka.gunma.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "富岡市",
+    "portal": "www.city.tomioka.lg.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "安中市",
+    "portal": "https://www.city.annaka.lg.jp"
+  },
+  {
+    "pref": "群馬",
+    "name": "みどり市",
+    "portal": "www.city.midori.gunma.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "さいたま市",
+    "portal": "https://www.city.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "川越市",
+    "portal": "https://www.city.kawagoe.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "熊谷市",
+    "portal": "www.city.kumagaya.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "川口市",
+    "portal": "https://www.city.kawaguchi.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "行田市",
+    "portal": "https://www.city.gyoda.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "秩父市",
+    "portal": "www.city.chichibu.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "所沢市",
+    "portal": "www.city.tokorozawa.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "飯能市",
+    "portal": "https://www.city.hanno.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "加須市",
+    "portal": "https://www.city.kazo.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "本庄市",
+    "portal": "https://www.city.honjo.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "東松山市",
+    "portal": "www.city.higashimatsuyama.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "春日部市",
+    "portal": "https://www.city.kasukabe.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "狭山市",
+    "portal": "https://www.city.sayama.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "羽生市",
+    "portal": "https://www.city.hanyu.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "鴻巣市",
+    "portal": "www.city.kounosu.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "深谷市",
+    "portal": "www.city.fukaya.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "上尾市",
+    "portal": "www.city.ageo.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "草加市",
+    "portal": "www.city.soka.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "越谷市",
+    "portal": "www.city.koshigaya.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "蕨市",
+    "portal": "https://www.city.warabi.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "戸田市",
+    "portal": "https://www.city.toda.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "入間市",
+    "portal": "www.city.iruma.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "朝霞市",
+    "portal": "https://www.city.asaka.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "志木市",
+    "portal": "https://www.city.shiki.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "和光市",
+    "portal": "www.city.wako.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "新座市",
+    "portal": "www.city.niiza.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "桶川市",
+    "portal": "https://www.city.okegawa.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "久喜市",
+    "portal": "https://www.city.kuki.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "北本市",
+    "portal": "www.city.kitamoto.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "八潮市",
+    "portal": "www.city.yashio.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "富士見市",
+    "portal": "https://www.city.fujimi.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "三郷市",
+    "portal": "www.city.misato.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "蓮田市",
+    "portal": "https://www.city.hasuda.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "坂戸市",
+    "portal": "https://www.city.sakado.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "幸手市",
+    "portal": "https://www.city.satte.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "鶴ヶ島市",
+    "portal": "https://www.city.tsurugashima.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "日高市",
+    "portal": "https://www.city.hidaka.lg.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "吉川市",
+    "portal": "https://www.city.yoshikawa.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "ふじみ野市",
+    "portal": "https://www.city.fujimino.saitama.jp"
+  },
+  {
+    "pref": "埼玉",
+    "name": "白岡市",
+    "portal": "www.city.shiraoka.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "千葉市",
+    "portal": "https://www.city.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "銚子市",
+    "portal": "www.city.choshi.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "市川市",
+    "portal": "https://www.city.ichikawa.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "船橋市",
+    "portal": "https://www.city.funabashi.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "館山市",
+    "portal": "www.city.tateyama.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "木更津市",
+    "portal": "https://www.city.kisarazu.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "松戸市",
+    "portal": "https://www.city.matsudo.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "野田市",
+    "portal": "https://www.city.noda.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "茂原市",
+    "portal": "www.city.mobara.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "成田市",
+    "portal": "https://www.city.narita.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "佐倉市",
+    "portal": "www.city.sakura.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "東金市",
+    "portal": "www.city.togane.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "旭市",
+    "portal": "www.city.asahi.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "習志野市",
+    "portal": "https://www.city.narashino.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "柏市",
+    "portal": "www.city.kashiwa.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "勝浦市",
+    "portal": "https://www.city.katsuura.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "市原市",
+    "portal": "https://www.city.ichihara.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "流山市",
+    "portal": "www.city.nagareyama.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "八千代市",
+    "portal": "www.city.yachiyo.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "我孫子市",
+    "portal": "https://www.city.abiko.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "鴨川市",
+    "portal": "www.city.kamogawa.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "鎌ケ谷市",
+    "portal": "https://www.city.kamagaya.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "君津市",
+    "portal": "www.city.kimitsu.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "富津市",
+    "portal": "https://www.city.futtsu.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "浦安市",
+    "portal": "www.city.urayasu.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "四街道市",
+    "portal": "www.city.yotsukaido.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "袖ケ浦市",
+    "portal": "https://www.city.sodegaura.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "八街市",
+    "portal": "https://www.city.yachimata.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "印西市",
+    "portal": "https://www.city.inzai.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "白井市",
+    "portal": "www.city.shiroi.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "富里市",
+    "portal": "www.city.tomisato.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "南房総市",
+    "portal": "www.city.minamiboso.chiba.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "匝瑳市",
+    "portal": "https://www.city.sosa.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "香取市",
+    "portal": "www.city.katori.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "山武市",
+    "portal": "https://www.city.sammu.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "いすみ市",
+    "portal": "www.city.isumi.lg.jp"
+  },
+  {
+    "pref": "千葉",
+    "name": "大網白里市",
+    "portal": "www.city.oamishirasato.lg.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "八王子市",
+    "portal": "https://www.city.hachioji.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "立川市",
+    "portal": "https://www.city.tachikawa.lg.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "武蔵野市",
+    "portal": "www.city.musashino.lg.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "三鷹市",
+    "portal": "https://www.city.mitaka.lg.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "青梅市",
+    "portal": "https://www.city.ome.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "府中市",
+    "portal": "https://www.city.fuchu.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "昭島市",
+    "portal": "https://www.city.akishima.lg.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "調布市",
+    "portal": "https://www.city.chofu.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "町田市",
+    "portal": "https://www.city.machida.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "小金井市",
+    "portal": "https://www.city.koganei.lg.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "小平市",
+    "portal": "https://www.city.kodaira.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "日野市",
+    "portal": "www.city.hino.lg.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "東村山市",
+    "portal": "https://www.city.higashimurayama.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "国分寺市",
+    "portal": "www.city.kokubunji.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "国立市",
+    "portal": "https://www.city.kunitachi.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "福生市",
+    "portal": "https://www.city.fussa.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "狛江市",
+    "portal": "https://www.city.komae.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "東大和市",
+    "portal": "https://www.city.higashiyamato.lg.jp/index.html"
+  },
+  {
+    "pref": "東京",
+    "name": "清瀬市",
+    "portal": "https://www.city.kiyose.lg.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "東久留米市",
+    "portal": "https://www.city.higashikurume.lg.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "武蔵村山市",
+    "portal": "www.city.musashimurayama.lg.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "多摩市",
+    "portal": "www.city.tama.lg.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "稲城市",
+    "portal": "https://www.city.inagi.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "羽村市",
+    "portal": "www.city.hamura.tokyo.jp"
+  },
+  {
+    "pref": "東京",
+    "name": "あきる野市",
+    "portal": "https://www.city.akiruno.tokyo.jp/category/18-11-1-0-0.html"
+  },
+  {
+    "pref": "東京",
+    "name": "西東京市",
+    "portal": "https://www.city.nishitokyo.lg.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "横浜市",
+    "portal": "https://www.city.yokohama.lg.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "川崎市",
+    "portal": "www.city.kawasaki.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "相模原市",
+    "portal": "https://www.city.sagamihara.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "横須賀市",
+    "portal": "https://www.city.yokosuka.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "平塚市",
+    "portal": "www.city.hiratsuka.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "鎌倉市",
+    "portal": "www.city.kamakura.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "藤沢市",
+    "portal": "www.city.fujisawa.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "小田原市",
+    "portal": "www.city.odawara.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "茅ヶ崎市",
+    "portal": "https://www.city.chigasaki.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "逗子市",
+    "portal": "https://www.city.zushi.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "三浦市",
+    "portal": "www.city.miura.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "秦野市",
+    "portal": "www.city.hadano.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "厚木市",
+    "portal": "https://www.city.atsugi.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "大和市",
+    "portal": "www.city.yamato.lg.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "伊勢原市",
+    "portal": "https://www.city.isehara.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "海老名市",
+    "portal": "https://www.city.ebina.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "座間市",
+    "portal": "www.city.zama.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "南足柄市",
+    "portal": "www.city.minamiashigara.kanagawa.jp"
+  },
+  {
+    "pref": "神奈川",
+    "name": "綾瀬市",
+    "portal": "www.city.ayase.kanagawa.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "新潟市",
+    "portal": "https://www.city.niigata.lg.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "長岡市",
+    "portal": "https://www.city.nagaoka.niigata.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "三条市",
+    "portal": "https://www.city.sanjo.niigata.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "柏崎市",
+    "portal": "https://www.city.kashiwazaki.lg.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "新発田市",
+    "portal": "https://www.city.shibata.lg.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "小千谷市",
+    "portal": "www.city.ojiya.niigata.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "加茂市",
+    "portal": "www.city.kamo.niigata.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "十日町市",
+    "portal": "www.city.tokamachi.lg.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "見附市",
+    "portal": "www.city.mitsuke.niigata.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "村上市",
+    "portal": "https://www.city.murakami.lg.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "燕市",
+    "portal": "www.city.tsubame.niigata.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "糸魚川市",
+    "portal": "www.city.itoigawa.lg.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "妙高市",
+    "portal": "https://www.city.myoko.niigata.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "五泉市",
+    "portal": "https://www.city.gosen.lg.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "上越市",
+    "portal": "www.city.joetsu.niigata.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "阿賀野市",
+    "portal": "https://www.city.agano.niigata.jp/index.html"
+  },
+  {
+    "pref": "新潟",
+    "name": "佐渡市",
+    "portal": "www.city.sado.niigata.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "魚沼市",
+    "portal": "https://www.city.uonuma.niigata.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "南魚沼市",
+    "portal": "www.city.minamiuonuma.niigata.jp"
+  },
+  {
+    "pref": "新潟",
+    "name": "胎内市",
+    "portal": "www.city.tainai.niigata.jp"
+  },
+  {
+    "pref": "富山",
+    "name": "富山市",
+    "portal": "https://www.city.toyama.toyama.jp/index.html"
+  },
+  {
+    "pref": "富山",
+    "name": "高岡市",
+    "portal": "https://www.city.takaoka.toyama.jp"
+  },
+  {
+    "pref": "富山",
+    "name": "魚津市",
+    "portal": "https://www.city.uozu.toyama.jp"
+  },
+  {
+    "pref": "富山",
+    "name": "氷見市",
+    "portal": "https://www.city.himi.toyama.jp/gyosei"
+  },
+  {
+    "pref": "富山",
+    "name": "滑川市",
+    "portal": "https://www.city.namerikawa.toyama.jp"
+  },
+  {
+    "pref": "富山",
+    "name": "黒部市",
+    "portal": "www.city.kurobe.toyama.jp"
+  },
+  {
+    "pref": "富山",
+    "name": "砺波市",
+    "portal": "https://www.city.tonami.toyama.jp"
+  },
+  {
+    "pref": "富山",
+    "name": "小矢部市",
+    "portal": "www.city.oyabe.toyama.jp"
+  },
+  {
+    "pref": "富山",
+    "name": "南砺市",
+    "portal": "https://www.city.nanto.toyama.jp"
+  },
+  {
+    "pref": "富山",
+    "name": "射水市",
+    "portal": "www.city.imizu.toyama.jp"
+  },
+  {
+    "pref": "石川",
+    "name": "金沢市",
+    "portal": "https://www4.city.kanazawa.lg.jp/index.html"
+  },
+  {
+    "pref": "石川",
+    "name": "七尾市",
+    "portal": "www.city.nanao.lg.jp"
+  },
+  {
+    "pref": "石川",
+    "name": "小松市",
+    "portal": "https://www.city.komatsu.lg.jp"
+  },
+  {
+    "pref": "石川",
+    "name": "輪島市",
+    "portal": "https://www.city.wajima.ishikawa.jp"
+  },
+  {
+    "pref": "石川",
+    "name": "珠洲市",
+    "portal": "https://www.city.suzu.lg.jp"
+  },
+  {
+    "pref": "石川",
+    "name": "加賀市",
+    "portal": "https://www.city.kaga.ishikawa.jp"
+  },
+  {
+    "pref": "石川",
+    "name": "羽咋市",
+    "portal": "https://www.city.hakui.lg.jp"
+  },
+  {
+    "pref": "石川",
+    "name": "かほく市",
+    "portal": "www.city.kahoku.ishikawa.jp"
+  },
+  {
+    "pref": "石川",
+    "name": "白山市",
+    "portal": "www.city.hakusan.ishikawa.jp"
+  },
+  {
+    "pref": "石川",
+    "name": "能美市",
+    "portal": "https://www.city.nomi.ishikawa.jp"
+  },
+  {
+    "pref": "石川",
+    "name": "野々市市",
+    "portal": "https://www.city.nonoichi.lg.jp"
+  },
+  {
+    "pref": "福井",
+    "name": "福井市",
+    "portal": "www.city.fukui.lg.jp"
+  },
+  {
+    "pref": "福井",
+    "name": "敦賀市",
+    "portal": "www.city.tsuruga.lg.jp"
+  },
+  {
+    "pref": "福井",
+    "name": "小浜市",
+    "portal": "www1.city.obama.fukui.jp"
+  },
+  {
+    "pref": "福井",
+    "name": "大野市",
+    "portal": "www.city.ono.fukui.jp"
+  },
+  {
+    "pref": "福井",
+    "name": "勝山市",
+    "portal": "https://www.city.katsuyama.fukui.jp"
+  },
+  {
+    "pref": "福井",
+    "name": "鯖江市",
+    "portal": "www.city.sabae.fukui.jp"
+  },
+  {
+    "pref": "福井",
+    "name": "あわら市",
+    "portal": "www.city.awara.lg.jp"
+  },
+  {
+    "pref": "福井",
+    "name": "越前市",
+    "portal": "www.city.echizen.lg.jp"
+  },
+  {
+    "pref": "福井",
+    "name": "坂井市",
+    "portal": "https://www.city.fukui-sakai.lg.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "甲府市",
+    "portal": "https://www.city.kofu.yamanashi.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "富士吉田市",
+    "portal": "https://www.city.fujiyoshida.yamanashi.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "都留市",
+    "portal": "https://www.city.tsuru.yamanashi.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "山梨市",
+    "portal": "https://www.city.yamanashi.yamanashi.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "大月市",
+    "portal": "www.city.otsuki.yamanashi.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "韮崎市",
+    "portal": "https://www.city.nirasaki.lg.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "南アルプス市",
+    "portal": "https://www.city.minami-alps.yamanashi.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "北杜市",
+    "portal": "https://www.city.hokuto.yamanashi.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "甲斐市",
+    "portal": "https://www.city.kai.yamanashi.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "笛吹市",
+    "portal": "https://www.city.fuefuki.yamanashi.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "上野原市",
+    "portal": "https://www.city.uenohara.yamanashi.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "甲州市",
+    "portal": "www.city.koshu.yamanashi.jp"
+  },
+  {
+    "pref": "山梨",
+    "name": "中央市",
+    "portal": "https://www.city.chuo.yamanashi.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "長野市",
+    "portal": "https://www.city.nagano.nagano.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "松本市",
+    "portal": "www.city.matsumoto.nagano.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "上田市",
+    "portal": "https://www.city.ueda.nagano.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "岡谷市",
+    "portal": "https://www.city.okaya.lg.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "飯田市",
+    "portal": "https://www.city.iida.lg.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "諏訪市",
+    "portal": "www.city.suwa.lg.jp/www/index.jsp"
+  },
+  {
+    "pref": "長野",
+    "name": "須坂市",
+    "portal": "https://www.city.suzaka.nagano.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "小諸市",
+    "portal": "https://www.city.komoro.lg.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "伊那市",
+    "portal": "www.inacity.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "駒ヶ根市",
+    "portal": "https://www.city.komagane.nagano.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "中野市",
+    "portal": "https://www.city.nakano.nagano.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "大町市",
+    "portal": "https://www.city.omachi.nagano.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "飯山市",
+    "portal": "https://www.city.iiyama.nagano.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "茅野市",
+    "portal": "https://www.city.chino.lg.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "塩尻市",
+    "portal": "https://www.city.shiojiri.lg.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "佐久市",
+    "portal": "www.city.saku.nagano.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "千曲市",
+    "portal": "https://www.city.chikuma.lg.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "東御市",
+    "portal": "https://www.city.tomi.nagano.jp"
+  },
+  {
+    "pref": "長野",
+    "name": "安曇野市",
+    "portal": "www.city.azumino.nagano.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "岐阜市",
+    "portal": "https://www.city.gifu.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "大垣市",
+    "portal": "https://www.city.ogaki.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "高山市",
+    "portal": "https://www.city.takayama.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "多治見市",
+    "portal": "https://www.city.tajimi.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "関市",
+    "portal": "https://www.city.seki.lg.jp/category/4-0-0-0-0.html"
+  },
+  {
+    "pref": "岐阜",
+    "name": "中津川市",
+    "portal": "www.city.nakatsugawa.gifu.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "美濃市",
+    "portal": "www.city.mino.gifu.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "瑞浪市",
+    "portal": "https://www.city.mizunami.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "羽島市",
+    "portal": "https://www.city.hashima.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "恵那市",
+    "portal": "https://www.city.ena.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "美濃加茂市",
+    "portal": "www.city.minokamo.gifu.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "土岐市",
+    "portal": "https://www.city.toki.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "各務原市",
+    "portal": "www.city.kakamigahara.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "可児市",
+    "portal": "www.city.kani.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "山県市",
+    "portal": "https://www.city.yamagata.gifu.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "瑞穂市",
+    "portal": "https://www.city.mizuho.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "飛騨市",
+    "portal": "www.city.hida.gifu.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "本巣市",
+    "portal": "https://www.city.motosu.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "郡上市",
+    "portal": "https://www.city.gujo.gifu.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "下呂市",
+    "portal": "www.city.gero.lg.jp"
+  },
+  {
+    "pref": "岐阜",
+    "name": "海津市",
+    "portal": "https://www.city.kaizu.lg.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "静岡市",
+    "portal": "https://www.city.shizuoka.lg.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "浜松市",
+    "portal": "https://www.city.hamamatsu.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "沼津市",
+    "portal": "https://www.city.numazu.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "熱海市",
+    "portal": "https://www.city.atami.lg.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "三島市",
+    "portal": "https://www.city.mishima.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "富士宮市",
+    "portal": "www.city.fujinomiya.lg.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "伊東市",
+    "portal": "https://www.city.ito.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "島田市",
+    "portal": "https://www.city.shimada.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "富士市",
+    "portal": "https://www.city.fuji.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "磐田市",
+    "portal": "https://www.city.iwata.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "焼津市",
+    "portal": "www.city.yaizu.lg.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "掛川市",
+    "portal": "https://www.city.kakegawa.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "藤枝市",
+    "portal": "https://www.city.fujieda.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "御殿場市",
+    "portal": "https://www.city.gotemba.lg.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "袋井市",
+    "portal": "https://www.city.fukuroi.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "下田市",
+    "portal": "https://www.city.shimoda.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "裾野市",
+    "portal": "www.city.susono.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "湖西市",
+    "portal": "https://www.city.kosai.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "伊豆市",
+    "portal": "www.city.izu.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "御前崎市",
+    "portal": "https://www.city.omaezaki.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "菊川市",
+    "portal": "www.city.kikugawa.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "伊豆の国市",
+    "portal": "https://www.city.izunokuni.shizuoka.jp"
+  },
+  {
+    "pref": "静岡",
+    "name": "牧之原市",
+    "portal": "https://www.city.makinohara.shizuoka.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "名古屋市",
+    "portal": "www.city.nagoya.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "豊橋市",
+    "portal": "www.city.toyohashi.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "岡崎市",
+    "portal": "https://www.city.okazaki.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "一宮市",
+    "portal": "https://www.city.ichinomiya.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "瀬戸市",
+    "portal": "www.city.seto.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "半田市",
+    "portal": "https://www.city.handa.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "春日井市",
+    "portal": "www.city.kasugai.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "豊川市",
+    "portal": "www.city.toyokawa.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "津島市",
+    "portal": "https://www.city.tsushima.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "碧南市",
+    "portal": "https://www.city.hekinan.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "刈谷市",
+    "portal": "www.city.kariya.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "豊田市",
+    "portal": "https://www.city.toyota.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "安城市",
+    "portal": "https://www.city.anjo.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "西尾市",
+    "portal": "https://www.city.nishio.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "蒲郡市",
+    "portal": "https://www.city.gamagori.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "犬山市",
+    "portal": "www.city.inuyama.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "常滑市",
+    "portal": "www.city.tokoname.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "江南市",
+    "portal": "https://www.city.konan.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "小牧市",
+    "portal": "www.city.komaki.aichi.jp/admin"
+  },
+  {
+    "pref": "愛知",
+    "name": "稲沢市",
+    "portal": "www.city.inazawa.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "新城市",
+    "portal": "https://www.city.shinshiro.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "東海市",
+    "portal": "www.city.tokai.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "大府市",
+    "portal": "https://www.city.obu.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "知多市",
+    "portal": "www.city.chita.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "知立市",
+    "portal": "https://www.city.chiryu.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "尾張旭市",
+    "portal": "https://www.city.owariasahi.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "高浜市",
+    "portal": "https://www.city.takahama.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "岩倉市",
+    "portal": "https://www.city.iwakura.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "豊明市",
+    "portal": "https://www.city.toyoake.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "日進市",
+    "portal": "https://www.city.nisshin.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "田原市",
+    "portal": "www.city.tahara.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "愛西市",
+    "portal": "https://www.city.aisai.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "清須市",
+    "portal": "www.city.kiyosu.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "北名古屋市",
+    "portal": "https://www.city.kitanagoya.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "弥富市",
+    "portal": "https://www.city.yatomi.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "みよし市",
+    "portal": "www.city.aichi-miyoshi.lg.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "あま市",
+    "portal": "https://www.city.ama.aichi.jp"
+  },
+  {
+    "pref": "愛知",
+    "name": "長久手市",
+    "portal": "https://www.city.nagakute.lg.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "津市",
+    "portal": "www.info.city.tsu.mie.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "四日市市",
+    "portal": "https://www.city.yokkaichi.lg.jp/www/index.html"
+  },
+  {
+    "pref": "三重",
+    "name": "伊勢市",
+    "portal": "https://www.city.ise.mie.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "松阪市",
+    "portal": "www.city.matsusaka.mie.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "桑名市",
+    "portal": "www.city.kuwana.lg.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "鈴鹿市",
+    "portal": "https://www.city.suzuka.lg.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "名張市",
+    "portal": "www.city.nabari.lg.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "尾鷲市",
+    "portal": "https://www.city.owase.lg.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "亀山市",
+    "portal": "https://www.city.kameyama.mie.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "鳥羽市",
+    "portal": "www.city.toba.mie.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "熊野市",
+    "portal": "www.city.kumano.mie.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "いなべ市",
+    "portal": "https://www.city.inabe.mie.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "志摩市",
+    "portal": "https://www.city.shima.mie.jp"
+  },
+  {
+    "pref": "三重",
+    "name": "伊賀市",
+    "portal": "https://www.city.iga.lg.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "彦根市",
+    "portal": "https://www.city.hikone.lg.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "長浜市",
+    "portal": "https://www.city.nagahama.lg.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "近江八幡市",
+    "portal": "https://www.city.omihachiman.lg.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "草津市",
+    "portal": "www.city.kusatsu.shiga.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "守山市",
+    "portal": "www.city.moriyama.lg.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "栗東市",
+    "portal": "www.city.ritto.lg.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "甲賀市",
+    "portal": "www.city.koka.lg.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "野洲市",
+    "portal": "https://www.city.yasu.lg.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "湖南市",
+    "portal": "https://www.city.shiga-konan.lg.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "高島市",
+    "portal": "www.city.takashima.lg.jp/www/toppage/0000000000000/APM..."
+  },
+  {
+    "pref": "滋賀",
+    "name": "東近江市",
+    "portal": "www.city.higashiomi.shiga.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "米原市",
+    "portal": "https://www.city.maibara.lg.jp"
+  },
+  {
+    "pref": "滋賀",
+    "name": "大津市",
+    "portal": "https://www.city.otsu.lg.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "京都市",
+    "portal": "www.city.kyoto.lg.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "福知山市",
+    "portal": "https://www.city.fukuchiyama.lg.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "舞鶴市",
+    "portal": "https://www.city.maizuru.kyoto.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "綾部市",
+    "portal": "www.city.ayabe.lg.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "宇治市",
+    "portal": "https://www.city.uji.kyoto.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "宮津市",
+    "portal": "www.city.miyazu.kyoto.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "亀岡市",
+    "portal": "www.city.kameoka.kyoto.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "城陽市",
+    "portal": "www.city.joyo.kyoto.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "向日市",
+    "portal": "https://www.city.muko.kyoto.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "長岡京市",
+    "portal": "www.city.nagaokakyo.lg.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "八幡市",
+    "portal": "https://www.city.yawata.kyoto.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "京田辺市",
+    "portal": "www.kyotanabe.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "京丹後市",
+    "portal": "www.city.kyotango.lg.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "南丹市",
+    "portal": "https://www.city.nantan.kyoto.jp"
+  },
+  {
+    "pref": "京都",
+    "name": "木津川市",
+    "portal": "https://www.city.kizugawa.lg.jp/index.cfm"
+  },
+  {
+    "pref": "大阪",
+    "name": "大阪市",
+    "portal": "https://www.city.osaka.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "堺市",
+    "portal": "www.city.sakai.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "岸和田市",
+    "portal": "https://www.city.kishiwada.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "豊中市",
+    "portal": "https://www.city.toyonaka.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "池田市",
+    "portal": "www.city.ikeda.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "吹田市",
+    "portal": "https://www.city.suita.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "泉大津市",
+    "portal": "https://www.city.izumiotsu.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "高槻市",
+    "portal": "www.city.takatsuki.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "貝塚市",
+    "portal": "https://www.city.kaizuka.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "守口市",
+    "portal": "www.city.moriguchi.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "枚方市",
+    "portal": "https://www.city.hirakata.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "茨木市",
+    "portal": "https://www.city.ibaraki.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "八尾市",
+    "portal": "https://www.city.yao.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "泉佐野市",
+    "portal": "www.city.izumisano.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "富田林市",
+    "portal": "https://www.city.tondabayashi.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "寝屋川市",
+    "portal": "https://www.city.neyagawa.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "河内長野市",
+    "portal": "https://www.city.kawachinagano.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "松原市",
+    "portal": "https://www.city.matsubara.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "大東市",
+    "portal": "www.city.daito.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "和泉市",
+    "portal": "https://www.city.osaka-izumi.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "箕面市",
+    "portal": "https://www.city.minoh.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "柏原市",
+    "portal": "www.city.kashiwara.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "羽曳野市",
+    "portal": "https://www.city.habikino.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "門真市",
+    "portal": "https://www.city.kadoma.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "摂津市",
+    "portal": "https://www.city.settsu.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "高石市",
+    "portal": "www.city.takaishi.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "藤井寺市",
+    "portal": "https://www.city.fujiidera.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "東大阪市",
+    "portal": "www.city.higashiosaka.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "泉南市",
+    "portal": "www.city.sennan.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "四條畷市",
+    "portal": "https://www.city.shijonawate.lg.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "交野市",
+    "portal": "https://www.city.katano.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "大阪狭山市",
+    "portal": "www.city.osakasayama.osaka.jp"
+  },
+  {
+    "pref": "大阪",
+    "name": "阪南市",
+    "portal": "www.city.hannan.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "神戸市",
+    "portal": "www.city.kobe.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "姫路市",
+    "portal": "https://www.city.himeji.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "尼崎市",
+    "portal": "https://www.city.amagasaki.hyogo.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "明石市",
+    "portal": "www.city.akashi.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "西宮市",
+    "portal": "https://www.nishi.or.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "洲本市",
+    "portal": "https://www.city.sumoto.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "芦屋市",
+    "portal": "https://www.city.ashiya.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "伊丹市",
+    "portal": "www.city.itami.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "相生市",
+    "portal": "www.city.aioi.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "豊岡市",
+    "portal": "https://www.city.toyooka.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "加古川市",
+    "portal": "https://www.city.kakogawa.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "赤穂市",
+    "portal": "www.city.ako.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "西脇市",
+    "portal": "https://www.city.nishiwaki.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "宝塚市",
+    "portal": "www.city.takarazuka.hyogo.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "三木市",
+    "portal": "https://www.city.miki.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "高砂市",
+    "portal": "www.city.takasago.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "川西市",
+    "portal": "https://www.city.kawanishi.hyogo.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "小野市",
+    "portal": "www.city.ono.hyogo.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "三田市",
+    "portal": "https://www.city.sanda.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "加西市",
+    "portal": "www.city.kasai.hyogo.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "篠山市",
+    "portal": "https://www.city.tambasasayama.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "養父市",
+    "portal": "https://www.city.yabu.hyogo.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "丹波市",
+    "portal": "https://www.city.tamba.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "南あわじ市",
+    "portal": "www.city.minamiawaji.hyogo.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "朝来市",
+    "portal": "https://www.city.asago.hyogo.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "淡路市",
+    "portal": "www.city.awaji.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "宍粟市",
+    "portal": "www.city.shiso.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "加東市",
+    "portal": "https://www.city.kato.lg.jp"
+  },
+  {
+    "pref": "兵庫",
+    "name": "たつの市",
+    "portal": "https://www.city.tatsuno.lg.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "奈良市",
+    "portal": "https://www.city.nara.lg.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "大和高田市",
+    "portal": "www.city.yamatotakada.nara.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "大和郡山市",
+    "portal": "https://www.city.yamatokoriyama.nara.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "天理市",
+    "portal": "www.city.tenri.nara.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "橿原市",
+    "portal": "https://www.city.kashihara.nara.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "桜井市",
+    "portal": "https://www.city.sakurai.lg.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "五條市",
+    "portal": "https://www.city.gojo.lg.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "御所市",
+    "portal": "www.city.gose.nara.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "生駒市",
+    "portal": "https://www.city.ikoma.lg.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "香芝市",
+    "portal": "www.city.kashiba.lg.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "葛城市",
+    "portal": "www.city.katsuragi.nara.jp"
+  },
+  {
+    "pref": "奈良",
+    "name": "宇陀市",
+    "portal": "www.city.uda.nara.jp"
+  },
+  {
+    "pref": "和歌山",
+    "name": "和歌山市",
+    "portal": "www.city.wakayama.wakayama.jp"
+  },
+  {
+    "pref": "和歌山",
+    "name": "海南市",
+    "portal": "www.city.kainan.wakayama.jp"
+  },
+  {
+    "pref": "和歌山",
+    "name": "橋本市",
+    "portal": "www.city.hashimoto.lg.jp"
+  },
+  {
+    "pref": "和歌山",
+    "name": "有田市",
+    "portal": "https://www.city.arida.lg.jp"
+  },
+  {
+    "pref": "和歌山",
+    "name": "御坊市",
+    "portal": "www.city.gobo.wakayama.jp"
+  },
+  {
+    "pref": "和歌山",
+    "name": "田辺市",
+    "portal": "www.city.tanabe.lg.jp"
+  },
+  {
+    "pref": "和歌山",
+    "name": "新宮市",
+    "portal": "www.city.shingu.lg.jp"
+  },
+  {
+    "pref": "和歌山",
+    "name": "紀の川市",
+    "portal": "www.city.kinokawa.lg.jp"
+  },
+  {
+    "pref": "和歌山",
+    "name": "岩出市",
+    "portal": "www.city.iwade.lg.jp"
+  },
+  {
+    "pref": "鳥取",
+    "name": "鳥取市",
+    "portal": "www.city.tottori.lg.jp"
+  },
+  {
+    "pref": "鳥取",
+    "name": "米子市",
+    "portal": "https://www.city.yonago.lg.jp"
+  },
+  {
+    "pref": "鳥取",
+    "name": "倉吉市",
+    "portal": "www.city.kurayoshi.lg.jp"
+  },
+  {
+    "pref": "鳥取",
+    "name": "境港市",
+    "portal": "https://www.city.sakaiminato.lg.jp"
+  },
+  {
+    "pref": "島根",
+    "name": "松江市",
+    "portal": "www.city.matsue.shimane.jp"
+  },
+  {
+    "pref": "島根",
+    "name": "浜田市",
+    "portal": "www.city.hamada.shimane.jp"
+  },
+  {
+    "pref": "島根",
+    "name": "出雲市",
+    "portal": "www.city.izumo.shimane.jp"
+  },
+  {
+    "pref": "島根",
+    "name": "益田市",
+    "portal": "https://www.city.masuda.lg.jp"
+  },
+  {
+    "pref": "島根",
+    "name": "大田市",
+    "portal": "https://www.city.ohda.lg.jp"
+  },
+  {
+    "pref": "島根",
+    "name": "安来市",
+    "portal": "https://www.city.yasugi.shimane.jp"
+  },
+  {
+    "pref": "島根",
+    "name": "江津市",
+    "portal": "https://www.city.gotsu.lg.jp"
+  },
+  {
+    "pref": "島根",
+    "name": "雲南市",
+    "portal": "https://www.city.unnan.shimane.jp/unnan"
+  },
+  {
+    "pref": "岡山",
+    "name": "岡山市",
+    "portal": "https://www.city.okayama.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "倉敷市",
+    "portal": "https://www.city.kurashiki.okayama.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "津山市",
+    "portal": "https://www.city.tsuyama.lg.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "玉野市",
+    "portal": "https://www.city.tamano.lg.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "笠岡市",
+    "portal": "https://www.city.kasaoka.okayama.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "井原市",
+    "portal": "www.city.ibara.okayama.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "総社市",
+    "portal": "www.city.soja.okayama.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "高梁市",
+    "portal": "www.city.takahashi.lg.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "新見市",
+    "portal": "https://www.city.niimi.okayama.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "備前市",
+    "portal": "https://www.city.bizen.okayama.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "瀬戸内市",
+    "portal": "www.city.setouchi.lg.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "赤磐市",
+    "portal": "https://www.city.akaiwa.lg.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "真庭市",
+    "portal": "https://www.city.maniwa.lg.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "美作市",
+    "portal": "www.city.mimasaka.lg.jp"
+  },
+  {
+    "pref": "岡山",
+    "name": "浅口市",
+    "portal": "www.city.asakuchi.lg.jp"
+  },
+  {
+    "pref": "広島",
+    "name": "広島市",
+    "portal": "https://www.city.hiroshima.lg.jp"
+  },
+  {
+    "pref": "広島",
+    "name": "呉市",
+    "portal": "https://www.city.kure.lg.jp"
+  },
+  {
+    "pref": "広島",
+    "name": "竹原市",
+    "portal": "https://www.city.takehara.lg.jp/index.html"
+  },
+  {
+    "pref": "広島",
+    "name": "三原市",
+    "portal": "https://www.city.mihara.hiroshima.jp"
+  },
+  {
+    "pref": "広島",
+    "name": "尾道市",
+    "portal": "https://www.city.onomichi.hiroshima.jp"
+  },
+  {
+    "pref": "広島",
+    "name": "福山市",
+    "portal": "www.city.fukuyama.hiroshima.jp"
+  },
+  {
+    "pref": "広島",
+    "name": "府中市",
+    "portal": "https://www.city.fuchu.tokyo.jp"
+  },
+  {
+    "pref": "広島",
+    "name": "三次市",
+    "portal": "https://www.city.miyoshi.hiroshima.jp/index.html"
+  },
+  {
+    "pref": "広島",
+    "name": "庄原市",
+    "portal": "www.city.shobara.hiroshima.jp"
+  },
+  {
+    "pref": "広島",
+    "name": "大竹市",
+    "portal": "www.city.otake.hiroshima.jp"
+  },
+  {
+    "pref": "広島",
+    "name": "東広島市",
+    "portal": "https://www.city.higashihiroshima.lg.jp/index.html"
+  },
+  {
+    "pref": "広島",
+    "name": "廿日市市",
+    "portal": "https://www.city.hatsukaichi.hiroshima.jp"
+  },
+  {
+    "pref": "広島",
+    "name": "安芸高田市",
+    "portal": "www.akitakata.jp"
+  },
+  {
+    "pref": "広島",
+    "name": "江田島市",
+    "portal": "https://www.city.etajima.hiroshima.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "下関市",
+    "portal": "www.city.shimonoseki.lg.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "宇部市",
+    "portal": "https://www.city.ube.yamaguchi.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "山口市",
+    "portal": "https://www.city.yamaguchi.lg.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "萩市",
+    "portal": "https://www.city.hagi.lg.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "防府市",
+    "portal": "https://www.city.hofu.yamaguchi.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "下松市",
+    "portal": "https://www.city.kudamatsu.lg.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "岩国市",
+    "portal": "www.city.iwakuni.lg.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "光市",
+    "portal": "https://www.city.hikari.lg.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "長門市",
+    "portal": "https://www.city.nagato.yamaguchi.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "柳井市",
+    "portal": "www.city-yanai.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "美祢市",
+    "portal": "https://www2.city.mine.lg.jp/index.html"
+  },
+  {
+    "pref": "山口",
+    "name": "周南市",
+    "portal": "www.city.shunan.lg.jp"
+  },
+  {
+    "pref": "山口",
+    "name": "山陽小野田市",
+    "portal": "https://www.city.sanyo-onoda.lg.jp"
+  },
+  {
+    "pref": "香川",
+    "name": "高松市",
+    "portal": "www.city.takamatsu.kagawa.jp"
+  },
+  {
+    "pref": "香川",
+    "name": "丸亀市",
+    "portal": "https://www.city.marugame.lg.jp"
+  },
+  {
+    "pref": "香川",
+    "name": "坂出市",
+    "portal": "https://www.city.sakaide.lg.jp"
+  },
+  {
+    "pref": "香川",
+    "name": "善通寺市",
+    "portal": "https://www.city.zentsuji.kagawa.jp"
+  },
+  {
+    "pref": "香川",
+    "name": "観音寺市",
+    "portal": "https://www.city.kanonji.kagawa.jp"
+  },
+  {
+    "pref": "香川",
+    "name": "さぬき市",
+    "portal": "https://www.city.sanuki.kagawa.jp"
+  },
+  {
+    "pref": "香川",
+    "name": "東かがわ市",
+    "portal": "https://www.higashikagawa.jp"
+  },
+  {
+    "pref": "香川",
+    "name": "三豊市",
+    "portal": "https://www.city.mitoyo.lg.jp"
+  },
+  {
+    "pref": "徳島",
+    "name": "徳島市",
+    "portal": "https://www.city.tokushima.tokushima.jp"
+  },
+  {
+    "pref": "徳島",
+    "name": "鳴門市",
+    "portal": "https://www.city.naruto.tokushima.jp"
+  },
+  {
+    "pref": "徳島",
+    "name": "小松島市",
+    "portal": "https://www.city.komatsushima.lg.jp"
+  },
+  {
+    "pref": "徳島",
+    "name": "阿南市",
+    "portal": "https://www.city.anan.tokushima.jp"
+  },
+  {
+    "pref": "徳島",
+    "name": "吉野川市",
+    "portal": "https://www.city.yoshinogawa.lg.jp"
+  },
+  {
+    "pref": "徳島",
+    "name": "阿波市",
+    "portal": "https://www.city.awa.lg.jp"
+  },
+  {
+    "pref": "徳島",
+    "name": "美馬市",
+    "portal": "www.city.mima.lg.jp"
+  },
+  {
+    "pref": "徳島",
+    "name": "三好市",
+    "portal": "https://www.miyoshi.i-tokushima.jp"
+  },
+  {
+    "pref": "愛媛",
+    "name": "松山市",
+    "portal": "https://www.city.matsuyama.ehime.jp"
+  },
+  {
+    "pref": "愛媛",
+    "name": "今治市",
+    "portal": "https://www.city.imabari.ehime.jp"
+  },
+  {
+    "pref": "愛媛",
+    "name": "宇和島市",
+    "portal": "https://www.city.uwajima.ehime.jp"
+  },
+  {
+    "pref": "愛媛",
+    "name": "八幡浜市",
+    "portal": "www.city.yawatahama.ehime.jp"
+  },
+  {
+    "pref": "愛媛",
+    "name": "新居浜市",
+    "portal": "https://www.city.niihama.lg.jp"
+  },
+  {
+    "pref": "愛媛",
+    "name": "西条市",
+    "portal": "https://www.city.saijo.ehime.jp"
+  },
+  {
+    "pref": "愛媛",
+    "name": "大洲市",
+    "portal": "https://www.city.ozu.ehime.jp"
+  },
+  {
+    "pref": "愛媛",
+    "name": "伊予市",
+    "portal": "https://www.city.iyo.lg.jp"
+  },
+  {
+    "pref": "愛媛",
+    "name": "四国中央市",
+    "portal": "https://www.city.shikokuchuo.ehime.jp"
+  },
+  {
+    "pref": "愛媛",
+    "name": "西予市",
+    "portal": "https://www.city.seiyo.ehime.jp"
+  },
+  {
+    "pref": "愛媛",
+    "name": "東温市",
+    "portal": "https://www.city.toon.ehime.jp"
+  },
+  {
+    "pref": "高知",
+    "name": "高知市",
+    "portal": "https://www.city.kochi.kochi.jp"
+  },
+  {
+    "pref": "高知",
+    "name": "室戸市",
+    "portal": "https://www.city.muroto.kochi.jp"
+  },
+  {
+    "pref": "高知",
+    "name": "安芸市",
+    "portal": "https://www.city.aki.kochi.jp"
+  },
+  {
+    "pref": "高知",
+    "name": "南国市",
+    "portal": "https://www.city.nankoku.lg.jp"
+  },
+  {
+    "pref": "高知",
+    "name": "土佐市",
+    "portal": "www.city.tosa.lg.jp"
+  },
+  {
+    "pref": "高知",
+    "name": "須崎市",
+    "portal": "https://www.city.susaki.lg.jp"
+  },
+  {
+    "pref": "高知",
+    "name": "宿毛市",
+    "portal": "https://www.city.sukumo.kochi.jp/index.html"
+  },
+  {
+    "pref": "高知",
+    "name": "土佐清水市",
+    "portal": "https://www.city.tosashimizu.kochi.jp"
+  },
+  {
+    "pref": "高知",
+    "name": "四万十市",
+    "portal": "www.city.shimanto.lg.jp"
+  },
+  {
+    "pref": "高知",
+    "name": "香南市",
+    "portal": "https://www.city.kochi-konan.lg.jp"
+  },
+  {
+    "pref": "高知",
+    "name": "香美市",
+    "portal": "https://www.city.kami.lg.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "大分市",
+    "portal": "www.city.oita.oita.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "別府市",
+    "portal": "https://www.city.beppu.oita.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "中津市",
+    "portal": "https://www.city-nakatsu.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "日田市",
+    "portal": "https://www.city.hita.oita.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "佐伯市",
+    "portal": "https://www.city.saiki.oita.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "臼杵市",
+    "portal": "https://www.city.usuki.oita.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "津久見市",
+    "portal": "www.city.tsukumi.oita.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "竹田市",
+    "portal": "https://www.city.taketa.oita.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "豊後高田市",
+    "portal": "www.city.bungotakada.oita.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "杵築市",
+    "portal": "www.city.kitsuki.lg.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "宇佐市",
+    "portal": "https://www.city.usa.oita.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "豊後大野市",
+    "portal": "https://www.bungo-ohno.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "由布市",
+    "portal": "www.city.yufu.oita.jp"
+  },
+  {
+    "pref": "大分",
+    "name": "国東市",
+    "portal": "https://www.city.kunisaki.oita.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "北九州市",
+    "portal": "https://www.city.kitakyushu.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "福岡市",
+    "portal": "https://www.city.fukuoka.lg.jp/index.html"
+  },
+  {
+    "pref": "福岡",
+    "name": "大牟田市",
+    "portal": "https://www.city.omuta.lg.jp/default.aspx"
+  },
+  {
+    "pref": "福岡",
+    "name": "久留米市",
+    "portal": "www.city.kurume.fukuoka.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "直方市",
+    "portal": "https://www.city.nogata.fukuoka.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "飯塚市",
+    "portal": "https://www.city.iizuka.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "田川市",
+    "portal": "https://www.joho.tagawa.fukuoka.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "柳川市",
+    "portal": "www.city.yanagawa.fukuoka.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "八女市",
+    "portal": "www.city.yame.fukuoka.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "筑後市",
+    "portal": "https://www.city.chikugo.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "大川市",
+    "portal": "https://www.city.okawa.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "行橋市",
+    "portal": "www.city.yukuhashi.fukuoka.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "豊前市",
+    "portal": "www.city.buzen.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "中間市",
+    "portal": "www.city.nakama.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "小郡市",
+    "portal": "https://www.city.ogori.fukuoka.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "筑紫野市",
+    "portal": "https://www.city.chikushino.fukuoka.jp/index.html"
+  },
+  {
+    "pref": "福岡",
+    "name": "春日市",
+    "portal": "https://www.city.kasuga.fukuoka.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "大野城市",
+    "portal": "www.city.onojo.fukuoka.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "宗像市",
+    "portal": "www.city.munakata.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "太宰府市",
+    "portal": "www.city.dazaifu.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "古賀市",
+    "portal": "https://www.city.koga.fukuoka.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "福津市",
+    "portal": "https://www.city.fukutsu.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "うきは市",
+    "portal": "www.city.ukiha.fukuoka.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "宮若市",
+    "portal": "https://www.city.miyawaka.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "嘉麻市",
+    "portal": "https://www.city.kama.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "朝倉市",
+    "portal": "www.city.asakura.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "みやま市",
+    "portal": "www.city.miyama.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "糸島市",
+    "portal": "www.city.itoshima.lg.jp"
+  },
+  {
+    "pref": "福岡",
+    "name": "那珂川市",
+    "portal": "https://www.city.nakagawa.lg.jp"
+  },
+  {
+    "pref": "佐賀",
+    "name": "佐賀市",
+    "portal": "https://www.city.saga.lg.jp"
+  },
+  {
+    "pref": "佐賀",
+    "name": "唐津市",
+    "portal": "https://www.city.karatsu.lg.jp/top.html"
+  },
+  {
+    "pref": "佐賀",
+    "name": "鳥栖市",
+    "portal": "www.city.tosu.lg.jp"
+  },
+  {
+    "pref": "佐賀",
+    "name": "多久市",
+    "portal": "https://www.city.taku.lg.jp"
+  },
+  {
+    "pref": "佐賀",
+    "name": "伊万里市",
+    "portal": "https://www.city.imari.saga.jp"
+  },
+  {
+    "pref": "佐賀",
+    "name": "武雄市",
+    "portal": "www.city.takeo.lg.jp"
+  },
+  {
+    "pref": "佐賀",
+    "name": "鹿島市",
+    "portal": "https://www.city.saga-kashima.lg.jp"
+  },
+  {
+    "pref": "佐賀",
+    "name": "小城市",
+    "portal": "https://www.city.ogi.lg.jp"
+  },
+  {
+    "pref": "佐賀",
+    "name": "嬉野市",
+    "portal": "https://www.city.ureshino.lg.jp"
+  },
+  {
+    "pref": "佐賀",
+    "name": "神埼市",
+    "portal": "https://www.city.kanzaki.saga.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "長崎市",
+    "portal": "https://www.city.nagasaki.lg.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "佐世保市",
+    "portal": "https://www.city.sasebo.lg.jp/index.html"
+  },
+  {
+    "pref": "長崎",
+    "name": "島原市",
+    "portal": "https://www.city.shimabara.lg.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "諫早市",
+    "portal": "https://www.city.isahaya.nagasaki.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "大村市",
+    "portal": "www.city.omura.nagasaki.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "平戸市",
+    "portal": "https://www.city.hirado.nagasaki.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "松浦市",
+    "portal": "https://www.city-matsuura.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "対馬市",
+    "portal": "www.city.tsushima.nagasaki.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "壱岐市",
+    "portal": "www.city.iki.nagasaki.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "五島市",
+    "portal": "https://www.city.goto.nagasaki.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "西海市",
+    "portal": "https://www.city.saikai.nagasaki.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "雲仙市",
+    "portal": "https://www.city.unzen.nagasaki.jp"
+  },
+  {
+    "pref": "長崎",
+    "name": "南島原市",
+    "portal": "https://www.city.minamishimabara.lg.jp"
+  },
+  {
+    "pref": "宮崎",
+    "name": "宮崎市",
+    "portal": "https://www.city.miyazaki.miyazaki.jp"
+  },
+  {
+    "pref": "宮崎",
+    "name": "都城市",
+    "portal": "https://www.city.miyakonojo.miyazaki.jp"
+  },
+  {
+    "pref": "宮崎",
+    "name": "延岡市",
+    "portal": "www.city.nobeoka.miyazaki.jp"
+  },
+  {
+    "pref": "宮崎",
+    "name": "日南市",
+    "portal": "https://www.city.nichinan.lg.jp"
+  },
+  {
+    "pref": "宮崎",
+    "name": "小林市",
+    "portal": "www.city.kobayashi.lg.jp"
+  },
+  {
+    "pref": "宮崎",
+    "name": "日向市",
+    "portal": "www.hyugacity.jp"
+  },
+  {
+    "pref": "宮崎",
+    "name": "串間市",
+    "portal": "city.kushima.lg.jp"
+  },
+  {
+    "pref": "宮崎",
+    "name": "西都市",
+    "portal": "city.saito.lg.jp"
+  },
+  {
+    "pref": "宮崎",
+    "name": "えびの市",
+    "portal": "www.city.ebino.lg.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "熊本市",
+    "portal": "https://www.city.kumamoto.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "八代市",
+    "portal": "www.city.yatsushiro.lg.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "人吉市",
+    "portal": "https://www.city.hitoyoshi.lg.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "荒尾市",
+    "portal": "https://www.city.arao.lg.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "水俣市",
+    "portal": "https://www.city.minamata.lg.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "玉名市",
+    "portal": "https://www.city.tamana.lg.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "山鹿市",
+    "portal": "https://www.city.yamaga.kumamoto.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "菊池市",
+    "portal": "https://www.city.kikuchi.lg.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "宇土市",
+    "portal": "https://www.city.uto.lg.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "上天草市",
+    "portal": "https://www.city.kamiamakusa.kumamoto.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "宇城市",
+    "portal": "https://www.city.uki.kumamoto.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "阿蘇市",
+    "portal": "www.city.aso.kumamoto.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "天草市",
+    "portal": "https://www.city.amakusa.kumamoto.jp"
+  },
+  {
+    "pref": "熊本",
+    "name": "合志市",
+    "portal": "https://www.city.koshi.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "鹿児島市",
+    "portal": "www.city.kagoshima.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "鹿屋市",
+    "portal": "https://www.city.kanoya.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "枕崎市",
+    "portal": "https://www.city.makurazaki.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "阿久根市",
+    "portal": "www.city.akune.kagoshima.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "出水市",
+    "portal": "https://www.city.kagoshima-izumi.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "指宿市",
+    "portal": "https://www.city.ibusuki.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "西之表市",
+    "portal": "www.city.nishinoomote.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "垂水市",
+    "portal": "https://www.city.tarumizu.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "薩摩川内市",
+    "portal": "https://www.city.satsumasendai.lg.jp/www/index.html"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "日置市",
+    "portal": "www.city.hioki.kagoshima.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "曽於市",
+    "portal": "https://www.city.soo.kagoshima.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "霧島市",
+    "portal": "www.city-kirishima.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "いちき串木野市",
+    "portal": "https://www.city.ichikikushikino.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "南さつま市",
+    "portal": "www.city.minamisatsuma.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "志布志市",
+    "portal": "https://www.city.shibushi.lg.jp/thema/ho-mupe-ji"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "奄美市",
+    "portal": "www.city.amami.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "南九州市",
+    "portal": "www.city.minamikyushu.lg.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "伊佐市",
+    "portal": "https://www.city.isa.kagoshima.jp"
+  },
+  {
+    "pref": "鹿児島",
+    "name": "姶良市",
+    "portal": "www.city.aira.lg.jp"
+  },
+  {
+    "pref": "沖縄",
+    "name": "那覇市",
+    "portal": "https://www.city.naha.okinawa.jp"
+  },
+  {
+    "pref": "沖縄",
+    "name": "宜野湾市",
+    "portal": "https://www.city.ginowan.lg.jp/index.html"
+  },
+  {
+    "pref": "沖縄",
+    "name": "石垣市",
+    "portal": "https://www.city.ishigaki.okinawa.jp"
+  },
+  {
+    "pref": "沖縄",
+    "name": "浦添市",
+    "portal": "www.city.urasoe.lg.jp"
+  },
+  {
+    "pref": "沖縄",
+    "name": "名護市",
+    "portal": "www.city.nago.okinawa.jp"
+  },
+  {
+    "pref": "沖縄",
+    "name": "糸満市",
+    "portal": "www.city.itoman.lg.jp"
+  },
+  {
+    "pref": "沖縄",
+    "name": "沖縄市",
+    "portal": "https://www.city.okinawa.okinawa.jp"
+  },
+  {
+    "pref": "沖縄",
+    "name": "豊見城市",
+    "portal": "https://www.city.tomigusuku.lg.jp"
+  },
+  {
+    "pref": "沖縄",
+    "name": "うるま市",
+    "portal": "www.city.uruma.lg.jp"
+  },
+  {
+    "pref": "沖縄",
+    "name": "宮古島市",
+    "portal": "https://www.city.miyakojima.lg.jp"
+  },
+  {
+    "pref": "沖縄",
+    "name": "南城市",
+    "portal": "https://www.city.nanjo.okinawa.jp/index.html"
+  }
+]

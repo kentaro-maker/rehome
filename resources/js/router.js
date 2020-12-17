@@ -5,9 +5,12 @@ import VueRouter from 'vue-router'
 import CityList from './pages/CityList.vue'
 import Login from './pages/Login.vue'
 import Welcome from './pages/Welcome.vue'
+import SearchResult from './pages/SearchResult.vue'
 import CityDetail from './pages/CityDetail.vue'
 
 import SystemError from './pages/errors/System.vue'
+import NotFound from './pages/errors/NotFound.vue'
+
 
 
 import store from './store'
@@ -20,7 +23,14 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
+    name: 'welcome',
     component: Welcome,
+  },
+  {
+    path: '/search',
+    name: 'search',
+    props: true,
+    component: SearchResult,
   },
   {
     path: '/login',
@@ -59,6 +69,11 @@ const routes = [
     name: 'city',
     props: true,
     component: CityDetail,
+  },
+  {
+    path: '*',
+    name: 'not-found',
+    component: NotFound
   }
 ]
 

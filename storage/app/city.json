@@ -5,6 +5,7 @@
         [
             {
                 "name":"北海道","slug":"hokkaido",
+                "portal": "http://www.pref.hokkaido.lg.jp/",
                 "cities":[
                     {"name":"札幌市","slug":"sapporo"},
                     {"name":"函館市","slug":"hakodate"},
@@ -50,6 +51,7 @@
         "prefs":[
             {
                 "name":"青森","slug":"aomori",
+                "portal": "https://www.pref.aomori.lg.jp/",
                 "cities":[
                     {"name":"青森市","slug":"aomori"},
                     {"name":"弘前市","slug":"hirosaki"},
@@ -65,6 +67,7 @@
             },
             {
                 "name":"秋田","slug":"akita",
+                "portal": "https://www.pref.akita.lg.jp/",
                 "cities":[
                     {"name":"秋田市","slug":"akita"},
                     {"name":"能代市","slug":"noshiro"},
@@ -83,6 +86,7 @@
             },
             {
                 "name":"岩手","slug":"iwate",
+                "portal": "https://www.pref.iwate.jp/",
                 "cities":[
                     {"name":"盛岡市","slug":"morioka"},
                     {"name":"宮古市","slug":"miyako"},
@@ -102,6 +106,7 @@
             },
             {
                 "name":"宮城","slug":"miyagi",
+                "portal": "https://www.pref.miyagi.jp/",
                 "cities":[
                     {"name":"仙台市","slug":"sendai"},
                     {"name":"石巻市","slug":"ishinomaki"},
@@ -121,6 +126,7 @@
             },
             {
                 "name":"山形","slug":"yamagata",
+                "portal": "https://www.pref.miyagi.jp/",
                 "cities":[
                     {"name":"山形市","slug":"yamagata"},
                     {"name":"米沢市","slug":"yonezawa"},
@@ -139,6 +145,7 @@
             },
             {
                 "name":"福島","slug":"fukushima",
+                "portal": "https://www.pref.fukushima.lg.jp/",
                 "cities":[
                     {"name":"福島市","slug":"fukushima"},
                     {"name":"会津若松市","slug":"aizuwakamatsu"},
@@ -162,6 +169,7 @@
         "prefs":[
             {
                 "name":"茨城","slug":"ibaraki",
+                "portal": "https://www.pref.ibaraki.jp/",
                 "cities":[
                     {"name":"水戸市","slug":"mito"},
                     {"name":"日立市","slug":"hitachi"},
@@ -199,6 +207,7 @@
             },
             {
                 "name":"栃木","slug":"tochigi",
+                "portal": "http://www.pref.tochigi.lg.jp/",
                 "cities":[
                     {"name":"宇都宮市","slug":"utsunomiya"},
                     {"name":"足利市","slug":"ashikaga"},
@@ -217,7 +226,8 @@
                 ]
             },
             {
-                "name":"群馬","slug":"gumma",
+                "name":"群馬","slug":"gunma",
+                "portal":"https://www.pref.gunma.jp/",
                 "cities":[
                     {"name":"前橋市","slug":"maebashi"},
                     {"name":"高崎市","slug":"takasaki"},
@@ -235,6 +245,7 @@
             },
             {
                 "name":"埼玉","slug":"saitama",
+                "portal": "https://www.pref.saitama.lg.jp/",
                 "cities":[
                     {"name":"さいたま市","slug":"saitama"},
                     {"name":"川越市","slug":"kawagoe"},
@@ -278,10 +289,9 @@
                     {"name":"白岡市","slug":"shiraoka"}
                 ]
             },
-                        
-          
             {
                 "name":"千葉","slug":"chiba",
+                "portal": "https://www.pref.chiba.lg.jp/",
                 "cities":[
                     {"name":"千葉市","slug":"chiba"},
                     {"name":"銚子市","slug":"choshi"},
@@ -301,7 +311,7 @@
                     {"name":"勝浦市","slug":"katsura"},
                     {"name":"市原市","slug":"ichihara"},
                     {"name":"流山市","slug":"nagareyama"},
-                    {"name":"八千代a市","slug":"yachiyo"},
+                    {"name":"八千代市","slug":"yachiyo"},
                     {"name":"我孫子市","slug":"abiko"},
                     {"name":"鴨川市","slug":"kamogawa"},
                     {"name":"鎌ケ谷市","slug":"kamagaya"},
@@ -324,6 +334,7 @@
             },
             {
                 "name":"東京","slug":"tokyo",
+                "portal":"https://www.metro.tokyo.lg.jp/",
                 "cities":[
                     {"name":"八王子市","slug":"hachioji"},
                     {"name":"立川市","slug":"tachikawa"},
@@ -355,6 +366,7 @@
             },
             {
                 "name":"神奈川","slug":"kanagawa",
+                "portal": "https://www.pref.kanagawa.lg.jp/",
                 "cities":[
                     {"name":"横浜市","slug":"yokohama"},
                     {"name":"川崎市","slug":"kawasaki"},
@@ -384,7 +396,8 @@
         "name":"甲信越・北陸","slug":"koshinetsu-hokuriku",
         "prefs":[
             {
-                "name":"新潟","slug":"nigata",
+                "name":"新潟","slug":"niigata",
+                "portal": "https://www.pref.niigata.lg.jp/",
                 "cities":[    
                     {"name":"新潟市","slug":"niigata"},
                     {"name":"長岡市","slug":"nagaoka"},
@@ -410,6 +423,7 @@
             },
             {
                 "name":"富山","slug":"toyama",
+                "portal": "https://www.pref.toyama.lg.jp/index2.php",
                 "cities":[
                     {"name":"富山市","slug":"toyama"},
                     {"name":"高岡市","slug":"takaoka"},
@@ -426,6 +440,7 @@
             },
             {
                 "name":"石川","slug":"ishikawa",
+                "portal": "https://www.pref.ishikawa.lg.jp/index2.html",
                 "cities":[
                     {"name":"金沢市","slug":"kanazawa"},
                     {"name":"七尾市","slug":"nanao"},
@@ -443,6 +458,7 @@
             },
             {
                 "name":"福井","slug":"fukui",
+                "portal": "https://www.pref.fukui.lg.jp/index2.html",
                 "cities":[
                     {"name":"福井市","slug":"fukui"},
                     {"name":"敦賀市","slug":"tsuruga"},
@@ -458,6 +474,7 @@
             },
             {
                 "name":"山梨","slug":"yamanashi",
+                "portal": "https://www.pref.yamanashi.jp/",
                 "cities":[
                     {"name":"甲府市","slug":"kofu"},
                     {"name":"富士吉田市","slug":"fujiyoshida"},
@@ -477,6 +494,7 @@
             },
             {
                 "name":"長野","slug":"nagano",
+                "portal": "https://www.pref.nagano.lg.jp/",
                 "cities":[
                     {"name":"長野市","slug":"nagano"},
                     {"name":"松本市","slug":"matsumoto"},
@@ -507,6 +525,7 @@
         "prefs":[
             {
                 "name":"岐阜","slug":"gifu",
+                "portal": "https://www.pref.gifu.lg.jp/",
                 "cities":[
                     {"name":"岐阜市","slug":"gifu"},
                     {"name":"大垣市","slug":"ogaki"},
@@ -533,6 +552,7 @@
             },
             {
                 "name":"静岡","slug":"shizuoka",
+                "portal": "https://www.pref.shizuoka.jp/index.html",
                 "cities":[
                     {"name":"静岡市","slug":"shizuoka"},
                     {"name":"浜松市","slug":"hamamatsu"},
@@ -561,6 +581,7 @@
             },
             {
                 "name":"愛知","slug":"aichi",
+                "portal": "https://www.pref.aichi.jp/",
                 "cities":[
                     {"name":"名古屋市","slug":"nagoya"},
                     {"name":"豊橋市","slug":"toyohashi"},
@@ -604,6 +625,7 @@
             },
             {
                 "name":"三重","slug":"mie",
+                "portal": "https://www.pref.mie.lg.jp/",
                 "cities":[
                     {"name":"津市","slug":"tsu"},
                     {"name":"四日市市","slug":"yokkaichi"},
@@ -628,6 +650,7 @@
         "prefs":[
             {
                 "name":"滋賀","slug":"shiga",
+                "portal": "https://www.pref.shiga.lg.jp/",
                 "cities":[
                     {"name":"彦根市","slug":"hikone"},
                     {"name":"長浜市","slug":"nagahama"},
@@ -646,6 +669,7 @@
             },
             {
                 "name":"京都","slug":"kyoto",
+                "portal": "https://www.pref.kyoto.lg.jp/index2.html",
                 "cities":[
                     {"name":"京都市","slug":"kyoto"},
                     {"name":"福知山市","slug":"fukuchiyama"},
@@ -666,6 +690,7 @@
             },
             {
                 "name":"大阪","slug":"osaka",
+                "portal": "http://www.pref.osaka.lg.jp/index.html",
                 "cities":[
                     {"name":"大阪市","slug":"osaka"},
                     {"name":"堺市","slug":"sakai"},
@@ -704,6 +729,7 @@
             },
             {
                 "name":"兵庫","slug":"hyogo",
+                "portal": "https://web.pref.hyogo.lg.jp/index2.html",
                 "cities":[
                     {"name":"神戸市","slug":"kobe"},
                     {"name":"姫路市","slug":"himeji"},
@@ -738,6 +764,7 @@
             },
             {
                 "name":"奈良","slug":"nara",
+                "portal": "http://www.pref.nara.jp/1.htm",
                 "cities":[
                     {"name":"奈良市","slug":"nara"},
                     {"name":"大和高田市","slug":"yamatotakada"},
@@ -755,6 +782,7 @@
             },
             {
                 "name":"和歌山","slug":"wakayama",
+                "portal": "https://www.pref.wakayama.lg.jp/",
                 "cities":[
                     {"name":"和歌山市","slug":"wakayama"},
                     {"name":"海南市","slug":"kainan"},
@@ -764,20 +792,17 @@
                     {"name":"田辺市","slug":"tanabe"},
                     {"name":"新宮市","slug":"shingu"},
                     {"name":"紀の川市","slug":"kinokawa"},
-                    {"name":"岩出市","slug":"iwade"}         
+                    {"name":"岩出市","slug":"iwade"}
                 ]
             }
         ]
     },
-                
-                
-                
-                
     {
         "name":"中国","slug":"chugoku",
         "prefs":[
             {
                 "name":"鳥取","slug":"tottori",
+                "portal": "https://www.pref.tottori.lg.jp/",
                 "cities":[
                     {"name":"鳥取市","slug":"tottori"},
                     {"name":"米子市","slug":"yonago"},
@@ -787,6 +812,7 @@
             },
             {
                 "name":"島根","slug":"shimane",
+                "portal": "https://www.pref.shimane.lg.jp/",
                 "cities":[
                     {"name":"松江市","slug":"matsue"},
                     {"name":"浜田市","slug":"hamada"},
@@ -799,7 +825,8 @@
                 ]
             },
             {
-                "name":"岡山","slug":"okay,",
+                "name":"岡山","slug":"okayama",
+                "portal": "https://www.pref.okayama.jp/",
                 "cities":[
                     {"name":"岡山市","slug":"okayama"},
                     {"name":"倉敷市","slug":"kurashiki"},
@@ -820,6 +847,7 @@
             },
             {
                 "name":"広島","slug":"hiroshima",
+                "portal": "https://www.pref.hiroshima.lg.jp/",
                 "cities":[
                     {"name":"広島市","slug":"hiroshima"},
                     {"name":"呉市","slug":"kure"},
@@ -839,6 +867,7 @@
             },
             {
                 "name":"山口","slug":"yamaguchi",
+                "portal": "https://www.pref.yamaguchi.lg.jp/",
                 "cities":[
                     {"name":"下関市","slug":"shimonoseki"},
                     {"name":"宇部市","slug":"ube"},
@@ -863,6 +892,7 @@
         "prefs":[
             {
                 "name":"香川","slug":"kagawa",
+                "portal": "https://www.pref.kagawa.lg.jp/",
                 "cities":[
                     {"name":"高松市","slug":"takamatsu"},
                     {"name":"丸亀市","slug":"marugame"},
@@ -876,6 +906,7 @@
             },
             {
                 "name":"徳島","slug":"tokushima",
+                "portal": "https://www.pref.tokushima.lg.jp/",
                 "cities":[ 
                     {"name":"徳島市","slug":"tokushima"},
                     {"name":"鳴門市","slug":"naruto"},
@@ -889,6 +920,7 @@
             },
             {
                 "name":"愛媛","slug":"ehime",
+                "portal": "https://www.pref.ehime.jp/",
                 "cities":[
                     {"name":"松山市","slug":"matsuyama"},
                     {"name":"今治市","slug":"imabari"},
@@ -905,6 +937,7 @@
             },
             {
                 "name":"高知","slug":"kochi",
+                "portal": "https://www.pref.kochi.lg.jp/",
                 "cities":[
                     {"name":"高知市","slug":"kochi"},
                     {"name":"室戸市","slug":"sukumo"},
@@ -926,6 +959,7 @@
         "prefs":[
             {
                 "name":"大分","slug":"oita",
+                "portal": "https://www.pref.oita.lg.jp/",
                 "cities":[
                     {"name":"大分市","slug":"oita"},
                     {"name":"別府市","slug":"beppu"},
@@ -945,6 +979,7 @@
             },
             {
                 "name":"福岡","slug":"fukuoka",
+                "portal": "https://www.pref.fukuoka.lg.jp/",
                 "cities":[
                     {"name":"北九州市","slug":"kitakyushu"},
                     {"name":"福岡市","slug":"fukuoka"},
@@ -979,6 +1014,7 @@
             },
             {
                 "name":"佐賀","slug":"saga",
+                "portal": "https://www.pref.saga.lg.jp/",
                 "cities":[
                     {"name":"佐賀市","slug":"saga"},
                     {"name":"唐津市","slug":"karatsu"},
@@ -994,6 +1030,7 @@
             },
             {
                 "name":"長崎","slug":"nagasaki",
+                "portal": "https://www.pref.nagasaki.lg.jp/",
                 "cities":[
                     {"name":"長崎市","slug":"nagasaki"},
                     {"name":"佐世保市","slug":"sasebo"},
@@ -1012,6 +1049,7 @@
             },
             {
                 "name":"宮崎","slug":"miyazaki",
+                "portal": "https://www.pref.miyazaki.lg.jp/",
                 "cities":[
                     {"name":"宮崎市","slug":"miyazaki"},
                     {"name":"都城市","slug":"miyakonojo"},
@@ -1026,6 +1064,7 @@
             },
             {
                 "name":"熊本","slug":"kumamoto",
+                "portal": "https://www.pref.kumamoto.jp/",
                 "cities":[
                     {"name":"熊本市","slug":"kumamoto"},
                     {"name":"八代市","slug":"yatsushiro"},
@@ -1045,6 +1084,7 @@
             },
             {
                 "name":"鹿児島","slug":"kagoshima",
+                "portal": "https://www.pref.kagoshima.jp/index2.html",
                 "cities":[
                     {"name":"鹿児島市","slug":"kagoshima"},
                     {"name":"鹿屋市","slug":"kanoya"},
@@ -1074,6 +1114,7 @@
         "prefs":[
             {
                 "name":"沖縄","slug":"okinawa",
+                "portal": "https://www.pref.okinawa.lg.jp/index.html",
                 "cities":[
                     {"name":"那覇市","slug":"naha"},
                     {"name":"宜野湾市","slug":"ginowan"},
