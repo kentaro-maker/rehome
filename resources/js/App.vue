@@ -15,10 +15,8 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <Message />
-        <RouterView />
-      </div>
+      <Message />
+      <router-view></router-view>
     </main>
     <Footer />
   </div>

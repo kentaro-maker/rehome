@@ -18,6 +18,9 @@ Route::post('/register', [App\Http\Controllers\Auth\RegisterController::class, '
 Route::post('/login', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
 Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
+Route::post('/event/create',[App\Http\Controllers\EventController::class, 'create'])->name('event.create');
+Route::get('/event/hosted',[App\Http\Controllers\EventController::class, 'hosted'])->name('event.hosted');
+
 Route::get('/user', fn() => Auth::user())->name('user');
 
 Route::post('/photos', [App\Http\Controllers\PhotoController::class,'create'])->name('photo.create');

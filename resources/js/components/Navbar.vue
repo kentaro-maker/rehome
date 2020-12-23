@@ -5,16 +5,24 @@
     </RouterLink>
     <div class="navbar__menu">
       <div class="navbar__item">
-        
+        <div class="navbar__item">
+          <router-link :to="{name: 'events.search'}" tag="button" class="button">
+            イベントを探す
+          </router-link>
+        </div>
+
         <div v-if="isLogin" class="navbar__item">
-          <button class="button" @click="showForm = ! showForm">
-            <i class="icon ion-md-add"></i>
-            Submit a photo
-          </button>
+        
+          <router-link :to="{path:`/user/${username}/dashboard`}" tag="button" class="button">
+            イベント作成
+          </router-link>
         </div>
         
         <span v-if="isLogin" class="navbar__item">
-          {{ username }}
+          <router-link :to="{ path: `/user/${username}/dashboard/profile` }">
+            <font-awesome-icon icon="user" />
+            {{ username }}
+          </router-link>
         </span>
         
         <div v-else class="navbar__item">
@@ -41,6 +49,11 @@ export default {
   data () {
     return {
       showForm: false
+    }
+  },
+  methods: {
+    con(){
+      console.log("clicked!")
     }
   },
   computed: {

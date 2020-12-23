@@ -3,10 +3,17 @@ import VueRouter from 'vue-router'
 
 // ページコンポーネントをインポートする
 import CityList from './pages/CityList.vue'
+import EventList from './pages/EventList.vue'
 import Login from './pages/Login.vue'
 import Welcome from './pages/Welcome.vue'
 import SearchResult from './pages/SearchResult.vue'
 import CityDetail from './pages/CityDetail.vue'
+
+import Dashboard from './pages/Dashboard.vue'
+import DHome from './components/dashboard/Home.vue'
+import DProfile from './components/dashboard/Profile.vue'
+import DEvents from './components/dashboard/Events.vue'
+import DSetteing from './components/dashboard/Setting.vue'
 
 import SystemError from './pages/errors/System.vue'
 import NotFound from './pages/errors/NotFound.vue'
@@ -51,6 +58,40 @@ const routes = [
   {
     path: '/500',
     component: SystemError
+  },
+  {
+    path: '/user/:user/dashboard',
+    component: Dashboard,
+    beforeEnter (to, from, next) {
+      if (store.getters['auth/check']) {
+        next()
+      } else {
+        next('/login')
+      }
+    },
+    children: [
+      {
+        path: '',
+        component: DHome,
+      },
+      {
+        path: 'profile',
+        component: DProfile,
+      },
+      {
+        path: 'events',
+        component: DEvents,
+      },
+      {
+        path: 'setting',
+        component: DSetteing,
+      },
+    ]
+  },
+  {
+    path: '/events/search',
+    name: 'events.search',
+    component: EventList,
   },
   {
     path: '/region/:region_slug',

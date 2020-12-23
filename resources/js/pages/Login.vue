@@ -5,12 +5,12 @@
             class="tab__item"
             :class="{'tab__item--active': tab === 1 }"
             @click="tab = 1"
-        >Login</li>
+        >ログイン</li>
         <li
             class="tab__item"
             :class="{'tab__item--active': tab === 2 }"
             @click="tab = 2"
-        >Register</li>
+        >会員登録</li>
     </ul>
     <ul class="tab">
     </ul>
@@ -47,16 +47,16 @@
                        <li v-for="msg in registerErrors.password" :key="msg">{{ msg }}</li>
                     </ul>
                 </div>
-                <label for="username">Name</label>
+                <label for="username">お名前</label>
                 <input type="text" class="form__item" id="username" v-model="registerForm.name">
-                <label for="email">Email</label>
+                <label for="email">メールアドレス</label>
                 <input type="text" class="form__item" id="email" v-model="registerForm.email">
-                <label for="password">Password</label>
+                <label for="password">パスワード</label>
                 <input type="password" class="form__item" id="password" v-model="registerForm.password">
-                <label for="password-confirmation">Password (confirm)</label>
+                <label for="password-confirmation">パスワード (確認用)</label>
                 <input type="password" class="form__item" id="password-confirmation" v-model="registerForm.password_confirmation">
                 <div class="form__button">
-                    <button type="submit" class="button button--inverse">register</button>
+                    <button type="submit" class="button button--inverse">登録</button>
                 </div>
             </form>
         </div>

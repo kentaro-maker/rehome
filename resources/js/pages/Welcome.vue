@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="container row">
         <div class="col-8">
           <h2 class="title__h2">市町村を探す</h2>
           
