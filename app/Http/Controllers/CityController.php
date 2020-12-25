@@ -125,7 +125,6 @@ class CityController extends Controller
         }
 
         $cities = $query->get();
-        Log::debug('cities',[$cities]);
 
         return (new SearchCollection($cities))
         ->additional(['search' => [
@@ -140,7 +139,7 @@ class CityController extends Controller
     {
         // 間違えて %{shi}% ってやって半日無駄にした 2020/11/26 21:47 by Kentaro Ito in Japan
         $cities = City::where('region',$slug)->get();
-        Log::debug('cities',[$cities]);
+        //Log::debug('cities',[$cities]);
         return $cities;
     }
 
@@ -168,9 +167,7 @@ class CityController extends Controller
                 )
             ->get();
 
-            Log::debug('city',[$city]);
-            Log::debug('slugs',[$region_slug,$pref_slug,$city_slug]);
-        return $city;
+            return $city;
     }
 
     /**
@@ -197,11 +194,6 @@ class CityController extends Controller
                 )
             ->get();
 
-            Log::debug('city',[$city]);
-        return $city;
+            return $city;
     }
-
-
-
-
 }

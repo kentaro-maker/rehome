@@ -18,12 +18,18 @@ Route::post('/register', [App\Http\Controllers\Auth\RegisterController::class, '
 Route::post('/login', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
 Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
-Route::post('/event/create',[App\Http\Controllers\EventController::class, 'create'])->name('event.create');
-Route::get('/event/hosted',[App\Http\Controllers\EventController::class, 'hosted'])->name('event.hosted');
-
 Route::get('/user', fn() => Auth::user())->name('user');
 
-Route::post('/photos', [App\Http\Controllers\PhotoController::class,'create'])->name('photo.create');
+Route::get('/event/search',[App\Http\Controllers\EventController::class, 'search'])->name('event.search');
+Route::get('/event/detail/{id}',[App\Http\Controllers\EventController::class, 'detail'])->name('event.detail');
+
+Route::get('/event/hosted',[App\Http\Controllers\EventController::class, 'hosted'])->name('event.hosted');
+Route::post('/event/create',[App\Http\Controllers\EventController::class, 'create'])->name('event.create');
+
+// いいね
+Route::put('/events/{id}/like', [App\Http\Controllers\EventController::class, 'like'])->name('event.like');
+// いいね解除
+Route::delete('/events/{id}/like', [App\Http\Controllers\EventController::class, 'unlike']);
 
 Route::post('/search', [App\Http\Controllers\CityController::class,'search']);
 Route::get('/region/{slug}', [App\Http\Controllers\CityController::class,'index'])->name('city.index');

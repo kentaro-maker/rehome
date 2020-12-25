@@ -17,7 +17,20 @@ class EventController extends Controller
     public function __construct()
     {
         // 認証が必要
-        $this->middleware('auth');
+        $this->middleware('auth')->except(['search','detail']);
+    }
+
+    public function search()
+    {
+        $result = Event::with(['host','likes'])->paginate(10);
+        return $result;
+    }
+
+    public function detail($id)
+    {
+        $event = Event::where('id', $id)->with(['host','likes'])->first();
+
+        return $event ?? abort(404);
     }
 
     public function create(CreateEventRequest $request)
@@ -42,8 +55,44 @@ class EventController extends Controller
     }
 
     public function hosted(){
-        $events = Auth::user()->events()->paginate();
-        Log::debug('events',[$events]);
+        $events = Auth::user()->events()->with(['host'])->paginate(5);
         return $events;
+    }
+
+    /**
+     * いいね
+     * @param $id
+     * @return array
+     */
+    public function like($id)
+    {
+        $event = Event::where('id', $id)->with('likes')->first();
+        if (! $event) {
+            abort(404);
+        }
+        
+        $event->likes()->detach(Auth::user()->id);
+        $event->likes()->attach(Auth::user()->id);
+
+        return ["event_id" => $event->id];
+    }
+
+    /**
+     * いいね解除
+     * @param  $id
+     * @return array
+     */
+    public function unlike($id)
+    {
+        $event = Event::where('id', $id)->with('likes')->first();
+
+        if (! $event) {
+            abort(404);
+        }
+
+        $event->likes()->detach(Auth::user()->id);
+
+        // $idは数値だが、受取側JSONでは文字列に変換されて送信されるため注意
+        return ["event_id" => $event->id];
     }
 }

@@ -3,11 +3,13 @@ import VueRouter from 'vue-router'
 
 // ページコンポーネントをインポートする
 import CityList from './pages/CityList.vue'
-import EventList from './pages/EventList.vue'
 import Login from './pages/Login.vue'
 import Welcome from './pages/Welcome.vue'
 import SearchResult from './pages/SearchResult.vue'
 import CityDetail from './pages/CityDetail.vue'
+
+import EventList from './pages/EventList.vue'
+import EventDetail from './pages/EventDetail.vue'
 
 import Dashboard from './pages/Dashboard.vue'
 import DHome from './components/dashboard/Home.vue'
@@ -94,6 +96,12 @@ const routes = [
     component: EventList,
   },
   {
+    path: '/events/detail/:id',
+    name: 'event.detail',
+    props: true,
+    component: EventDetail,
+  },
+  {
     path: '/region/:region_slug',
     name: 'region',
     props: true,
@@ -112,7 +120,7 @@ const routes = [
     component: CityDetail,
   },
   {
-    path: '*',
+    path: '/not-found',
     name: 'not-found',
     component: NotFound
   }

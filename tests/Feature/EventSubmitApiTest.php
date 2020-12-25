@@ -33,7 +33,6 @@ class EventSubmitApiTest extends TestCase
         $response = $this->actingAs($this->user)
         ->json('POST', route('event.create'), $data);
         
-        Log::debug('event',[$response]);
         // レスポンスが201(CREATED)であること
         $response
                 ->assertStatus(201)

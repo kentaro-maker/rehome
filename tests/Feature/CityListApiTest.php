@@ -18,7 +18,7 @@ class CityListApiTest extends TestCase
     /**
      * @test
      */
-    public function should_正しい構造のJSONを返却する()
+    public function should_正しい構造のcityJSONを返却する()
     {
         // 5つの写真データを生成する
         City::factory(5)->create();
