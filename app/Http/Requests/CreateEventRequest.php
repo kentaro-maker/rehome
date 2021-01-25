@@ -24,7 +24,7 @@ class CreateEventRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|unique:events|max:255',
+            'title' => 'required|max:255',
         ];
     }
 }

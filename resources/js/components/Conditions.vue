@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container-item">
         <h3 class="title">こだわり条件から探す</h3>
         <div class="card-group">
             <div class="card">

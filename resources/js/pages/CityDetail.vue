@@ -3,49 +3,80 @@
         <div v-show="loading">
             <Loader/>
         </div>
-        <div v-show="! loading" v-if="city">
-            <img :src="img.src" :alt="imgList.alt" v-for="img in imgList">
-            
-            <h1 v-if="city">{{ city.city_name }}</h1>
-            <h3>
-                都道府県：
-                <router-link :to="{name: 'pref', params: { pref_slug: city.prefecture_slug, region_slug: city.region_slug }}">
-                    {{ city.prefecture_name }}
-                </router-link>
-            </h3>
-            
-            <h3>
-                地域：
-                <router-link :to="{name: 'region', params: { region_slug: city.region_slug }}">
-                    {{ city.region_name }}
-                </router-link>
-            </h3>
-
-            <ul>
-                <li>人口：{{ city.pop }} 人</li>
-                <li>総面積：{{ city.land }} ha</li>
-                <li>世帯数：{{ city.household}} 世帯</li>
-                <li>幼稚園数：{{ city.yo_school }}</li>
-                <li>小学校数：{{ city.sho_school }}</li>
-                <li>中学校数：{{ city.chu_school }}</li>
-                <li>高等学校数：{{ city.ko_school }}</li>
-                <li>空家数：{{ city.empty }}</li>
-                <li>公民館数：{{ city.kominkan }}</li>
-                <li>図書館数：{{ city.toshokan }}</li>
-                <li>ホームページ：<a target="_blank" :href="city.portal"><cite>{{ city.portal }}</cite></a></li>
-                <li>病院数：{{ city.hospital }}</li>
-                <li>診療所数：{{ city.clinic }}</li>
-            </ul>
-
-            <router-link
-                :to="`/photos/${city.slug}`"
-                >
-                <div class="photo__controls">
-                    <button>
+        <div v-show="! loading" v-if="city" class="d-flex justify-content-center">
+            <div class="card col-9">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height:15rem;">
+                            <img class="d-block w-100 card-img-top" :src="imgList[0].src" alt="First slide">
+                        </div>
+                        <div class="carousel-item" style="height:15rem;">
+                        <img class="d-block w-100 card-img-top" :src="imgList[1].src" alt="Second slide">
+                        </div>
+                        <div class="carousel-item" style="height:15rem;">
+                        <img class="d-block w-100 card-img-top" :src="imgList[2].src" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size:3rem;font-weight:bold;">{{ city.city_name }}</h5>
+                    <p class="card-text">
+                         都道府県：
+                        <router-link :to="{name: 'pref', params: { pref_slug: city.prefecture_slug, region_slug: city.region_slug }}">
+                            {{ city.prefecture_name }}
+                        </router-link>
+                        、
+                        地域：
+                        <router-link :to="{name: 'region', params: { region_slug: city.region_slug }}">
+                            {{ city.region_name }}
+                        </router-link>
+                    </p>
+                    <p class="card-text">
+                        ホームページ：
+                        <a target="_blank" :href="city.portal">
+                            <cite>{{ city.portal }}</cite>
+                        </a>
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        人口：{{ city.pop }}人、
+                        世帯数：{{ city.household}}世帯
+                    </li>
+                    <li class="list-group-item">総面積：{{ city.land }} ha</li>
+                    <li class="list-group-item">
+                        幼稚園数：{{ city.yo_school }}、
+                        小学校数：{{ city.sho_school }}、
+                        中学校数：{{ city.chu_school }}、
+                        高等学校数：{{ city.ko_school }}、
+                        公民館数：{{ city.kominkan }}、
+                        図書館数：{{ city.toshokan }}
+                    </li>
+                    <li class="list-group-item">空家数：{{ city.empty }}</li>
+                    <li class="list-group-item">
+                        病院数：{{ city.hospital }}、
+                        診療所数：{{ city.clinic }}
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <button class="btn btn-primary"@click="pdf(city.id)">
                         転出届ダウンロード
                     </button>
                 </div>
-            </router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -81,6 +112,18 @@ export default {
         }
     },
     methods: {
+        async pdf(id){
+            const response = await axios.get(
+                `/api/cities/${id}/pdf`, {responseType: 'arraybuffer'})
+
+            console.log(response)
+            const url = window.URL.createObjectURL(new Blob([response.data], { "type" : "application/pdf" }))
+            const link = document.createElement('a')
+            link.href = url
+            link.setAttribute('download', 'file.pdf')
+            document.body.appendChild(link)
+            link.click()
+        },
         async fetchCityDetail () {
 
             this.loading = true

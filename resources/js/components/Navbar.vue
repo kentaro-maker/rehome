@@ -1,60 +1,44 @@
 <template>
   <nav class="navbar">
-    <RouterLink class="navbar__brand" to="/">
+    <router-link class="navbar__brand" to="/">
+      <img src="/storage/images/logo.svg" class="navbar__brand--logo"/>
       rehome++
-    </RouterLink>
+    </router-link>
     <div class="navbar__menu">
-      <div class="navbar__item">
-        <div class="navbar__item">
-          <router-link :to="{name: 'events.search'}" tag="button" class="button">
-            イベントを探す
-          </router-link>
-        </div>
+      <div v-if="isLogin" class="navbar__item">
 
-        <div v-if="isLogin" class="navbar__item">
-        
-          <router-link :to="{path:`/user/${username}/dashboard`}" tag="button" class="button">
-            イベント作成
-          </router-link>
-        </div>
-        
-        <span v-if="isLogin" class="navbar__item">
-          <router-link :to="{ path: `/user/${username}/dashboard/profile` }">
-            <font-awesome-icon icon="user" />
+        <router-link :to="{path:`/user/${username}/events`}">
+          <font-awesome-icon icon="user" />
             {{ username }}
-          </router-link>
-        </span>
-        
-        <div v-else class="navbar__item">
-          <RouterLink class="button button--link" to="/login">
-            ログイン / 新規登録
-          </RouterLink>
-        </div>
-        
+        </router-link>
+      </div>
+      <div v-else class="navbar__item">
+        <router-link class="button button--link" to="/login">
+          ログイン / 新規登録
+        </router-link>
+      </div>  
+      <div class="navbar__item">
+        <router-link :to="{name: 'events.search'}" tag="button" class="button">
+          イベントを探す
+        </router-link>
+      </div>
+      <div v-if="isLogin" class="navbar__item">
+        <router-link :to="{path:`/user/${username}/events`}" tag="button" class="button">
+          イベントを作る
+        </router-link>
       </div>
     </div>
-    
-    <PhotoForm v-model="showForm" />
-
   </nav>
 </template>
 
 <script>
-import PhotoForm from './PhotoForm.vue'
 
 export default {
   components: {
-    PhotoForm
-  },
-  data () {
-    return {
-      showForm: false
-    }
+  
   },
   methods: {
-    con(){
-      console.log("clicked!")
-    }
+
   },
   computed: {
     isLogin () {

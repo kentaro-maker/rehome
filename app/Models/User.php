@@ -19,7 +19,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'password',
+        'password'
     ];
 
     protected $visible = [
@@ -34,8 +34,24 @@ class User extends Authenticatable
         return $this->hasMany(Event::class);
     }
 
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+
     public function likes()
     {
         return $this->belongsToMany(Event::class, 'likes')->withTimestamps();
+    }
+
+    public function applies()
+    {
+        return $this->hasMany(Apply::class);
+    }
+
+    public function tickets()
+    {
+        return $this->hasMany(Ticket::class);
     }
 }

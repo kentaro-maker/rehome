@@ -12,8 +12,7 @@
             @click="tab = 2"
         >会員登録</li>
     </ul>
-    <ul class="tab">
-    </ul>
+
         <div class="panel" v-show="tab === 1">
             <form class="form" @submit.prevent="login">
                 <div v-if="loginErrors" class="errors">

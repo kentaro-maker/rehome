@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Models\Event;
 use App\Models\User;
+use App\Models\Comment;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -44,13 +45,37 @@ class EventListApiTest extends TestCase
      */
     public function should_正しい構造のイベント詳細JSONを返却する()
     {
-        Event::factory(5)->create();
-        $event = Event::find(3);
-        // テストでは外部mysqlデータベースではなく内部sqliteデータベースが使用されるため、
-        // ファクトリーでデータを作成しなければ、パラメータをいくら渡そうとデータは返ってこない。
-        $response = $this->json('GET', route('event.detail',['id' => $event->id]));
+        Event::factory()->create()->each(function ($event) {
+            $event->comments()->saveMany(Comment::factory(3)->make());
+        });
+
+        $event = Event::first();
+       
+        //Log::debug('event',[$event->comments]);
+
+        $response = $this->json('GET', route('event.detail',[
+            'id' => $event->id
+            ]));
+
+
+        //Log::debug('response',[$response]);
+
         $response->assertStatus(200)
             ->assertJsonFragment([
+                    'host' => [
+                        'name' => $event->host->name,
+                    ],
+                    'comments' => $event->comments
+                    ->sortByDesc('id')
+                    ->map(function ($comment) {
+                        return [
+                            'author' => [
+                                'name' => $comment->author->name,
+                            ],
+                            'content' => $comment->content,
+                        ];
+                    })
+                    ->all(),
                     'liked_by_user' => false,
                     'likes_count' => 0,
             ]);

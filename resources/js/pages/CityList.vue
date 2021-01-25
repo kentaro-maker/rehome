@@ -69,7 +69,7 @@ export default {
       if(response.data.length == 0){
         this.$router.push('/not-found')
       }
-      this.cities = response.data
+      this.cities = response.data.data
     }
   },
   watch: {

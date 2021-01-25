@@ -124,7 +124,7 @@ class CityController extends Controller
             }
         }
 
-        $cities = $query->get();
+        $cities = $query->get()->paginate(10);
 
         return (new SearchCollection($cities))
         ->additional(['search' => [
@@ -138,7 +138,7 @@ class CityController extends Controller
     public function index($slug)
     {
         // 間違えて %{shi}% ってやって半日無駄にした 2020/11/26 21:47 by Kentaro Ito in Japan
-        $cities = City::where('region',$slug)->get();
+        $cities = City::where('region',$slug)->paginate(10);
         //Log::debug('cities',[$cities]);
         return $cities;
     }
@@ -165,7 +165,7 @@ class CityController extends Controller
                 'regions.name as region_name',
                 'regions.slug as region_slug',
                 )
-            ->get();
+            ->paginate(10);
 
             return $city;
     }

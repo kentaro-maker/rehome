@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container-item">
         <h3 class="title">地域から探す</h3>
         <div class="row">
         <div class="col">

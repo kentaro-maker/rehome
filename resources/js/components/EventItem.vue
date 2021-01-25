@@ -1,18 +1,45 @@
 <template>
-  <div class="city panel">
-     <router-link :to="{name: 'event.detail', params:{id:item.id}}">
-        {{ item.title }}
+  <div class="card w-100">
+    <div class="card-body">
+      <h5 class="card-title">
+        <span v-if="item.hosted_by_user" class="hosted">主催中</span>
+        <router-link :to="{name: 'event.detail', params:{id:item.id}}">
+          {{ item.title }}
         </router-link>
-        <button
-          class="photo__action photo__action--like"
-          :class="{ 'photo__action--liked': item.liked_by_user }"
-          title="いいねする"
-          :disabled="isDisabled"
-          @click.prevent="like"
-          >
-        <p v-model="isActive">{{isActive}}</p>
-          <font-awesome-icon icon="heart" />{{ item.likes_count }}
-        </button>
+        <span class="event__place">開催地：{{ item.place }}</span>
+      </h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <button
+        class="event__action event__action--like"
+        :class="{ 'event__action--liked': item.liked_by_user }"
+        title="いいねする"
+        :disabled="isDisabled"
+        @click.prevent="like"
+        >
+        <font-awesome-icon  class="icon" icon="heart" />{{ item.likes_count }}
+      </button>
+      <router-link 
+        v-show="item.liked_by_user == true"
+        :to="{path:`/user/${username}/events`}">
+        いいねリスト &raquo;
+      </router-link>
+      <button
+        class="event__action event__action--apply icon"
+        :class="{ 'event__action event__action--applied' : item.applied_by_user }"
+        title="イベントに申し込む"
+        :disabled="isDisabled"
+        @click.prevent="apply"
+        >
+        <font-awesome-icon class="icon" icon="file-signature" />
+        <span v-show="item.applied_by_user == true">申請済</span>
+        <span v-show="item.applied_by_user == false">未申請</span>
+      </button>
+      <router-link 
+        v-show="item.applied_by_user == true"
+        :to="{path:`/user/${username}/events`}">
+        申請済リスト &raquo;
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -26,23 +53,34 @@ export default {
   },
   data () {
     return {
-      isActive: false
     }
   },
   computed : {
     isDisabled () {
       return this.item.hosted_by_user || this.item.isProcessing
-      //return this.item.isProcessing
+    },
+    username () {
+      return this.$store.getters['auth/username']
     }
   },
   methods: {
-    async like () {
+    like () {
       if(this.item.isProcessing == false) {
         this.item.isProcessing = true
 
         this.$emit('like', {
           id: this.item.id,
           liked: this.item.liked_by_user,
+        })
+      }
+    },
+    apply () {
+      if(this.item.isProcessing == false) {
+        this.item.isProcessing = true
+
+        this.$emit('apply', {
+          id: this.item.id,
+          applied: this.item.applied_by_user,
         })
       }
     },

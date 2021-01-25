@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container-item">
         <h3 class="title">キーワード検索</h3>
 
         <form class="form" @submit.prevent="search">

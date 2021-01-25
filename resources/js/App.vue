@@ -5,8 +5,7 @@
       <div v-show="isWelcome" class="container-fluid p-0">
         <div class="row">
           <div id="welcome_board" class="col p-0 d-flex flex-column align-items-center text-center justify-content-center">
-            <h1>あなたにぴったりの町を探そう</h1>
-            <p style="font-size:1.5rem;">登録済み市町村は現在「792」</p>
+            <h1 class="title__h1">あなたにぴったりの町を探そう</h1>
           </div>
           <div class="col p-0">
             <img :src="welcomeImg" class="img-fluid" alt="Responsive image">

@@ -1,0 +1,261 @@
+.event {
+  $component: &;
+  position: relative;
+
+  &:hover {
+    #{$component}__overlay {
+      visibility: visible;
+    }
+  }
+
+  &:nth-child(4n+1) {
+    #{$component}__wrapper {
+      background: #DBBCD5;
+    }
+  }
+
+  &:nth-child(4n+2) {
+    #{$component}__wrapper {
+      background: #DBDBBC;
+    }
+  }
+
+  &:nth-child(4n+3) {
+    #{$component}__wrapper {
+      background: #BCDBC8;
+    }
+  }
+
+  &:nth-child(4n) {
+    #{$component}__wrapper {
+      background: #BCC8DB;
+    }
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    padding-top: 75%;
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__overlay {
+    background: rgba(0, 0, 0, .3);
+    bottom: 0;
+    color: #fff;
+    cursor: zoom-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    visibility: hidden;
+  }
+
+  &__controls {
+    text-align: right;
+  }
+
+  &__place {
+    right: 1.5rem;
+    position: absolute;
+  }
+
+  &__ticket {
+    font-size: 2rem;
+    
+    &--status {
+      border-bottom: 2px solid $yellow;
+
+      &--icon {
+        color: $yellow;
+  
+        &--validated {
+          color: $green;
+        }
+      }
+
+      &--validated {
+        border-bottom: 2px solid $green;
+      }
+    }
+  }
+
+  &__action {
+    background: #fff;
+    border: 0;
+    border-radius: .25rem;
+    color: $text-color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1;
+    margin-left: .25rem;
+    opacity: .8;
+    outline: none;
+    padding: .5em .75em;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:disabled{
+      background: $grey-3;
+      cursor: unset;
+      &:hover{
+        opacity: .8;
+      }
+    }
+
+    &--like {
+      border: 1px solid $grey-2;
+      .icon {
+        color: $red;
+        margin-right: .5em;
+      }
+    }
+
+    &--liked {
+      border: 1px solid $red;
+      background: $red;
+      color: #fff;
+
+      .icon {
+        color: #fff;
+      }
+    }
+
+    &--apply {
+      border: 1px solid $grey-2;
+      .icon {
+        color: $green;
+        margin-right: .5em;
+      }
+    }
+
+    &--applied {
+      border: 1px solid $green;
+      background: $green;
+      color: #fff;
+
+      .icon {
+        color: #fff;
+      }
+    }
+
+    &--approve {
+      border: 1px solid $grey-2;
+      .icon {
+        color: $blue;
+        margin-right: .5em;
+      }
+    }
+
+    &--approved {
+      border: 1px solid $blue;
+      background: $blue;
+      color: #fff;
+
+      .icon {
+        color: #fff;
+      }
+    }
+
+    &--decline {
+      border: 1px solid $grey-2;
+      .icon {
+        color: $red;
+        margin-right: .5em;
+      }
+    }
+
+    &--declined {
+      border: 1px solid $red;
+      background: $red;
+      color: #fff;
+
+      .icon {
+        color: #fff;
+      }
+    }
+
+    &--purchase {
+      border: 1px solid $grey-2;
+      .icon {
+        color: $orange;
+        margin-right: .5em;
+      }
+    }
+
+    &--purchased {
+      border: 1px solid $orange;
+      background: $orange;
+      color: #fff;
+
+      .icon {
+        color: #fff;
+      }
+    }
+
+    &--ticket {
+      border: 1px solid $grey-2;
+      .icon {
+        color: $red;
+        margin-right: .5em;
+      }
+    }
+
+  }
+
+  &__status {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $grey-2;
+    border-bottom: 2px solid $grey-2;
+
+      
+      &--apply {
+        color: $blue;
+        border-bottom: 2px solid $blue;
+      }
+      
+      &--approve {
+        color: $green;
+        border-bottom: 2px solid $green;
+      }
+      
+      &--purchase {
+        color: $orange;
+        border-bottom: 2px solid $orange;
+      }
+
+      &--ticket {
+        color: $red;
+        border-bottom: 2px solid $red;
+      }
+
+      &--participated {
+        color: $purple;
+        border-bottom: 2px solid $purple;
+      }
+
+      &--error {
+        color: $danger;
+        border-bottom: 2px solid $danger;
+      }
+  }
+}

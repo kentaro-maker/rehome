@@ -19,9 +19,34 @@ body {
   background-color: khaki;
   background-image: url(/storage/images/background.png);
 }
+
+.container-item {
+  margin: 30px 0;
+  border-bottom: 2px solid #38c172;
+}
+
+.page-info {
+  text-align: end;
+  font-size: 1.5rem;
+}
+
+.hosted {
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  background-color: $green;
+  color: #fff;
+}
+
 main {
-  margin: 3rem 0;
-  min-height: 70vh;
+  padding: 3rem 0;
+  min-height: 90vh;
+  background-color: #8fbc8f;
+  background-image: url('/storage/images/logo_alpha.png');
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 50rem;
 }
 
 figure {

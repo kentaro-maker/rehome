@@ -12,10 +12,14 @@
 
   &__brand {
     color: inherit;
-    font-family: Merriweather, serif;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 3rem;
     text-decoration: none;
+    
+    &--logo {
+      margin-right: 30px;
+      width: 100px;
+    }
 
     &:visited {
       color: inherit;
@@ -29,6 +33,7 @@
   &__menu {
     align-items: center;
     display: flex;
+    font-size: 2rem;
   }
 
   &__item {
