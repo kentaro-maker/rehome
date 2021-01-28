@@ -7,6 +7,7 @@ use App\Models\Comment;
 use App\Models\Ticket;
 use App\Models\Apply;
 use App\Models\Review;
+use App\Models\User;
 use App\Models\Questionnaire;
 use App\Models\Question;
 use App\Models\Answer;
@@ -19,8 +20,13 @@ use App\Http\Requests\CreateEventRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 use Illuminate\Support\Facades\Log;
+
+use App\Events\EventCreated;
+use App\Events\UserApplied;
+use App\Events\UserApproved;
 
 
 class EventController extends Controller
@@ -33,7 +39,7 @@ class EventController extends Controller
 
     public function search()
     {
-        $result = Event::with(['host','likes','applies'])->paginate(10);
+        $result = Event::with(['host','likes','applies'])->orderByDesc('id')->paginate(10);
         // Log::debug('sear',[$result]);
         // Log::debug('use',[Auth::user()]);
         return $result;
@@ -52,11 +58,19 @@ class EventController extends Controller
 
         $event->title = $request->title;
 
+        $new_event;
+
         DB::beginTransaction();
 
         try {
             Auth::user()->events()->save($event);
             DB::commit();
+
+            $new_event = DB::table('events')->where('user_id',Auth::user()->id)->latest()->first();
+            Log::debug('new_event',[DB::table('events')->where('user_id',Auth::user()->id)->latest()->first()]);
+
+            event(new EventCreated($new_event));
+
         } catch (\Exception $exception) {
             DB::rollBack();
             throw $exception;
@@ -68,12 +82,12 @@ class EventController extends Controller
     }
 
     public function hosted(){
-        $events = Auth::user()->events()->with(['applies'])->paginate(10);
+        $events = Auth::user()->events()->with(['applies'])->orderByDesc('created_at')->paginate(10);
         return $events;
     }
 
     public function participated(){
-        $events = Auth::user()->applies()->with('event')->paginate(10);
+        $events = Auth::user()->applies()->with('event')->orderByDesc('created_at')->paginate(10);
         $events->each(function ($item, $key) {
             $ticket = Ticket::where([
                 ['event_id', $item->event_id],
@@ -81,7 +95,6 @@ class EventController extends Controller
                 ])->first();
             $item->ticket = $ticket;
         });
-        // Log::debug('message',[$events]);
         // Log::debug('message',[Auth::user()->applies()]);
    
         return $events;
@@ -237,11 +250,13 @@ class EventController extends Controller
         $apply->user_id = Auth::user()->id;
         $apply->approved = null;
 
+        
         $event->applies()->save($apply);
-
+        
         $new_event = Event::all();
         // Log::debug('e',[$new_event]);
-
+        
+        event(new UserApplied($event, Auth::user()));
 
         return ["event_id" => $event->id];
     }
@@ -268,6 +283,9 @@ class EventController extends Controller
             $applies_HasMany->where('event_id', $event->id)->delete();
             return ["event_id" => $event->id];
         }
+
+        event(new UserApplied($event, Auth::user()));
+
         return ["event_id" => $event->id];
     }
 
@@ -286,7 +304,10 @@ class EventController extends Controller
         $apply = $applies->firstWhere('user_id',$user_id);
         $apply->approved = true;
         $apply->save();
-        Log::debug('message',[$apply]);
+        Log::debug('apply',[$apply]);
+
+        event(new UserApproved($apply, User::find($user_id)));
+
         return [
             'event_id' => $event->id,
             'user_id' => $user_id
@@ -310,6 +331,9 @@ class EventController extends Controller
         $apply->approved = null;
         $apply->save();
         Log::debug('message',[$apply]);
+
+        event(new UserApproved($apply, User::find($user_id)));
+
         return [
             'event_id' => $event->id,
             'user_id' => $user_id
@@ -386,7 +410,7 @@ class EventController extends Controller
             if($apply->approved){
                 $ticket = new Ticket();
                 $ticket->event_id = $event->id;
-                $ticket->code = "00000000";
+                $ticket->code = Str::random(20);
                 $ticket->validated = null;
                 Auth::user()->tickets()->save($ticket);
 

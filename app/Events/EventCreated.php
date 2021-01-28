@@ -10,15 +10,14 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
-class TicketValidated implements ShouldBroadcast
+class EventCreated implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
+    public $event;
 
-    public $ticket;
-    
     public $afterCommit = true;
 
     /**
@@ -26,11 +25,20 @@ class TicketValidated implements ShouldBroadcast
      *
      * @return void
      */
-    public function __construct($ticket)
+    public function __construct($event)
     {
-        $this->ticket = $ticket;
+        $this->event = new \stdClass();
+        $this->event->id = $event->id;
+        $this->event->title = $event->title;
+        $this->event->likes_count = 0;
+        $this->event->liked_by_user = false;
+        $this->event->hosted_by_user = false;
+        $this->event->applied_by_user = false;
+        $this->event->applied_by_user = false;
+        $this->event->purchased_by_user = false;
+        $this->event->participants = [];
     }
-
+    
     /**
      * Get the channels the event should broadcast on.
      *
@@ -38,6 +46,7 @@ class TicketValidated implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('ticket-validated.'. $this->ticket->id);
+        Log::debug('event',[$this->event]);
+        return new Channel('event-created', $this->event);
     }
 }

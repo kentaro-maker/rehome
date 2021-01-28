@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Events\TicketValidated;
+use App\Events\EventCreated;
+
+use App\Models\Event;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
@@ -62,7 +65,7 @@ Route::delete('/event/{event_id}/purchase', [App\Http\Controllers\EventControlle
 
 Route::get('/events/{event_id}/tickets/{ticket_id}', [App\Http\Controllers\TicketController::class, 'fetch'])->name('ticket.fetch');
 
-Route::post('/event/{event}/validate', [App\Http\Controllers\TicketController::class, 'ticketValidate'])->name('ticket.validate');
+Route::post('/event/{event_id}/validate', [App\Http\Controllers\TicketController::class, 'ticketValidate'])->name('ticket.validate');
 
 Route::post('/search', [App\Http\Controllers\CityController::class,'search']);
 Route::get('/region/{slug}', [App\Http\Controllers\CityController::class,'index'])->name('city.index');
@@ -77,5 +80,3 @@ Route::get(
 
 // 写真ダウンロード
 Route::get('/cities/{city_id}/pdf', [App\Http\Controllers\PdfController::class,'index'])->name('pdf.download');
-
-Route::get('/ticket', function () {event(new TicketValidated);});

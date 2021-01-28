@@ -1,14 +1,15 @@
 <template>
   <div class="card w-100">
     <div class="card-body">
-      <h5 class="card-title">
-        <span v-if="item.hosted_by_user" class="hosted">主催中</span>
-        <router-link :to="{name: 'event.detail', params:{id:item.id}}">
+      <h5 class="card-title title__h1">
+        <span v-if="item.hosted_by_user" class="hosted align-middle">主催中</span>
+        <span v-if="item.isNew" class="new align-middle">NEW</span>
           {{ item.title }}
+        <!--
+        <router-link :to="{name: 'event.detail', params:{id:item.id}}">
         </router-link>
-        <span class="event__place">開催地：{{ item.place }}</span>
+        -->
       </h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <button
         class="event__action event__action--like"
         :class="{ 'event__action--liked': item.liked_by_user }"

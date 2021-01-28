@@ -24,7 +24,7 @@ class TicketValidationRequest extends FormRequest
     public function rules()
     {
         return [
-            'code' => 'required|string|size:8',
+            'code' => 'required|string|size:20',
             //'token' => 'required|string|size:100',
         ];
     }

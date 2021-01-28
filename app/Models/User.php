@@ -23,7 +23,7 @@ class User extends Authenticatable
     ];
 
     protected $visible = [
-        'name',
+        'id','name',
     ];
 
     protected $casts = [

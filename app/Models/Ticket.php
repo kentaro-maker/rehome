@@ -12,7 +12,7 @@ class Ticket extends Model
 
      /** JSONに含める属性 */
      protected $visible = [
-        'event_id','user_id','code', 'validated','token',
+        'id','event_id','user_id','code', 'validated','token',
     ];
 
     public function user()

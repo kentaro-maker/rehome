@@ -20,7 +20,6 @@ class Event extends Model
         'applied_by_user',
         'purchased_by_user',
         'participants',
-        'place',
     ];
     
     protected $visible = [
@@ -31,7 +30,6 @@ class Event extends Model
         'applied_by_user',
         'purchased_by_user',
         'participants',
-        'place'
     ];
 
     public function user()
@@ -139,6 +137,15 @@ class Event extends Model
     }
 
     /**
+     * アクセサ - hosted_by_user
+     * @return boolean
+     */
+    public function setHostedByUserAttribute($is_hosted)
+    {
+        $this->hosted_by_user = $is_hosted;
+    }
+
+    /**
      * アクセサ - purchased_by_user
      * @return boolean
      */
@@ -176,19 +183,5 @@ class Event extends Model
         });
         // Log::debug('new',[$new_applies->makeVisible('name')->makeHidden(['id','event_id'])]);
         return $new_applies->makeVisible('name')->makeHidden(['id','event_id']);
-    }
-
-    /**
-     * アクセサ - place
-     * @return boolean
-     */
-    public function getPlaceAttribute()
-    {
-        if (Auth::guest()) {
-            return false;
-        }
-
-        // $this->place = "北海道";
-        return "北海道";
     }
 }

@@ -7,6 +7,8 @@ use App\Models\Comment;
 use App\Models\Ticket;
 use App\Models\Apply;
 
+use App\Events\TicketValidated;
+
 use App\Http\Requests\TicketValidationRequest;
 
 use Illuminate\Http\Request;
@@ -21,7 +23,7 @@ class TicketController extends Controller
     public function __construct()
     {
         // 認証が必要
-        $this->middleware('auth');
+        $this->middleware('auth')->except(['push']);
     }
 
     public function fetch($event_id, $ticket_id)
@@ -42,20 +44,20 @@ class TicketController extends Controller
     }
 
 
-    public function ticketValidate(Event $event, TicketValidationRequest $request)
+    public function ticketValidate($event_id, TicketValidationRequest $request)
     {
         
-        $ticket = $event->tickets()->where('code',$request->code)->first();
+        $ticket = Event::find($event_id)->tickets()->where('code',$request->code)->first();
+        Log::debug('message',[$ticket]);
         $ticket->validated = true;
         $ticket->save();
-        Log::debug('ev',[$event]);
-        Log::debug('code',[$request->code]);
-        Log::debug('ticket',[$ticket]);
         
         // // authorリレーションをロードするためにコメントを取得しなおす
         // $new_comment = Comment::where('id', $comment->id)->with('author')->first();
 
+        event(new TicketValidated($ticket));
+
          return response($ticket, 200);
-    
     }
+
 }

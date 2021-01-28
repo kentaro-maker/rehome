@@ -199,10 +199,21 @@ export default {
       
       this.events = this.events.map(event => {
           event.isProcessing =false
+          event.isNew = false
         
         return event
       })
     }
+  },
+  mounted() {
+      window.Echo.channel('event-created').listen('EventCreated',response => {
+        console.log('received a message');
+        console.log(response.event);
+        var e = response.event
+        e.isNew = true
+        e.isProcessing = false
+        this.events.unshift(e);
+      });
   },
   watch: {
     $route: {

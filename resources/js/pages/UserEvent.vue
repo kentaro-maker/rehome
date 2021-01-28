@@ -131,14 +131,6 @@
                                         <div class="col-3 d-flex align-content-center flex-wrap justify-content-end" style="font-size:1.2rem;"><span>イベント名</span></div>
                                         <div class="col-6" style="font-size:3rem; font-weight:bold">{{ h.title }}</div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-3 d-flex align-content-center flex-wrap justify-content-end" style="font-size:1.2rem;">開催地</div>
-                                        <div class="col-6" style="font-size:2rem;">北海道</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-3 d-flex align-content-center flex-wrap justify-content-end" style="font-size:1.2rem;">開催日</div>
-                                        <div class="col-6" style="font-size:2rem;">2021年2月10日</div>
-                                    </div>
                                 </div><!-- end of tab 1 -->
                                 <div v-show="hosted_tab[index].tab === 2">
                                     <ul v-if="h.participants.length == 0" class="list-group list-group-flush">
@@ -191,8 +183,8 @@
                                         <button type="submit" class="button">作成</button>
                                     </form>
                                 </div><!-- end of tab 3 -->
-                                <div v-show="hosted_tab[index].tab === 4">
-                                    <form class="form-inline justify-content-center" @submit.prevent="validateCode(h.id,code[h.id])">
+                                <div v-show="hosted_tab[index].tab === 4" class="justify-content-center" >
+                                    <form class="form-inline justify-content-center" @submit.prevent="validateCode(h.id,sw[index].code)">
                                         <div v-if="createEventErrors" class="errors">
                                             <ul v-if="createEventErrors.title">
                                                 <li v-for="msg in createEventErrors.title" :key="msg">{{ msg }}</li>
@@ -200,21 +192,23 @@
                                         </div>
                                         <div class="form-group">
                                             <label :for="'event_code--' + h.id" class="col-form-label">チケットコード</label>
-                                            <input type="text" :id="'event_code--' + h.id" class="form--ticket ml-5 mr-5" v-model="code[h.id]"/>
+                                            <input type="text" :id="'event_code--' + h.id" class="form--ticket ml-5 mr-5" v-model="sw[index].code"/>
                                         </div>
                                         <div class="">
                                             <button type="submit" class="button">認証</button>
                                         </div>
                                     </form>
                                     <p class="error">{{ error }}</p>
-                                    <div style="width:400px;height:auto;" v-if="sw[index].cap" :key="sw[index].cap">
+                                    <div style="width:400px;height:auto;margin:0 auto;" v-if="sw[index].cap" :key="sw[index].cap">
                                         <QrcodeStream @decode="onDecode" @init="onInit"/>
                                     </div>
-                                    <button class="button" @click="sw[index].cap = ! sw[index].cap">
-                                        <font-awesome-icon class="icon" icon="camera" />
-                                        <span v-if="sw[index].cap">OFF</span>
-                                        <span v-else>ON</span>
-                                    </button>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <button class="button" @click="switchCamera(index)">
+                                            <font-awesome-icon class="icon" icon="camera" />
+                                            <span v-if="sw[index].cap">OFF</span>
+                                            <span v-else>ON</span>
+                                        </button>
+                                    </div>
                                 </div><!--- end of tab 4 -->
                             </div><!-- end of card body -->
                         </div><!-- end of card -->
@@ -276,14 +270,6 @@
                                     <div class="row">
                                         <div class="col-3 d-flex align-content-center flex-wrap justify-content-end" style="font-size:1.2rem;"><span>イベント名</span></div>
                                         <div class="col-6" style="font-size:3rem; font-weight:bold">{{ p.event.title }}</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-3 d-flex align-content-center flex-wrap justify-content-end" style="font-size:1.2rem;">開催地</div>
-                                        <div class="col-6" style="font-size:2rem;">北海道</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-3 d-flex align-content-center flex-wrap justify-content-end" style="font-size:1.2rem;">開催日</div>
-                                        <div class="col-6" style="font-size:2rem;">2021年2月10日</div>
                                     </div>
                                 </div><!-- end of tab 1 -->
                                 <div v-show="participated_tab[index].tab === 2">
@@ -366,7 +352,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row m-0">
+                                        <div class="row m-0 justify-content-center">
                                             <VueQrcode v-if="p.ticket.code" :value="p.ticket.code" :options="option" tag="img" />
                                         </div>
                                     </div>
@@ -397,14 +383,6 @@
                                     <div class="col-2 d-flex align-content-center flex-wrap justify-content-end" style="font-size:1.2rem;"><span>イベント名</span></div>
                                     <div class="col-8" style="font-size:3rem; font-weight:bold">{{ l.title }}</div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-2 d-flex align-content-center flex-wrap justify-content-end" style="font-size:1.2rem;">開催地</div>
-                                    <div class="col-8" style="font-size:2rem;">北海道</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-2 d-flex align-content-center flex-wrap justify-content-end" style="font-size:1.2rem;">開催日</div>
-                                    <div class="col-8" style="font-size:2rem;">2021年2月10日</div>
-                                </div>
                             </div><!-- end of card body -->
                         </div><!-- end of card --><!-- end of liked loop -->
                         <Pagination :current-page="liked_page.current" :last-page="liked_page.last" />
@@ -423,18 +401,6 @@
                                     <label for="title" class="col-sm-2 col-form-label">タイトル</label>
                                     <div class="col-sm-10">
                                         <input type="text" id="title" class="form-control" placeholder="タイトル" v-model="eventForm.title"/>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="place" class="col-sm-2 col-form-label">開催地</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" placeholder="開催地" id="plcae" v-model="eventForm.place"/>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="date" class="col-sm-2 col-form-label">開催日</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" placeholder="開催日" id="date" v-model="eventForm.date"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -506,8 +472,6 @@ export default {
             new_tab_title: '',
             eventForm: {
                 title: '',
-                place: '北海道',
-                date: '2020年2月10日',
             },
             code:[],
             showCreateEventForm: false,
@@ -563,9 +527,26 @@ export default {
     },
     methods: {
          onDecode (result,id) {
-      console.log(result)
-      this.result = result
-    },
+            console.log(result)
+            this.result = result
+            this.sw = this.sw.map(sw => {
+                if(sw.cap){
+                    sw.code = result
+                }
+                return sw
+            })
+         },
+        switchCamera(index) {
+            this.sw = this.sw.map((sw,i) => {
+                console.log(sw)
+                if(i == index){
+                    sw.cap = !sw.cap
+                }else{
+                    sw.cap = false
+                }
+                return sw
+            })
+        },
     async onInit (promise) {
       try {
         await promise
@@ -718,6 +699,11 @@ export default {
                 if(p.event.id == response.data.event_id){
                     p.event.purchased_by_user = true
                     p.ticket = response.data.ticket
+                    window.Echo.private('ticket-validated.'+ p.ticket.id).listen('TicketValidated',response => {
+                        console.log('received a message')
+                        console.log(response);
+                        p.ticket.validated = response.ticket.validated
+                    });
                 }
                 console.log(p)
                 return p
@@ -780,11 +766,20 @@ export default {
                 var o = new Object()
                 o['tab'] = 1
                 this.hosted_tab.push(o)
-                var cap = new Object()
-                cap['cap'] = false
-                var code = new Object()
-                code['code'] = ''
-                this.sw.push(code)
+                var sw = new Object()
+                sw['cap'] = false
+                sw['code'] = ''
+                this.sw.push(sw)
+
+                window.Echo.private('user-applied-event.'+ event.id).listen('UserApplied',response => {
+                    console.log('received a message')
+                    console.log(response);
+                    var user = new Object()
+                    user['user_id'] = response.user.id
+                    user['name'] = response.user.name
+                    user['approved'] = null
+                    event.participants.unshift(user)
+                });
             })
 
             console.log(this.sw)
@@ -803,10 +798,24 @@ export default {
             console.log(response)
             this.participated = response.data.data
             this.participated_total = response.data.total
-            this.participated.forEach(event => {
+            this.participated.forEach(apply => {
                 var o = new Object()
                 o['tab'] = 1
                 this.participated_tab.push(o)
+                window.Echo.private('user-approved-apply.'+ apply.id).listen('UserApproved',response => {
+                    console.log('received a message')
+                    console.log(response);
+                    apply.approved = response.apply.approved
+                });
+                if(apply.ticket){
+                    console.log(apply.ticket.id)
+                    window.Echo.private('ticket-validated.'+ apply.ticket.id).listen('TicketValidated',response => {
+                        console.log('received a message')
+                        console.log(response);
+                        apply.ticket.validated = response.ticket.validated
+                    });
+                }
+
             })
             this.participated_loading = false
         },
@@ -844,6 +853,9 @@ export default {
     },
     created() {
         this.clearError()
+    },
+    mounted() {
+      
     },
      watch: {
         $route: {

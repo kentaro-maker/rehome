@@ -10,15 +10,13 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-use Illuminate\Support\Facades\Auth;
-
-class TicketValidated implements ShouldBroadcast
+class UserApproved implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
+    public $apply;
+    public $user;
 
-    public $ticket;
-    
     public $afterCommit = true;
 
     /**
@@ -26,9 +24,10 @@ class TicketValidated implements ShouldBroadcast
      *
      * @return void
      */
-    public function __construct($ticket)
+    public function __construct($apply, $user)
     {
-        $this->ticket = $ticket;
+        $this->apply = $apply;
+        $this->user = $user;
     }
 
     /**
@@ -38,6 +37,6 @@ class TicketValidated implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('ticket-validated.'. $this->ticket->id);
+        return new PrivateChannel('user-approved-apply.'.$this->apply->id, $this->user);
     }
 }

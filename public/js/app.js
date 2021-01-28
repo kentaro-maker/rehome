@@ -18020,6 +18020,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     item: {
@@ -18178,6 +18179,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var _components$methods$c;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 //
 //
 //
@@ -18211,7 +18224,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({
+//
+/* harmony default export */ __webpack_exports__["default"] = (_components$methods$c = {
   components: {},
   methods: {},
   computed: {
@@ -18222,7 +18236,41 @@ __webpack_require__.r(__webpack_exports__);
       return this.$store.getters['auth/username'];
     }
   }
-});
+}, _defineProperty(_components$methods$c, "methods", {
+  send: function send() {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var response;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              // console.log("PUSH")
+              // const response = await axios.put(`/api/ticket`)
+              // console.log(response)
+              console.log("EVENT_CREATED");
+              _context.next = 3;
+              return axios.get("/api/eventcreated");
+
+            case 3:
+              response = _context.sent;
+              console.log(response);
+
+            case 5:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
+  }
+}), _defineProperty(_components$methods$c, "mounted", function mounted() {
+  // window.Echo.channel("ticketValidate").listen(".ticket-validated", e => {
+  //   alert(e)
+  // });
+  window.Echo["private"]("ticketValidate." + this.$store.getters['auth/userid']).listen(".ticket-validated", function (e) {
+    alert(e);
+  });
+}), _components$methods$c);
 
 /***/ }),
 
@@ -19692,6 +19740,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _this5.to = response.data.to;
                 _this5.events = _this5.events.map(function (event) {
                   event.isProcessing = false;
+                  event.isNew = false;
                   return event;
                 });
 
@@ -19704,10 +19753,23 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }))();
     }
   },
+  mounted: function mounted() {
+    var _this6 = this;
+
+    window.Echo.channel('event-created').listen('EventCreated', function (response) {
+      console.log('received a message');
+      console.log(response.event);
+      var e = response.event;
+      e.isNew = true;
+      e.isProcessing = false;
+
+      _this6.events.unshift(e);
+    });
+  },
   watch: {
     $route: {
       handler: function handler() {
-        var _this6 = this;
+        var _this7 = this;
 
         return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6() {
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee6$(_context6) {
@@ -19715,7 +19777,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               switch (_context6.prev = _context6.next) {
                 case 0:
                   _context6.next = 2;
-                  return _this6.fetchEvents();
+                  return _this7.fetchEvents();
 
                 case 2:
                 case "end":
@@ -20577,40 +20639,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -20639,9 +20667,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       new_tab: false,
       new_tab_title: '',
       eventForm: {
-        title: '',
-        place: '北海道',
-        date: '2020年2月10日'
+        title: ''
       },
       code: [],
       showCreateEventForm: false,
@@ -20711,6 +20737,26 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     onDecode: function onDecode(result, id) {
       console.log(result);
       this.result = result;
+      this.sw = this.sw.map(function (sw) {
+        if (sw.cap) {
+          sw.code = result;
+        }
+
+        return sw;
+      });
+    },
+    switchCamera: function switchCamera(index) {
+      this.sw = this.sw.map(function (sw, i) {
+        console.log(sw);
+
+        if (i == index) {
+          sw.cap = !sw.cap;
+        } else {
+          sw.cap = false;
+        }
+
+        return sw;
+      });
     },
     onInit: function onInit(promise) {
       var _this = this;
@@ -21015,6 +21061,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                   if (p.event.id == response.data.event_id) {
                     p.event.purchased_by_user = true;
                     p.ticket = response.data.ticket;
+                    window.Echo["private"]('ticket-validated.' + p.ticket.id).listen('TicketValidated', function (response) {
+                      console.log('received a message');
+                      console.log(response);
+                      p.ticket.validated = response.ticket.validated;
+                    });
                   }
 
                   console.log(p);
@@ -21169,12 +21220,21 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
                   _this9.hosted_tab.push(o);
 
-                  var cap = new Object();
-                  cap['cap'] = false;
-                  var code = new Object();
-                  code['code'] = '';
+                  var sw = new Object();
+                  sw['cap'] = false;
+                  sw['code'] = '';
 
-                  _this9.sw.push(code);
+                  _this9.sw.push(sw);
+
+                  window.Echo["private"]('user-applied-event.' + event.id).listen('UserApplied', function (response) {
+                    console.log('received a message');
+                    console.log(response);
+                    var user = new Object();
+                    user['user_id'] = response.user.id;
+                    user['name'] = response.user.name;
+                    user['approved'] = null;
+                    event.participants.unshift(user);
+                  });
                 });
 
                 console.log(_this9.sw);
@@ -21218,11 +21278,26 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 _this10.participated = response.data.data;
                 _this10.participated_total = response.data.total;
 
-                _this10.participated.forEach(function (event) {
+                _this10.participated.forEach(function (apply) {
                   var o = new Object();
                   o['tab'] = 1;
 
                   _this10.participated_tab.push(o);
+
+                  window.Echo["private"]('user-approved-apply.' + apply.id).listen('UserApproved', function (response) {
+                    console.log('received a message');
+                    console.log(response);
+                    apply.approved = response.apply.approved;
+                  });
+
+                  if (apply.ticket) {
+                    console.log(apply.ticket.id);
+                    window.Echo["private"]('ticket-validated.' + apply.ticket.id).listen('TicketValidated', function (response) {
+                      console.log('received a message');
+                      console.log(response);
+                      apply.ticket.validated = response.ticket.validated;
+                    });
+                  }
                 });
 
                 _this10.participated_loading = false;
@@ -21294,6 +21369,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   created: function created() {
     this.clearError();
   },
+  mounted: function mounted() {},
   watch: {
     $route: {
       handler: function handler() {
@@ -64170,35 +64246,17 @@ var render = function() {
       "div",
       { staticClass: "card-body" },
       [
-        _c(
-          "h5",
-          { staticClass: "card-title" },
-          [
-            _vm.item.hosted_by_user
-              ? _c("span", { staticClass: "hosted" }, [_vm._v("主催中")])
-              : _vm._e(),
-            _vm._v(" "),
-            _c(
-              "router-link",
-              {
-                attrs: {
-                  to: { name: "event.detail", params: { id: _vm.item.id } }
-                }
-              },
-              [_vm._v("\n        " + _vm._s(_vm.item.title) + "\n      ")]
-            ),
-            _vm._v(" "),
-            _c("span", { staticClass: "event__place" }, [
-              _vm._v("開催地：" + _vm._s(_vm.item.place))
-            ])
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c("p", { staticClass: "card-text" }, [
-          _vm._v(
-            "With supporting text below as a natural lead-in to additional content."
-          )
+        _c("h5", { staticClass: "card-title title__h1" }, [
+          _vm.item.hosted_by_user
+            ? _c("span", { staticClass: "hosted align-middle" }, [
+                _vm._v("主催中")
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.item.isNew
+            ? _c("span", { staticClass: "new align-middle" }, [_vm._v("NEW")])
+            : _vm._e(),
+          _vm._v("\n        " + _vm._s(_vm.item.title) + "\n      ")
         ]),
         _vm._v(" "),
         _c(
@@ -64647,7 +64705,19 @@ var render = function() {
               ],
               1
             )
-          : _vm._e()
+          : _vm._e(),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            on: {
+              click: function($event) {
+                return _vm.send()
+              }
+            }
+          },
+          [_vm._v("API")]
+        )
       ])
     ],
     1
@@ -66607,11 +66677,7 @@ var render = function() {
                               },
                               [_vm._v(_vm._s(h.title))]
                             )
-                          ]),
-                          _vm._v(" "),
-                          _vm._m(4, true),
-                          _vm._v(" "),
-                          _vm._m(5, true)
+                          ])
                         ]
                       ),
                       _vm._v(" "),
@@ -66632,7 +66698,7 @@ var render = function() {
                             ? _c(
                                 "ul",
                                 { staticClass: "list-group list-group-flush" },
-                                [_vm._m(6, true)]
+                                [_vm._m(4, true)]
                               )
                             : _c(
                                 "ul",
@@ -66896,7 +66962,8 @@ var render = function() {
                               value: _vm.hosted_tab[index].tab === 4,
                               expression: "hosted_tab[index].tab === 4"
                             }
-                          ]
+                          ],
+                          staticClass: "justify-content-center"
                         },
                         [
                           _c(
@@ -66906,7 +66973,10 @@ var render = function() {
                               on: {
                                 submit: function($event) {
                                   $event.preventDefault()
-                                  return _vm.validateCode(h.id, _vm.code[h.id])
+                                  return _vm.validateCode(
+                                    h.id,
+                                    _vm.sw[index].code
+                                  )
                                 }
                               }
                             },
@@ -66945,8 +67015,8 @@ var render = function() {
                                     {
                                       name: "model",
                                       rawName: "v-model",
-                                      value: _vm.code[h.id],
-                                      expression: "code[h.id]"
+                                      value: _vm.sw[index].code,
+                                      expression: "sw[index].code"
                                     }
                                   ],
                                   staticClass: "form--ticket ml-5 mr-5",
@@ -66954,15 +67024,15 @@ var render = function() {
                                     type: "text",
                                     id: "event_code--" + h.id
                                   },
-                                  domProps: { value: _vm.code[h.id] },
+                                  domProps: { value: _vm.sw[index].code },
                                   on: {
                                     input: function($event) {
                                       if ($event.target.composing) {
                                         return
                                       }
                                       _vm.$set(
-                                        _vm.code,
-                                        h.id,
+                                        _vm.sw[index],
+                                        "code",
                                         $event.target.value
                                       )
                                     }
@@ -66970,7 +67040,7 @@ var render = function() {
                                 })
                               ]),
                               _vm._v(" "),
-                              _vm._m(7, true)
+                              _vm._m(5, true)
                             ]
                           ),
                           _vm._v(" "),
@@ -66985,7 +67055,8 @@ var render = function() {
                                   key: _vm.sw[index].cap,
                                   staticStyle: {
                                     width: "400px",
-                                    height: "auto"
+                                    height: "auto",
+                                    margin: "0 auto"
                                   }
                                 },
                                 [
@@ -67001,26 +67072,34 @@ var render = function() {
                             : _vm._e(),
                           _vm._v(" "),
                           _c(
-                            "button",
+                            "div",
                             {
-                              staticClass: "button",
-                              on: {
-                                click: function($event) {
-                                  _vm.sw[index].cap = !_vm.sw[index].cap
-                                }
-                              }
+                              staticClass: "d-flex justify-content-center mt-4"
                             },
                             [
-                              _c("font-awesome-icon", {
-                                staticClass: "icon",
-                                attrs: { icon: "camera" }
-                              }),
-                              _vm._v(" "),
-                              _vm.sw[index].cap
-                                ? _c("span", [_vm._v("OFF")])
-                                : _c("span", [_vm._v("ON")])
-                            ],
-                            1
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "button",
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.switchCamera(index)
+                                    }
+                                  }
+                                },
+                                [
+                                  _c("font-awesome-icon", {
+                                    staticClass: "icon",
+                                    attrs: { icon: "camera" }
+                                  }),
+                                  _vm._v(" "),
+                                  _vm.sw[index].cap
+                                    ? _c("span", [_vm._v("OFF")])
+                                    : _c("span", [_vm._v("ON")])
+                                ],
+                                1
+                              )
+                            ]
                           )
                         ]
                       )
@@ -67060,7 +67139,7 @@ var render = function() {
               },
               [
                 _c("div", { staticClass: "card" }, [
-                  _vm._m(8),
+                  _vm._m(6),
                   _vm._v(" "),
                   _c("div", { staticClass: "card-body" }, [_c("Loader")], 1)
                 ])
@@ -67093,7 +67172,7 @@ var render = function() {
                     ],
                     staticClass: "card"
                   },
-                  [_vm._m(9)]
+                  [_vm._m(7)]
                 ),
                 _vm._v(" "),
                 _vm._l(_vm.participated, function(p, index) {
@@ -67213,7 +67292,7 @@ var render = function() {
                         },
                         [
                           _c("div", { staticClass: "row" }, [
-                            _vm._m(10, true),
+                            _vm._m(8, true),
                             _vm._v(" "),
                             _c(
                               "div",
@@ -67226,11 +67305,7 @@ var render = function() {
                               },
                               [_vm._v(_vm._s(p.event.title))]
                             )
-                          ]),
-                          _vm._v(" "),
-                          _vm._m(11, true),
-                          _vm._v(" "),
-                          _vm._m(12, true)
+                          ])
                         ]
                       ),
                       _vm._v(" "),
@@ -67699,7 +67774,10 @@ var render = function() {
                                   _vm._v(" "),
                                   _c(
                                     "div",
-                                    { staticClass: "row m-0" },
+                                    {
+                                      staticClass:
+                                        "row m-0 justify-content-center"
+                                    },
                                     [
                                       p.ticket.code
                                         ? _c("VueQrcode", {
@@ -67785,14 +67863,14 @@ var render = function() {
                     ],
                     staticClass: "card"
                   },
-                  [_vm._m(13)]
+                  [_vm._m(9)]
                 ),
                 _vm._v(" "),
                 _vm._l(_vm.liked, function(l, index) {
                   return _c("div", { staticClass: "card grid__item" }, [
                     _c("div", { staticClass: "card-body" }, [
                       _c("div", { staticClass: "row" }, [
-                        _vm._m(14, true),
+                        _vm._m(10, true),
                         _vm._v(" "),
                         _c(
                           "div",
@@ -67805,11 +67883,7 @@ var render = function() {
                           },
                           [_vm._v(_vm._s(l.title))]
                         )
-                      ]),
-                      _vm._v(" "),
-                      _vm._m(15, true),
-                      _vm._v(" "),
-                      _vm._m(16, true)
+                      ])
                     ])
                   ])
                 }),
@@ -67914,93 +67988,7 @@ var render = function() {
                       ])
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "form-group row" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "col-sm-2 col-form-label",
-                          attrs: { for: "place" }
-                        },
-                        [_vm._v("開催地")]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-sm-10" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.eventForm.place,
-                              expression: "eventForm.place"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "text",
-                            placeholder: "開催地",
-                            id: "plcae"
-                          },
-                          domProps: { value: _vm.eventForm.place },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.eventForm,
-                                "place",
-                                $event.target.value
-                              )
-                            }
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "form-group row" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "col-sm-2 col-form-label",
-                          attrs: { for: "date" }
-                        },
-                        [_vm._v("開催日")]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-sm-10" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.eventForm.date,
-                              expression: "eventForm.date"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "text",
-                            placeholder: "開催日",
-                            id: "date"
-                          },
-                          domProps: { value: _vm.eventForm.date },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.eventForm,
-                                "date",
-                                $event.target.value
-                              )
-                            }
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(17)
+                    _vm._m(11)
                   ]
                 )
               ])
@@ -68078,50 +68066,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "col-3 d-flex align-content-center flex-wrap justify-content-end",
-          staticStyle: { "font-size": "1.2rem" }
-        },
-        [_vm._v("開催地")]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-6", staticStyle: { "font-size": "2rem" } },
-        [_vm._v("北海道")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "col-3 d-flex align-content-center flex-wrap justify-content-end",
-          staticStyle: { "font-size": "1.2rem" }
-        },
-        [_vm._v("開催日")]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-6", staticStyle: { "font-size": "2rem" } },
-        [_vm._v("2021年2月10日")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("li", { staticClass: "list-group-item text-center" }, [
       _c("div", { staticStyle: { "font-size": "1.5rem" } }, [
         _vm._v("参加者がいません")
@@ -68190,50 +68134,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "col-3 d-flex align-content-center flex-wrap justify-content-end",
-          staticStyle: { "font-size": "1.2rem" }
-        },
-        [_vm._v("開催地")]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-6", staticStyle: { "font-size": "2rem" } },
-        [_vm._v("北海道")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "col-3 d-flex align-content-center flex-wrap justify-content-end",
-          staticStyle: { "font-size": "1.2rem" }
-        },
-        [_vm._v("開催日")]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-6", staticStyle: { "font-size": "2rem" } },
-        [_vm._v("2021年2月10日")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-body" }, [
       _c("ul", { staticClass: "list-group list-group-flush" }, [
         _c("li", { staticClass: "list-group-item text-center" }, [
@@ -68257,50 +68157,6 @@ var staticRenderFns = [
       },
       [_c("span", [_vm._v("イベント名")])]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "col-2 d-flex align-content-center flex-wrap justify-content-end",
-          staticStyle: { "font-size": "1.2rem" }
-        },
-        [_vm._v("開催地")]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-8", staticStyle: { "font-size": "2rem" } },
-        [_vm._v("北海道")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "col-2 d-flex align-content-center flex-wrap justify-content-end",
-          staticStyle: { "font-size": "1.2rem" }
-        },
-        [_vm._v("開催日")]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-8", staticStyle: { "font-size": "2rem" } },
-        [_vm._v("2021年2月10日")]
-      )
-    ])
   },
   function() {
     var _vm = this
@@ -96805,7 +96661,7 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_1__["default"]({
   broadcaster: 'pusher',
   key: "c4de30226ede65154fb2",
   cluster: "ap3",
-  forceTLS: true
+  encrypted: true
 });
 
 /***/ }),
@@ -98374,6 +98230,9 @@ var getters = {
   },
   username: function username(state) {
     return state.user ? state.user.name : '';
+  },
+  userid: function userid(state) {
+    return state.user ? state.user.id : '';
   }
 };
 var mutations = {
