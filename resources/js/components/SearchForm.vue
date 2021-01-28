@@ -49,6 +49,8 @@ export default {
         return {
             loading: false,
             errors: null,
+            searchErrors: null,
+            keywordForm: null,
             keyword: '',
         }
     },

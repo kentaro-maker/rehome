@@ -27,7 +27,6 @@
           イベントを作る
         </router-link>
       </div>
-      <button @click="send()">API</button>
     </div>
   </nav>
 </template>
@@ -48,24 +47,6 @@ export default {
     username () {
       return this.$store.getters['auth/username']
     }
-  },
-  methods: {
-    async send(){
-      // console.log("PUSH")
-      // const response = await axios.put(`/api/ticket`)
-      // console.log(response)
-      console.log("EVENT_CREATED")
-      const response = await axios.get(`/api/eventcreated`)
-      console.log(response)
-    }
-  },
-  mounted() {
-        // window.Echo.channel("ticketValidate").listen(".ticket-validated", e => {
-        //   alert(e)
-        // });
-        window.Echo.private("ticketValidate."+this.$store.getters['auth/userid']).listen(".ticket-validated", e => {
-           alert(e)
-        });
   },
 }
 </script>

@@ -771,6 +771,7 @@ export default {
                 sw['code'] = ''
                 this.sw.push(sw)
 
+                
                 window.Echo.private('user-applied-event.'+ event.id).listen('UserApplied',response => {
                     console.log('received a message')
                     console.log(response);
@@ -854,10 +855,16 @@ export default {
     created() {
         this.clearError()
     },
-    mounted() {
-      
+    destroyed() {
+        this.hosted.forEach(event => {
+                var ch = window.Echo.leaveChannel('user-applied-event.'+ event.id)
+                console.log(ch)
+        })
     },
-     watch: {
+    watch: {
+        hosted: function () {
+            console.log('hosted watcher')
+        },
         $route: {
             async handler () {
                 await this.fetchHosted()

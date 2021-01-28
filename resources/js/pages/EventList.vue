@@ -215,6 +215,9 @@ export default {
         this.events.unshift(e);
       });
   },
+  destroyed() {
+      window.Echo.leaveChannel('event-created')
+  },
   watch: {
     $route: {
       async handler () {
