@@ -17,13 +17,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active card-image-out">
-                            <img class="d-block card-img-top card-image-in" :src="imgList[0].src" alt="First slide">
+                            <img class="d-block card-img-top card-image-in" src="https://i.ibb.co/0BVRXmm/Kitami-Hokkaido-Japan.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item card-image-out">
-                        <img class="d-block card-img-top card-image-in" :src="imgList[1].src" alt="Second slide">
+                        <img class="d-block card-img-top card-image-in" src="https://i.ibb.co/gwDzfRC/furano-4.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item card-image-out">
-                        <img class="d-block card-img-top card-image-in" :src="imgList[2].src" alt="Third slide">
+                        <img class="d-block card-img-top card-image-in" src="https://i.ibb.co/Wxj0nmV/asahikawa-1.jpg" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

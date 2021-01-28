@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <router-link class="navbar__brand" to="/">
-      <img src="/storage/images/logo.svg" class="navbar__brand--logo"/>
+      <img src="https://i.ibb.co/2qq7xRK/logo.png" class="navbar__brand--logo"/>
       rehome++
     </router-link>
     <div class="navbar__menu">

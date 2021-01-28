@@ -199,7 +199,7 @@
                                         </div>
                                     </form>
                                     <p class="error">{{ error }}</p>
-                                    <div style="width:400px;height:auto;margin:0 auto;" v-if="sw[index].cap" :key="sw[index].cap">
+                                    <div style="width:100%;height:auto;margin:0 auto;" v-if="sw[index].cap" :key="sw[index].cap">
                                         <QrcodeStream @decode="onDecode" @init="onInit"/>
                                     </div>
                                     <div class="d-flex justify-content-center mt-4">

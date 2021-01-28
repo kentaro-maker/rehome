@@ -63944,22 +63944,7 @@ var render = function() {
               ],
               staticClass: "container-fluid p-0"
             },
-            [
-              _c("div", { staticClass: "row m-0" }, [
-                _vm._m(0),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-6 p-0 order-1 order-sm-2" },
-                  [
-                    _c("img", {
-                      staticClass: "img-fluid",
-                      attrs: { src: _vm.welcomeImg, alt: "Responsive image" }
-                    })
-                  ]
-                )
-              ])
-            ]
+            [_vm._m(0)]
           )
         ],
         1
@@ -63977,19 +63962,31 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "col p-0 order-2 order-sm-1 d-flex flex-column align-items-center text-center justify-content-center",
-        attrs: { id: "welcome_board" }
-      },
-      [
-        _c("h1", { staticClass: "title__h1" }, [
-          _vm._v("あなたにぴったりの町を探そう")
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "row m-0" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "col p-0 order-2 order-sm-1 d-flex flex-column align-items-center text-center justify-content-center",
+          attrs: { id: "welcome_board" }
+        },
+        [
+          _c("h1", { staticClass: "title__h1" }, [
+            _vm._v("あなたにぴったりの町を探そう")
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-12 col-sm-6 p-0 order-1 order-sm-2" }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: {
+            src: "https://i.ibb.co/W3zC18S/welcome.jpg",
+            alt: "Responsive image"
+          }
+        })
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -64616,7 +64613,7 @@ var render = function() {
       _c("router-link", { staticClass: "navbar__brand", attrs: { to: "/" } }, [
         _c("img", {
           staticClass: "navbar__brand--logo",
-          attrs: { src: "/storage/images/logo.svg" }
+          attrs: { src: "https://i.ibb.co/2qq7xRK/logo.png" }
         }),
         _vm._v("\n    rehome++\n  ")
       ]),
@@ -64854,7 +64851,11 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "col-12 col-md-6 order-ms-2 order-1" }, [
         _c("img", {
-          attrs: { src: "/storage/images/zenkoku.svg", usemap: "#image-map" }
+          staticStyle: { "max-width": "100%" },
+          attrs: {
+            src: "https://i.ibb.co/L1WvH8M/zenkoku.png",
+            usemap: "#image-map"
+          }
         })
       ])
     ]),
@@ -65067,50 +65068,7 @@ var render = function() {
           },
           [
             _c("div", { staticClass: "card col-10 col-sm-9 col-md-8 mb-4" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "carousel slide",
-                  attrs: {
-                    id: "carouselExampleIndicators",
-                    "data-ride": "carousel"
-                  }
-                },
-                [
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "carousel-inner" }, [
-                    _c(
-                      "div",
-                      { staticClass: "carousel-item active card-image-out" },
-                      [
-                        _c("img", {
-                          staticClass: "d-block card-img-top card-image-in",
-                          attrs: { src: _vm.imgList[0].src, alt: "First slide" }
-                        })
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "carousel-item card-image-out" }, [
-                      _c("img", {
-                        staticClass: "d-block card-img-top card-image-in",
-                        attrs: { src: _vm.imgList[1].src, alt: "Second slide" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "carousel-item card-image-out" }, [
-                      _c("img", {
-                        staticClass: "d-block card-img-top card-image-in",
-                        attrs: { src: _vm.imgList[2].src, alt: "Third slide" }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(1),
-                  _vm._v(" "),
-                  _vm._m(2)
-                ]
-              ),
+              _vm._m(0),
               _vm._v(" "),
               _c("div", { staticClass: "card-body" }, [
                 _c(
@@ -65264,75 +65222,108 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("ol", { staticClass: "carousel-indicators" }, [
-      _c("li", {
-        staticClass: "active",
-        attrs: {
-          "data-target": "#carouselExampleIndicators",
-          "data-slide-to": "0"
-        }
-      }),
-      _vm._v(" "),
-      _c("li", {
-        attrs: {
-          "data-target": "#carouselExampleIndicators",
-          "data-slide-to": "1"
-        }
-      }),
-      _vm._v(" "),
-      _c("li", {
-        attrs: {
-          "data-target": "#carouselExampleIndicators",
-          "data-slide-to": "2"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c(
-      "a",
+      "div",
       {
-        staticClass: "carousel-control-prev",
-        attrs: {
-          href: "#carouselExampleIndicators",
-          role: "button",
-          "data-slide": "prev"
-        }
+        staticClass: "carousel slide",
+        attrs: { id: "carouselExampleIndicators", "data-ride": "carousel" }
       },
       [
-        _c("span", {
-          staticClass: "carousel-control-prev-icon",
-          attrs: { "aria-hidden": "true" }
-        }),
+        _c("ol", { staticClass: "carousel-indicators" }, [
+          _c("li", {
+            staticClass: "active",
+            attrs: {
+              "data-target": "#carouselExampleIndicators",
+              "data-slide-to": "0"
+            }
+          }),
+          _vm._v(" "),
+          _c("li", {
+            attrs: {
+              "data-target": "#carouselExampleIndicators",
+              "data-slide-to": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("li", {
+            attrs: {
+              "data-target": "#carouselExampleIndicators",
+              "data-slide-to": "2"
+            }
+          })
+        ]),
         _vm._v(" "),
-        _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        staticClass: "carousel-control-next",
-        attrs: {
-          href: "#carouselExampleIndicators",
-          role: "button",
-          "data-slide": "next"
-        }
-      },
-      [
-        _c("span", {
-          staticClass: "carousel-control-next-icon",
-          attrs: { "aria-hidden": "true" }
-        }),
+        _c("div", { staticClass: "carousel-inner" }, [
+          _c("div", { staticClass: "carousel-item active card-image-out" }, [
+            _c("img", {
+              staticClass: "d-block card-img-top card-image-in",
+              attrs: {
+                src: "https://i.ibb.co/0BVRXmm/Kitami-Hokkaido-Japan.jpg",
+                alt: "First slide"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "carousel-item card-image-out" }, [
+            _c("img", {
+              staticClass: "d-block card-img-top card-image-in",
+              attrs: {
+                src: "https://i.ibb.co/gwDzfRC/furano-4.jpg",
+                alt: "Second slide"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "carousel-item card-image-out" }, [
+            _c("img", {
+              staticClass: "d-block card-img-top card-image-in",
+              attrs: {
+                src: "https://i.ibb.co/Wxj0nmV/asahikawa-1.jpg",
+                alt: "Third slide"
+              }
+            })
+          ])
+        ]),
         _vm._v(" "),
-        _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+        _c(
+          "a",
+          {
+            staticClass: "carousel-control-prev",
+            attrs: {
+              href: "#carouselExampleIndicators",
+              role: "button",
+              "data-slide": "prev"
+            }
+          },
+          [
+            _c("span", {
+              staticClass: "carousel-control-prev-icon",
+              attrs: { "aria-hidden": "true" }
+            }),
+            _vm._v(" "),
+            _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "carousel-control-next",
+            attrs: {
+              href: "#carouselExampleIndicators",
+              role: "button",
+              "data-slide": "next"
+            }
+          },
+          [
+            _c("span", {
+              staticClass: "carousel-control-next-icon",
+              attrs: { "aria-hidden": "true" }
+            }),
+            _vm._v(" "),
+            _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+          ]
+        )
       ]
     )
   }
@@ -67026,7 +67017,7 @@ var render = function() {
                                 {
                                   key: _vm.sw[index].cap,
                                   staticStyle: {
-                                    width: "400px",
+                                    width: "100%",
                                     height: "auto",
                                     margin: "0 auto"
                                   }

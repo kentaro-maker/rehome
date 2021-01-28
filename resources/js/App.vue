@@ -8,7 +8,7 @@
             <h1 class="title__h1">あなたにぴったりの町を探そう</h1>
           </div>
           <div class="col-12 col-sm-6 p-0 order-1 order-sm-2">
-            <img :src="welcomeImg" class="img-fluid" alt="Responsive image">
+            <img src="https://i.ibb.co/W3zC18S/welcome.jpg" class="img-fluid" alt="Responsive image">
           </div>
         </div>
       </div>
