@@ -2,27 +2,27 @@
     <div class="container-item">
         <h3 class="title">地域から探す</h3>
         <div class="row">
-        <div class="col">
-        <ul class="region-list-group">
-            <li v-for="region in zenkoku" class="region-list-group__item">
-                <ul class="region-nav align-items-center">
-                    <li class="region-nav__item">
-                        <router-link :to="{name: 'region', params: { region_slug: region.slug }}"  class="region-nav__link">
-                            {{ region.name }}
-                        </router-link>
-                    </li>
-                    <li v-for="pref in region.prefs" class="region-nav__item">
-                        <router-link :to="{name: 'pref', params: { pref_slug: pref.slug, region_slug: region.slug }}"  class="region-nav__link">
-                            {{ pref.name }}
-                        </router-link>
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <ul class="region-list-group">
+                    <li v-for="region in zenkoku" class="region-list-group__item">
+                        <ul class="region-nav align-items-center">
+                            <li class="region-nav__item">
+                                <router-link :to="{name: 'region', params: { region_slug: region.slug }}"  class="region-nav__link">
+                                    {{ region.name }}
+                                </router-link>
+                            </li>
+                            <li v-for="pref in region.prefs" class="region-nav__item">
+                                <router-link :to="{name: 'pref', params: { pref_slug: pref.slug, region_slug: region.slug }}"  class="region-nav__link">
+                                    {{ pref.name }}
+                                </router-link>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-            </li>
-        </ul>
-        </div>
-        <div class="col">
-        <img :src="'/storage/images/zenkoku.svg'" usemap="#image-map">
-        </div>
+            </div>
+            <div class="col-12 col-md-6 order-ms-2 order-1">
+                <img :src="'/storage/images/zenkoku.svg'" usemap="#image-map">
+            </div>
         </div>
         <map name="image-map">
             <template v-for="region in zenkoku">

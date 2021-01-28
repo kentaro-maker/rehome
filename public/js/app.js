@@ -17709,10 +17709,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
-    item: {
+    city: {
       type: Object,
       required: true
     }
@@ -18646,18 +18645,29 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   methods: {
     pdf: function pdf(id) {
+      var _this = this;
+
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
         var response, url, link;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _context.next = 2;
+                if (_this.$store.getters['auth/check']) {
+                  _context.next = 3;
+                  break;
+                }
+
+                alert('転出届をダウンロードするにはログインしてください。');
+                return _context.abrupt("return", false);
+
+              case 3:
+                _context.next = 5;
                 return axios.get("/api/cities/".concat(id, "/pdf"), {
                   responseType: 'arraybuffer'
                 });
 
-              case 2:
+              case 5:
                 response = _context.sent;
                 console.log(response);
                 url = window.URL.createObjectURL(new Blob([response.data], {
@@ -18669,7 +18679,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 document.body.appendChild(link);
                 link.click();
 
-              case 10:
+              case 13:
               case "end":
                 return _context.stop();
             }
@@ -18678,7 +18688,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }))();
     },
     fetchCityDetail: function fetchCityDetail() {
-      var _this = this;
+      var _this2 = this;
 
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
         var response;
@@ -18686,9 +18696,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                _this.loading = true;
+                _this2.loading = true;
                 _context2.next = 3;
-                return axios.get("/api/region/".concat(_this.region_slug, "/pref/").concat(_this.pref_slug, "/city/").concat(_this.city_slug));
+                return axios.get("/api/region/".concat(_this2.region_slug, "/pref/").concat(_this2.pref_slug, "/city/").concat(_this2.city_slug));
 
               case 3:
                 response = _context2.sent;
@@ -18698,15 +18708,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   break;
                 }
 
-                _this.$store.commit('error/setCode', response.status);
+                _this2.$store.commit('error/setCode', response.status);
 
                 return _context2.abrupt("return", false);
 
               case 7:
                 //setTimeout(() => this.loading = false, 1800);
-                _this.loading = false;
+                _this2.loading = false;
                 console.log(response.data);
-                _this.city = response.data[0];
+                _this2.city = response.data[0];
 
               case 10:
               case "end":
@@ -18730,7 +18740,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     },
     $route: {
       handler: function handler() {
-        var _this2 = this;
+        var _this3 = this;
 
         return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
@@ -18738,7 +18748,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               switch (_context3.prev = _context3.next) {
                 case 0:
                   _context3.next = 2;
-                  return _this2.fetchCityDetail();
+                  return _this3.fetchCityDetail();
 
                 case 2:
                 case "end":
@@ -18777,6 +18787,20 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -63917,15 +63941,19 @@ var render = function() {
               staticClass: "container-fluid p-0"
             },
             [
-              _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "row m-0" }, [
                 _vm._m(0),
                 _vm._v(" "),
-                _c("div", { staticClass: "col p-0" }, [
-                  _c("img", {
-                    staticClass: "img-fluid",
-                    attrs: { src: _vm.welcomeImg, alt: "Responsive image" }
-                  })
-                ])
+                _c(
+                  "div",
+                  { staticClass: "col-12 col-sm-6 p-0 order-1 order-sm-2" },
+                  [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: { src: _vm.welcomeImg, alt: "Responsive image" }
+                    })
+                  ]
+                )
               ])
             ]
           )
@@ -63949,7 +63977,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "col p-0 d-flex flex-column align-items-center text-center justify-content-center",
+          "col p-0 order-2 order-sm-1 d-flex flex-column align-items-center text-center justify-content-center",
         attrs: { id: "welcome_board" }
       },
       [
@@ -63981,70 +64009,59 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "city panel" },
-    [
+  return _c("div", { staticClass: "card col-10 col-sm-9 col-md-8 mb-4" }, [
+    _c("div", { staticClass: "card-body" }, [
       _c(
-        "router-link",
+        "h5",
         {
-          attrs: {
-            to: {
-              name: "city",
-              params: {
-                region_slug: _vm.item.region,
-                pref_slug: _vm.item.prefecture,
-                city_slug: _vm.item.slug
-              }
-            }
-          }
+          staticClass: "card-title",
+          staticStyle: { "font-size": "3rem", "font-weight": "bold" }
         },
-        [_vm._v("\n    " + _vm._s(_vm.item.name) + "\n  ")]
+        [
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: {
+                  name: "city",
+                  params: {
+                    region_slug: _vm.city.region,
+                    pref_slug: _vm.city.prefecture,
+                    city_slug: _vm.city.slug
+                  }
+                }
+              }
+            },
+            [_vm._v("\n    " + _vm._s(_vm.city.name) + "\n  ")]
+          )
+        ],
+        1
       ),
-      _vm._v(
-        "\n        " +
-          _vm._s(_vm.item.prefecture_name) +
-          "\n    " +
-          _vm._s(_vm.item.region_name) +
-          "\n\n    "
-      ),
-      _c("ul", [
-        _c("li", [_vm._v("人口：" + _vm._s(_vm.item.pop) + " 人")]),
-        _vm._v(" "),
-        _c("li", [_vm._v("総面積：" + _vm._s(_vm.item.land) + " ha")]),
-        _vm._v(" "),
-        _c("li", [_vm._v("林野面積：" + _vm._s(_vm.item.forest) + " ha")]),
-        _vm._v(" "),
-        _c("li", [_vm._v("世帯数：" + _vm._s(_vm.item.household) + " 世帯")]),
-        _vm._v(" "),
-        _c("li", [_vm._v("幼稚園数：" + _vm._s(_vm.item.yo_school))]),
-        _vm._v(" "),
-        _c("li", [_vm._v("小学校数：" + _vm._s(_vm.item.sho_school))]),
-        _vm._v(" "),
-        _c("li", [_vm._v("中学校数：" + _vm._s(_vm.item.chu_school))]),
-        _vm._v(" "),
-        _c("li", [_vm._v("高等学校数：" + _vm._s(_vm.item.ko_school))]),
-        _vm._v(" "),
-        _c("li", [_vm._v("空家数：" + _vm._s(_vm.item.empty))]),
-        _vm._v(" "),
-        _c("li", [_vm._v("公民館数：" + _vm._s(_vm.item.kominkan))]),
-        _vm._v(" "),
-        _c("li", [_vm._v("図書館数：" + _vm._s(_vm.item.toshokan))]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v("ホームページ："),
-          _c("a", { attrs: { target: "_blank", href: _vm.item.portal } }, [
-            _c("cite", [_vm._v(_vm._s(_vm.item.portal))])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [_vm._v("病院数：" + _vm._s(_vm.item.hospital))]),
-        _vm._v(" "),
-        _c("li", [_vm._v("診療所数：" + _vm._s(_vm.item.clinic))])
+      _vm._v(" "),
+      _c("p", { staticClass: "card-text" }, [
+        _vm._v("\n      ホームページ：\n      "),
+        _c("a", { attrs: { target: "_blank", href: _vm.city.portal } }, [
+          _c("cite", [_vm._v(_vm._s(_vm.city.portal))])
+        ])
       ])
-    ],
-    1
-  )
+    ]),
+    _vm._v(" "),
+    _c("ul", { staticClass: "list-group list-group-flush" }, [
+      _c("li", { staticClass: "list-group-item" }, [
+        _vm._v(
+          "\n      人口：" +
+            _vm._s(_vm.city.pop) +
+            "人、\n      世帯数：" +
+            _vm._s(_vm.city.household) +
+            "世帯\n    "
+        )
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "list-group-item" }, [
+        _vm._v("総面積：" + _vm._s(_vm.city.land) + " ha")
+      ])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -64071,8 +64088,8 @@ var render = function() {
   return _c("div", { staticClass: "container-item" }, [
     _c("h3", { staticClass: "title" }, [_vm._v("こだわり条件から探す")]),
     _vm._v(" "),
-    _c("div", { staticClass: "card-group" }, [
-      _c("div", { staticClass: "card" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "card col-md-4 col-sm-6 col-12" }, [
         _c("div", { staticClass: "card-body" }, [
           _c("h5", { staticClass: "card-title" }, [_vm._v("総人口から探す")]),
           _vm._v(" "),
@@ -64109,7 +64126,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card col-md-4 col-sm-6 col-12" }, [
         _c("div", { staticClass: "card-body" }, [
           _c("h5", { staticClass: "card-title" }, [_vm._v("総面積から探す")]),
           _vm._v(" "),
@@ -64146,7 +64163,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card col-md-4 col-sm-6 col-12" }, [
         _c("div", { staticClass: "card-body" }, [
           _c("h5", { staticClass: "card-title" }, [_vm._v("空家数から探す")]),
           _vm._v(" "),
@@ -64754,7 +64771,7 @@ var render = function() {
     _c("h3", { staticClass: "title" }, [_vm._v("地域から探す")]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col" }, [
+      _c("div", { staticClass: "col-12 col-md-6 order-2 order-md-1" }, [
         _c(
           "ul",
           { staticClass: "region-list-group" },
@@ -64781,9 +64798,9 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        " +
+                            "\n                                " +
                               _vm._s(region.name) +
-                              "\n                    "
+                              "\n                            "
                           )
                         ]
                       )
@@ -64812,9 +64829,9 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                        " +
+                              "\n                                " +
                                 _vm._s(pref.name) +
-                                "\n                    "
+                                "\n                            "
                             )
                           ]
                         )
@@ -64831,7 +64848,7 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
+      _c("div", { staticClass: "col-12 col-md-6 order-ms-2 order-1" }, [
         _c("img", {
           attrs: { src: "/storage/images/zenkoku.svg", usemap: "#image-map" }
         })
@@ -65059,7 +65076,7 @@ var render = function() {
                       "div",
                       {
                         staticClass: "carousel-item active",
-                        staticStyle: { height: "15rem" }
+                        staticStyle: { height: "50vw" }
                       },
                       [
                         _c("img", {
@@ -65073,7 +65090,7 @@ var render = function() {
                       "div",
                       {
                         staticClass: "carousel-item",
-                        staticStyle: { height: "15rem" }
+                        staticStyle: { height: "50vw" }
                       },
                       [
                         _c("img", {
@@ -65090,7 +65107,7 @@ var render = function() {
                       "div",
                       {
                         staticClass: "carousel-item",
-                        staticStyle: { height: "15rem" }
+                        staticStyle: { height: "50vw" }
                       },
                       [
                         _c("img", {
@@ -65364,10 +65381,22 @@ var render = function() {
             value: _vm.loading,
             expression: "loading"
           }
-        ]
+        ],
+        staticClass: "row justify-content-center"
       },
-      [_c("Loader")],
-      1
+      [
+        _c("div", { staticClass: "card col-10 col-sm-9 col-md-8 mb-4" }, [
+          _c("div", { staticClass: "card-body" }, [_c("Loader")], 1)
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card col-10 col-sm-9 col-md-8 mb-4" }, [
+          _c("div", { staticClass: "card-body" }, [_c("Loader")], 1)
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card col-10 col-sm-9 col-md-8 mb-4" }, [
+          _c("div", { staticClass: "card-body" }, [_c("Loader")], 1)
+        ])
+      ]
     ),
     _vm._v(" "),
     _c(
@@ -65380,10 +65409,11 @@ var render = function() {
             value: !_vm.loading,
             expression: "! loading"
           }
-        ]
+        ],
+        staticClass: "row justify-content-center"
       },
       _vm._l(_vm.cities, function(city) {
-        return _c("CityItem", { key: city.id, attrs: { item: city } })
+        return _c("CityItem", { key: city.id, attrs: { city: city } })
       }),
       1
     )

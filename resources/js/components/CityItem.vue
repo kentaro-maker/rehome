@@ -1,43 +1,42 @@
 <template>
-  <div class="city panel">
-    <router-link
+  <div class="card col-10 col-sm-9 col-md-8 mb-4">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size:3rem;font-weight:bold;">
+      <router-link
       :to="{
         name: 'city',
         params: {
-          region_slug: item.region,
-          pref_slug:   item.prefecture,
-          city_slug:   item.slug
+          region_slug: city.region,
+          pref_slug:   city.prefecture,
+          city_slug:   city.slug
         }
       }"
     >
-      {{ item.name }}
+      {{ city.name }}
     </router-link>
-          {{ item.prefecture_name }}
-      {{ item.region_name }}
-
-      <ul>
-        <li>人口：{{ item.pop }} 人</li>
-        <li>総面積：{{ item.land }} ha</li>
-        <li>林野面積：{{ item.forest }} ha</li>
-        <li>世帯数：{{ item.household}} 世帯</li>
-        <li>幼稚園数：{{ item.yo_school }}</li>
-        <li>小学校数：{{ item.sho_school }}</li>
-        <li>中学校数：{{ item.chu_school }}</li>
-        <li>高等学校数：{{ item.ko_school }}</li>
-        <li>空家数：{{ item.empty }}</li>
-        <li>公民館数：{{ item.kominkan }}</li>
-        <li>図書館数：{{ item.toshokan }}</li>
-        <li>ホームページ：<a target="_blank" :href="item.portal"><cite>{{ item.portal }}</cite></a></li>
-        <li>病院数：{{ item.hospital }}</li>
-        <li>診療所数：{{ item.clinic }}</li>
-      </ul>
+    </h5>
+      <p class="card-text">
+        ホームページ：
+        <a target="_blank" :href="city.portal">
+          <cite>{{ city.portal }}</cite>
+        </a>
+      </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        人口：{{ city.pop }}人、
+        世帯数：{{ city.household}}世帯
+      </li>
+      <li class="list-group-item">総面積：{{ city.land }} ha</li>
+    </ul>
   </div>
+
 </template>
 
 <script>
 export default {
   props: {
-    item: {
+    city: {
       type: Object,
       required: true
     }

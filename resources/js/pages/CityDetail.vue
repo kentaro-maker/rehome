@@ -12,13 +12,13 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
-                        <div class="carousel-item active" style="height:15rem;">
+                        <div class="carousel-item active" style="height:50vw;">
                             <img class="d-block w-100 card-img-top" :src="imgList[0].src" alt="First slide">
                         </div>
-                        <div class="carousel-item" style="height:15rem;">
+                        <div class="carousel-item" style="height:50vw;">
                         <img class="d-block w-100 card-img-top" :src="imgList[1].src" alt="Second slide">
                         </div>
-                        <div class="carousel-item" style="height:15rem;">
+                        <div class="carousel-item" style="height:50vw;">
                         <img class="d-block w-100 card-img-top" :src="imgList[2].src" alt="Third slide">
                         </div>
                     </div>
@@ -113,6 +113,10 @@ export default {
     },
     methods: {
         async pdf(id){
+            if (! this.$store.getters['auth/check']) {
+                alert('転出届をダウンロードするにはログインしてください。')
+                return false
+            }
             const response = await axios.get(
                 `/api/cities/${id}/pdf`, {responseType: 'arraybuffer'})
 

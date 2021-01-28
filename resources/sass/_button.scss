@@ -14,7 +14,7 @@
   transition:
     border-color 300ms ease-in-out,
     color 300ms ease-in-out;
-
+  
   &:hover {
     border-color: $grey-1;
     color: inherit;
@@ -66,4 +66,10 @@
       opacity: .8;
     }
   }
+}
+
+
+/* スマートフォン用 */
+@media only screen and (max-width: 575px) {
+  .button {font-size: 1rem;} 
 }

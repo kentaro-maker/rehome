@@ -11034,6 +11034,14 @@ img {
   margin-left: 1rem;
 }
 
+/* スマートフォン用 */
+
+@media only screen and (max-width: 575px) {
+  .navbar__menu {
+    font-size: 1.5rem;
+  }
+}
+
 .event {
   position: relative;
 }
@@ -11429,6 +11437,14 @@ img {
   border-color: #e4406f;
   color: #fff;
   opacity: 0.8;
+}
+
+/* スマートフォン用 */
+
+@media only screen and (max-width: 575px) {
+  .button {
+    font-size: 1rem;
+  }
 }
 
 .form--ticket {

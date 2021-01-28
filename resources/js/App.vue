@@ -3,11 +3,11 @@
     <header>
       <Navbar />
       <div v-show="isWelcome" class="container-fluid p-0">
-        <div class="row">
-          <div id="welcome_board" class="col p-0 d-flex flex-column align-items-center text-center justify-content-center">
+        <div class="row m-0">
+          <div id="welcome_board" class="col p-0 order-2 order-sm-1 d-flex flex-column align-items-center text-center justify-content-center">
             <h1 class="title__h1">あなたにぴったりの町を探そう</h1>
           </div>
-          <div class="col p-0">
+          <div class="col-12 col-sm-6 p-0 order-1 order-sm-2">
             <img :src="welcomeImg" class="img-fluid" alt="Responsive image">
           </div>
         </div>

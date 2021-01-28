@@ -1,13 +1,27 @@
 <template>
   <div class="city-list">
-    <div v-show="loading">
-      <Loader/>
+    <div v-show="loading" class="row justify-content-center">
+      <div class="card col-10 col-sm-9 col-md-8 mb-4">
+        <div class="card-body">
+          <Loader/>
+        </div>
+      </div>
+      <div class="card col-10 col-sm-9 col-md-8 mb-4">
+        <div class="card-body">
+          <Loader/>
+        </div>
+      </div>
+      <div class="card col-10 col-sm-9 col-md-8 mb-4">
+        <div class="card-body">
+          <Loader/>
+        </div>
+      </div>
     </div>
-    <div v-show="! loading" class="">
+    <div v-show="! loading" class="row justify-content-center">
       <CityItem
         v-for="city in cities"
         :key="city.id"
-        :item="city"
+        :city="city"
       />
     </div>
   </div>

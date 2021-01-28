@@ -1,8 +1,8 @@
 <template>
     <div class="container-item">
         <h3 class="title">こだわり条件から探す</h3>
-        <div class="card-group">
-            <div class="card">
+        <div class="row">
+            <div class="card col-md-4 col-sm-6 col-12">
                 <div class="card-body">
                     <h5 class="card-title">総人口から探す</h5>
                     <ul class="condition-list-group">
@@ -16,7 +16,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card">
+            <div class="card col-md-4 col-sm-6 col-12">
                 <div class="card-body">
                     <h5 class="card-title">総面積から探す</h5>
                     <ul class="condition-list-group">
@@ -30,7 +30,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card">
+            <div class="card col-md-4 col-sm-6 col-12">
                 <div class="card-body">
                     <h5 class="card-title">空家数から探す</h5>
                     <ul class="condition-list-group">
