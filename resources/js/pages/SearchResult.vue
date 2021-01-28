@@ -9,20 +9,38 @@
             <div v-show="loading">
                 <Loader>検索中</Loader>
             </div>
-            <div v-show="! loading">
+            <div v-show="! loading"  class="row justify-content-center">
                 <p>{{ keywordData }}</p>
-                <input class="form__item" type="text" v-model="keyword">
-                <div class="form__button">
-                    <button type="submit" class="button button--inverse">検索</button>
+                <div class="col-10 col-sm-9 col-md-8">
+                  <input class="form__item" type="text" v-model="keyword">
+                </div>
+                <div class="form__button col-10 col-sm-9 col-md-8 mb-4">
+                    <button type="submit" class="w-50 button button--inverse">検索</button>
                 </div>
             </div>
         </form>
-        <div v-show="load"><Loader>検索中</Loader></div>
-        <div v-show="! load">
+        <div v-show="load" class="row justify-content-center">
+          <div class="card col-10 col-sm-9 col-md-8 mb-4">
+            <div class="card-body">
+              <Loader/>
+            </div>
+          </div>
+          <div class="card col-10 col-sm-9 col-md-8 mb-4">
+            <div class="card-body">
+              <Loader/>
+            </div>
+          </div>
+          <div class="card col-10 col-sm-9 col-md-8 mb-4">
+            <div class="card-body">
+              <Loader/>
+            </div>
+          </div>
+        </div>
+        <div v-show="! load" class="row justify-content-center">
           <CityItem
               v-for="city in cities"
               :key="city.id"
-              :item="city"
+              :city="city"
             />
         </div>
   </div>
@@ -59,15 +77,16 @@ export default {
   },
   methods: {
     async keyword_search () {
-            this.loading = true
+      this.loading = true
 
-            const response = await axios.post(
-                'api/search',{keyword:this.keyword}
-                ).catch(
-                    err => err.response || err
-                )
-                            console.log(response)
-
+      const response = await axios.post(
+          'api/search',{keyword:this.keyword}
+        ).catch(
+          err => err.response || err
+        )
+        console.log(response)
+        this.cities = response.data.data
+        this.loading = false
     },
     async fetchCities () {
       var popArr = this.pop ? this.pop.split('to') : []

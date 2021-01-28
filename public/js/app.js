@@ -18456,35 +18456,36 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               case 3:
                 response = _context.sent;
+                console.log(response); //console.log(response.data.search)
 
                 if (!(response.status === _util__WEBPACK_IMPORTED_MODULE_1__["OK"])) {
-                  _context.next = 13;
+                  _context.next = 14;
                   break;
                 }
 
                 if (!(response.data.data.length == 0)) {
-                  _context.next = 9;
+                  _context.next = 10;
                   break;
                 }
 
-                _this.searchErrors = "キーワード「" + response.data.search.keyword + "」に一致する市はありません";
-                _context.next = 13;
+                _this.searchErrors = "キーワード「" + _this.keywordForm + "」に一致する市はありません";
+                _context.next = 14;
                 break;
 
-              case 9:
-                _context.next = 11;
+              case 10:
+                _context.next = 12;
                 return _this.$store.dispatch('search/store', response.data.data);
 
-              case 11:
-                _context.next = 13;
+              case 12:
+                _context.next = 14;
                 return _this.$router.push({
                   name: 'search',
                   query: {
-                    keyword: response.data.search.keyword
+                    keyword: _this.keywordForm
                   }
                 });
 
-              case 13:
+              case 14:
                 // バリデーションエラー
                 if (response.status === _util__WEBPACK_IMPORTED_MODULE_1__["UNPROCESSABLE_ENTITY"]) {
                   _this.searchErrors = "空です";
@@ -18501,7 +18502,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                 _this.loading = false;
 
-              case 17:
+              case 18:
               case "end":
                 return _context.stop();
             }
@@ -20003,6 +20004,24 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -20050,8 +20069,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 3:
                 response = _context.sent;
                 console.log(response);
+                _this.cities = response.data.data;
+                _this.loading = false;
 
-              case 5:
+              case 7:
               case "end":
                 return _context.stop();
             }
@@ -66150,32 +66171,35 @@ var render = function() {
                 value: !_vm.loading,
                 expression: "! loading"
               }
-            ]
+            ],
+            staticClass: "row justify-content-center"
           },
           [
             _c("p", [_vm._v(_vm._s(_vm.keywordData))]),
             _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.keyword,
-                  expression: "keyword"
-                }
-              ],
-              staticClass: "form__item",
-              attrs: { type: "text" },
-              domProps: { value: _vm.keyword },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
+            _c("div", { staticClass: "col-10 col-sm-9 col-md-8" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.keyword,
+                    expression: "keyword"
                   }
-                  _vm.keyword = $event.target.value
+                ],
+                staticClass: "form__item",
+                attrs: { type: "text" },
+                domProps: { value: _vm.keyword },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.keyword = $event.target.value
+                  }
                 }
-              }
-            }),
+              })
+            ]),
             _vm._v(" "),
             _vm._m(0)
           ]
@@ -66193,10 +66217,22 @@ var render = function() {
             value: _vm.load,
             expression: "load"
           }
-        ]
+        ],
+        staticClass: "row justify-content-center"
       },
-      [_c("Loader", [_vm._v("検索中")])],
-      1
+      [
+        _c("div", { staticClass: "card col-10 col-sm-9 col-md-8 mb-4" }, [
+          _c("div", { staticClass: "card-body" }, [_c("Loader")], 1)
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card col-10 col-sm-9 col-md-8 mb-4" }, [
+          _c("div", { staticClass: "card-body" }, [_c("Loader")], 1)
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card col-10 col-sm-9 col-md-8 mb-4" }, [
+          _c("div", { staticClass: "card-body" }, [_c("Loader")], 1)
+        ])
+      ]
     ),
     _vm._v(" "),
     _c(
@@ -66209,10 +66245,11 @@ var render = function() {
             value: !_vm.load,
             expression: "! load"
           }
-        ]
+        ],
+        staticClass: "row justify-content-center"
       },
       _vm._l(_vm.cities, function(city) {
-        return _c("CityItem", { key: city.id, attrs: { item: city } })
+        return _c("CityItem", { key: city.id, attrs: { city: city } })
       }),
       1
     )
@@ -66223,13 +66260,20 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form__button" }, [
-      _c(
-        "button",
-        { staticClass: "button button--inverse", attrs: { type: "submit" } },
-        [_vm._v("検索")]
-      )
-    ])
+    return _c(
+      "div",
+      { staticClass: "form__button col-10 col-sm-9 col-md-8 mb-4" },
+      [
+        _c(
+          "button",
+          {
+            staticClass: "w-50 button button--inverse",
+            attrs: { type: "submit" }
+          },
+          [_vm._v("検索")]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true

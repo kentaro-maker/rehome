@@ -72,18 +72,18 @@ export default {
                 )
                 
 
-            //console.log(response)
+            console.log(response)
             //console.log(response.data.search)
 
             if(response.status === OK) {
                 if(response.data.data.length == 0){
-                    this.searchErrors = "キーワード「" + response.data.search.keyword + "」に一致する市はありません"
+                    this.searchErrors = "キーワード「" + this.keywordForm + "」に一致する市はありません"
                 }else{
                     await this.$store.dispatch('search/store', response.data.data)
                     await this.$router.push({ 
                         name: 'search',
                         query: {
-                            keyword: response.data.search.keyword,
+                            keyword: this.keywordForm,
                         }
                     })
                 }

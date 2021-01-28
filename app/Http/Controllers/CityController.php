@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
+use App\Support\Collection;
+
 use Illuminate\Support\Facades\Log;
 
 class CityController extends Controller
@@ -70,9 +72,9 @@ class CityController extends Controller
             }
         }
 
-        Log::debug('pop',$pop);
-        Log::debug('land',$land);
-        Log::debug('empty',$empty);
+        // Log::debug('pop',$pop);
+        // Log::debug('land',$land);
+        // Log::debug('empty',$empty);
 
         // 省略しちゃう無駄に
         $keyword = $request->keyword;
@@ -91,13 +93,13 @@ class CityController extends Controller
             )
             ->distinct();
         if($keyword) {
-            Log::debug('insidekeyword',[$keyword]);
+            // Log::debug('insidekeyword',[$keyword]);
             $query->where('cities.name','like',"%$keyword%")
             ->orWhere('prefectures.name', 'like', "%$keyword%")
             ->orWhere('regions.name', 'like', "%$keyword%");
         }
         if($pop){
-            Log::debug('insidepop',$pop);
+            // Log::debug('insidepop',$pop);
             if($pop['min']){
                 $query->where('pop', '>=', $pop['min']);
             }
@@ -106,7 +108,7 @@ class CityController extends Controller
             }
         }
         if($land){
-            Log::debug('insideland',$land);
+            // Log::debug('insideland',$land);
             if($land['min']){
                 $query->where('land', '>=', $land['min']);
             }
@@ -115,7 +117,7 @@ class CityController extends Controller
             }
         }
         if($empty){
-            Log::debug('insideempty',$empty);
+            // Log::debug('insideempty',$empty);
             if($empty['min']){
                 $query->where('empty', '>=', $empty['min']);
             }
@@ -124,12 +126,10 @@ class CityController extends Controller
             }
         }
 
-        $cities = $query->get()->paginate(10);
+        Log::debug('s',[collect($query->get())]);
+        $cities = collect($query->get())->paginate(10);
 
-        return (new SearchCollection($cities))
-        ->additional(['search' => [
-            'keyword' => $keyword,
-        ]]);
+        return $cities;
     }
 
     /**
