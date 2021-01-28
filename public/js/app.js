@@ -64870,15 +64870,7 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-12 col-md-6 order-ms-2 order-1" }, [
-        _c("img", {
-          staticStyle: { "max-width": "100%" },
-          attrs: {
-            src: "https://i.ibb.co/L1WvH8M/zenkoku.png",
-            usemap: "#image-map"
-          }
-        })
-      ])
+      _vm._m(0)
     ]),
     _vm._v(" "),
     _c(
@@ -64912,7 +64904,22 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12 col-md-6 order-ms-2 order-1" }, [
+      _c("img", {
+        staticStyle: { "max-width": "100%" },
+        attrs: {
+          src: "https://i.ibb.co/rx6xbTM/zenkoku.png",
+          usemap: "#image-map"
+        }
+      })
+    ])
+  }
+]
 render._withStripped = true
 
 
