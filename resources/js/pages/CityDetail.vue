@@ -1,10 +1,14 @@
 <template>
     <div>
-        <div v-show="loading">
-            <Loader/>
+        <div v-show="loading" class="row justify-content-center">
+            <div class="card col-10 col-sm-9 col-md-8 mb-4">
+                <div class="card-body">
+                    <Loader/>
+                </div>
+            </div>
         </div>
-        <div v-show="! loading" v-if="city" class="d-flex justify-content-center">
-            <div class="card col-9">
+        <div v-show="! loading" v-if="city" class="row justify-content-center">
+            <div class="card col-10 col-sm-9 col-md-8 mb-4">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -12,14 +16,14 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
-                        <div class="carousel-item active" style="height:50vw;">
-                            <img class="d-block w-100 card-img-top" :src="imgList[0].src" alt="First slide">
+                        <div class="carousel-item active card-image-out">
+                            <img class="d-block card-img-top card-image-in" :src="imgList[0].src" alt="First slide">
                         </div>
-                        <div class="carousel-item" style="height:50vw;">
-                        <img class="d-block w-100 card-img-top" :src="imgList[1].src" alt="Second slide">
+                        <div class="carousel-item card-image-out">
+                        <img class="d-block card-img-top card-image-in" :src="imgList[1].src" alt="Second slide">
                         </div>
-                        <div class="carousel-item" style="height:50vw;">
-                        <img class="d-block w-100 card-img-top" :src="imgList[2].src" alt="Third slide">
+                        <div class="carousel-item card-image-out">
+                        <img class="d-block card-img-top card-image-in" :src="imgList[2].src" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

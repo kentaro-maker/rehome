@@ -18616,6 +18616,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -65037,10 +65041,14 @@ var render = function() {
             value: _vm.loading,
             expression: "loading"
           }
-        ]
+        ],
+        staticClass: "row justify-content-center"
       },
-      [_c("Loader")],
-      1
+      [
+        _c("div", { staticClass: "card col-10 col-sm-9 col-md-8 mb-4" }, [
+          _c("div", { staticClass: "card-body" }, [_c("Loader")], 1)
+        ])
+      ]
     ),
     _vm._v(" "),
     _vm.city
@@ -65055,10 +65063,10 @@ var render = function() {
                 expression: "! loading"
               }
             ],
-            staticClass: "d-flex justify-content-center"
+            staticClass: "row justify-content-center"
           },
           [
-            _c("div", { staticClass: "card col-9" }, [
+            _c("div", { staticClass: "card col-10 col-sm-9 col-md-8 mb-4" }, [
               _c(
                 "div",
                 {
@@ -65074,48 +65082,28 @@ var render = function() {
                   _c("div", { staticClass: "carousel-inner" }, [
                     _c(
                       "div",
-                      {
-                        staticClass: "carousel-item active",
-                        staticStyle: { height: "50vw" }
-                      },
+                      { staticClass: "carousel-item active card-image-out" },
                       [
                         _c("img", {
-                          staticClass: "d-block w-100 card-img-top",
+                          staticClass: "d-block card-img-top card-image-in",
                           attrs: { src: _vm.imgList[0].src, alt: "First slide" }
                         })
                       ]
                     ),
                     _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "carousel-item",
-                        staticStyle: { height: "50vw" }
-                      },
-                      [
-                        _c("img", {
-                          staticClass: "d-block w-100 card-img-top",
-                          attrs: {
-                            src: _vm.imgList[1].src,
-                            alt: "Second slide"
-                          }
-                        })
-                      ]
-                    ),
+                    _c("div", { staticClass: "carousel-item card-image-out" }, [
+                      _c("img", {
+                        staticClass: "d-block card-img-top card-image-in",
+                        attrs: { src: _vm.imgList[1].src, alt: "Second slide" }
+                      })
+                    ]),
                     _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "carousel-item",
-                        staticStyle: { height: "50vw" }
-                      },
-                      [
-                        _c("img", {
-                          staticClass: "d-block w-100 card-img-top",
-                          attrs: { src: _vm.imgList[2].src, alt: "Third slide" }
-                        })
-                      ]
-                    )
+                    _c("div", { staticClass: "carousel-item card-image-out" }, [
+                      _c("img", {
+                        staticClass: "d-block card-img-top card-image-in",
+                        attrs: { src: _vm.imgList[2].src, alt: "Third slide" }
+                      })
+                    ])
                   ]),
                   _vm._v(" "),
                   _vm._m(1),

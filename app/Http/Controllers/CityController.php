@@ -145,7 +145,7 @@ class CityController extends Controller
 
     public function pref($region_slug,$pref_slug,$city_slug = null)
     {
-        $city = DB::table('cities')
+        $cities = DB::table('cities')
             ->where([
                 ['cities.prefecture', $pref_slug],
                 ['cities.region', $region_slug],
@@ -166,8 +166,8 @@ class CityController extends Controller
                 'regions.slug as region_slug',
                 )
             ->paginate(10);
-
-            return $city;
+            Log::debug('cc',[$cities]);
+            return $cities;
     }
 
     /**
