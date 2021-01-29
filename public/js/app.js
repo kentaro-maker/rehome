@@ -64913,7 +64913,7 @@ var staticRenderFns = [
       _c("img", {
         staticStyle: { "max-width": "100%" },
         attrs: {
-          src: "https://i.ibb.co/rx6xbTM/zenkoku.png",
+          src: "https://i.ibb.co/Y8QcxcS/zenkoku.png",
           usemap: "#image-map"
         }
       })

@@ -21,7 +21,7 @@
                 </ul>
             </div>
             <div class="col-12 col-md-6 order-ms-2 order-1">
-                <img src="https://i.ibb.co/rx6xbTM/zenkoku.png" usemap="#image-map" style="max-width:100%;">
+                <img src="https://i.ibb.co/Y8QcxcS/zenkoku.png" usemap="#image-map" style="max-width:100%;">
             </div>
         </div>
         <map name="image-map">
